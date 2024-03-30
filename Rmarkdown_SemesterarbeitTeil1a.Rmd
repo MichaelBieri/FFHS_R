@@ -1,0 +1,43 @@
+---
+title: "Semsterarbeit_Teil1a"
+author: "MB"
+date: "2024-03-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Lernziel
+- Ich kann (eigene) Daten (ggf. unterschiedliche Formate) in R einlesen/importieren und dabei Importfunktionen anpassen. 
+- Ich kann mir einen Überblick über Datentypen, Grössen,  Lagemasse, Streumasse etc.  verschaffen.
+- Ich kann einfache Anpassungen ( Data Cleaning/Wrangling), wie dem Ersetzen/Entfernen von NAs, Konvertierungen von Datentypen oder Definition neuer Variablen vornehmen. 
+- Ich kann einfache/erste Forschungsfragen an meinen Datensatz im Sinne einer explorativen Datenanalyse stellen und auswählen, welche explorativen Diagramme sinnvoll sind. 
+- Ich kann explorative Diagramme, wie Histogramme oder Boxplots mit ggplot2  erzeugen und deren Parameter anpassen.
+- Ich kann einen Bericht über meine Datenanalyse verfasse (s. Wegleitung und Diskussion an der PVA) (wahlweise auch mit RMarkdown)
+
+```{r cars}
+summary(cars)
+```
+
+## Aufgabe - Einlesen Datensatz R, Variablen beschreiben, 
+Lesen Sie einen selbst gewählten Datensatz in R ein und beschreiben Sie die Variablen in einer Tabelle, worin jeder Variablenname benannt wird, welches Skalenniveau (z.B. numerisch, kategorisch, nominal, etc.) sie besitzt und welche Bedeutung sie hat (z.B. Höhe des Einkommens, Alter eines Patienten etc.)
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Lage- und Streumasse der numerischen Variablen
+Fertigen Sie einen Überblick über Lage- und Streumasse der numerischen Variablen an.
+
+## Zwei Forschungsfragen
+Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer eindimensionaler Diagramme, wie Histogramme, Balkendiagrammen oder Boxplots beantworten können/möchten. 
+
+## Sortieren Datensatz
+Sortieren Sie den Datensatz nach mindestens einer Variablen.
+
+## 
+
