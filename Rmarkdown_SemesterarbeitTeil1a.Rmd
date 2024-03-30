@@ -24,8 +24,56 @@ summary(cars)
 ## Aufgabe - Einlesen Datensatz R, Variablen beschreiben, 
 Lesen Sie einen selbst gewählten Datensatz in R ein und beschreiben Sie die Variablen in einer Tabelle, worin jeder Variablenname benannt wird, welches Skalenniveau (z.B. numerisch, kategorisch, nominal, etc.) sie besitzt und welche Bedeutung sie hat (z.B. Höhe des Einkommens, Alter eines Patienten etc.)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+# Bibliothek laden
+library("tuneR") 
+
+# Audio einlesen
+analyze_audio <- function(audio_file) {
+audio <- readWave(audio_file)
+
+# Grundlegende Merkmale extrahieren
+duration <- length(audio@left) / audio@samp.rate  # Dauer in Sekunden
+samples <- length(audio@left)
+sample_rate <- audio@samp.rate
+amplitude_mean <- mean(abs(audio@left))
+amplitude_max <- max(abs(audio@left))
+amplitude_min <- min(abs(audio@left))
+energy <- sum(audio_data@left^2)
+variance <- var(audio_data@left)
+std_deviation <- sd(audio_data@left)
+kurtosis <- kurtosis(audio_data@left)
+skewness <- skewness(audio_data@left)
+percentiles <- quantile(abs(audio_data@left), c(0.25, 0.50, 0.75, 0.90, 0.95, 0.99))
+
+# Rückgabe der analysierten Daten
+analysis_result <- list(
+duration = duration,
+samples = samples,
+sample_rate = sample_rate,
+amplitude_mean = amplitude_mean,
+amplitude_max = amplitude_max,
+amplitude_min = amplitude_min,
+cat("Energie des Signals:", energy, "\n")
+cat("Varianz der Amplituden:", variance, "\n")
+cat("Standardabweichung der Amplituden:", std_deviation, "\n")
+cat("Kurtosis:", kurtosis, "\n")
+cat("Schiefe (Skewness):", skewness, "\n")
+cat("25. Perzentil:", percentiles[1], "\n")
+cat("50. Perzentil (Median):", percentiles[2], "\n")
+cat("75. Perzentil:", percentiles[3], "\n")
+cat("90. Perzentil:", percentiles[4], "\n")
+cat("95. Perzentil:", percentiles[5], "\n")
+cat("99. Perzentil:", percentiles[6], "\n")
+)
+  
+return(analysis_result)
+}
+
+# Beispielaufruf
+audio_file <- "1727.wav"  # Pfad zur Audiodatei
+result <- analyze_audio(audio_file)
+print(result)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
