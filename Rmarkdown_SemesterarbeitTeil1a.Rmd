@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 ## Lernziel
 - Ich kann (eigene) Daten (ggf. unterschiedliche Formate) in R einlesen/importieren und dabei Importfunktionen anpassen. 
@@ -26,60 +27,76 @@ Lesen Sie einen selbst gewählten Datensatz in R ein und beschreiben Sie die Var
 
 ```{r}
 # Bibliothek laden
-library("tuneR") 
+library(tuneR)
+library(readr)
+library(wrassp)
 
-# Audio einlesen
-analyze_audio <- function(audio_file) {
-audio <- readWave(audio_file)
+# Einlesen der Audio-Datei
+audiofile_long <- readWave("1727.wav")
 
-# Grundlegende Merkmale extrahieren
-duration <- length(audio@left) / audio@samp.rate  # Dauer in Sekunden
-samples <- length(audio@left)
-sample_rate <- audio@samp.rate
-amplitude_mean <- mean(abs(audio@left))
-amplitude_max <- max(abs(audio@left))
-amplitude_min <- min(abs(audio@left))
-energy <- sum(audio_data@left^2)
-variance <- var(audio_data@left)
-std_deviation <- sd(audio_data@left)
-kurtosis <- kurtosis(audio_data@left)
-skewness <- skewness(audio_data@left)
-percentiles <- quantile(abs(audio_data@left), c(0.25, 0.50, 0.75, 0.90, 0.95, 0.99))
+# Audiodatei kuerzen
+start_time <- 2000  # Start bei 2000
+end_time <- 152000  # Ende nach 152000
+trimmed_audio <- extractWave(audiofile_long, from = start_time, to = end_time)
+writeWave(trimmed_audio, "1727_gekuerzt.wav")
 
-# Rückgabe der analysierten Daten
-analysis_result <- list(
-duration = duration,
-samples = samples,
-sample_rate = sample_rate,
-amplitude_mean = amplitude_mean,
-amplitude_max = amplitude_max,
-amplitude_min = amplitude_min,
-cat("Energie des Signals:", energy, "\n")
-cat("Varianz der Amplituden:", variance, "\n")
-cat("Standardabweichung der Amplituden:", std_deviation, "\n")
-cat("Kurtosis:", kurtosis, "\n")
-cat("Schiefe (Skewness):", skewness, "\n")
-cat("25. Perzentil:", percentiles[1], "\n")
-cat("50. Perzentil (Median):", percentiles[2], "\n")
-cat("75. Perzentil:", percentiles[3], "\n")
-cat("90. Perzentil:", percentiles[4], "\n")
-cat("95. Perzentil:", percentiles[5], "\n")
-cat("99. Perzentil:", percentiles[6], "\n")
-)
+# Path wav file, source kaggle - 1 min
+audiofile_short <- readWave("1727_gekuerzt.wav")
+
+# Structure audio file
+str(audiofile_short)
+
+# Einzelne Schalldruckwerte des monokanals konvertieren in Werte von -1 bis 1
+left_channel <- audiofile_short@left
+s1 <- left_channel / 2^(audiofile_short@bit -1) # 32 Bit - 1
+plot(s1)
+
+# Plotten der Druckwerte nach der Zeitachse
+timeArray <- (0:(150000-1)) / audiofile_short@samp.rate
+plot(timeArray, s1, type='l', col='black', xlab='Time (s)', ylab='Amplitude')
+
+```
+Diskussion: Die wav-Datei hat einen Kanal (links). Variablen:
+Die Datei "1727_gekuerzt.wav" beinhaltet die gekuerte Datei.
+  ..@ left     : num [1:150001]  -> Nominale Werte, Aussage ueber Schalldruckwerte die Intensitaet und Lautstaerke. Die Datei hat nur ein Kanal.
+  ..@ right    : num(0) -> Keine Werte auf dem rechten Kanal.
+  ..@ stereo   : logi FALSE -> Kein Stereo
+  ..@ samp.rate: int 44100 -> Abtastrate
+  ..@ bit      : int 32 -> Werte-Bit-Tiefe ist auf 32 ganzzahlwerten
+  ..@ pcm      : logi FALSE -> Keine Pulse-code Modulation
+
+```{r}
+library(tuneR)
+
+# Definition Funkion
+  analyze_audio <- function(audio) {
+  duration <- length(audio@left) / audio@samp.rate # Dauer in Sekunden
+  samples <- length(audio@left) # Anzahl Samples
   
-return(analysis_result)
+  analysis_audio <- list(
+    duration = duration,
+    samples = samples
+  )
+  
+  return(analysis_audio)
 }
 
-# Beispielaufruf
-audio_file <- "1727.wav"  # Pfad zur Audiodatei
+# Ausgabe
+audio_file <- readWave("1727_gekuerzt.wav")
+print(audio_file)
 result <- analyze_audio(audio_file)
-print(result)
+print(result) # Ausgabe
 ```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
 ## Lage- und Streumasse der numerischen Variablen
 Fertigen Sie einen Überblick über Lage- und Streumasse der numerischen Variablen an.
+
+```{r}
+# Lage der numerischen Variablen
+library(tuneR)
+library(signal)
+
+```
+
 
 ## Zwei Forschungsfragen
 Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer eindimensionaler Diagramme, wie Histogramme, Balkendiagrammen oder Boxplots beantworten können/möchten. 
@@ -87,5 +104,62 @@ Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer
 ## Sortieren Datensatz
 Sortieren Sie den Datensatz nach mindestens einer Variablen.
 
-## 
+### Zusatz
+## Audio einlesen funktion
+# analyze_audio <- function(audio_file) {
+# audio <- readWave(audio_file)
 
+## Statistikwerte
+# duration <- length(audio@left) / audio@samp.rate  # Dauer in Sekunden
+# samples <- length(audio@left)
+# sample_rate <- audio@samp.rate
+# amplitude_mean <- mean(abs(audio@left))
+# amplitude_max <- max(abs(audio@left))
+# amplitude_min <- min(abs(audio@left))
+# energy <- sum(audio_data@left^2)
+# variance <- var(audio_data@left)
+# std_deviation <- sd(audio_data@left)
+# percentiles <- quantile(abs(audio_data@left), c(0.25, 0.50, 0.75, 0.90, 0.95, 0.99))
+
+## Rückgabe der analysierten Daten
+# analysis_result <- list(
+# duration = duration,
+# samples = samples,
+# sample_rate = sample_rate,
+# amplitude_mean = amplitude_mean,
+# amplitude_max = amplitude_max,
+# amplitude_min = amplitude_min,
+# energy = energy,
+# variance = variance,
+# std_deviation = std_deviation,
+# percentiles_1 = percentiles[1],
+# percentiles_2 = percentiles[2],
+# percentiles_3 = percentiles[3],
+# percentiles_4 = percentiles[4],
+# percentiles_5 = percentiles[5],
+# )
+
+# return(analysis_result)
+# }
+
+## Beispielaufruf
+# audio_file <- "1727.wav"  # Pfad Audiodatei
+# print(audio_file)
+#result <- analyze_audio(audio_file)
+#print(data_no_na) #result
+
+# ############################################################################
+## Path wav file, source kaggle - 1 min
+#audiofile_short <- readWave("1727_gekuerzt.wav")
+
+## Structure audio file
+#str(audiofile_short)
+
+## Einzelne Schalldruckwerte des monokanals konvertieren in Werte von -1 bis 1
+#left_channel <- audiofile_short@left
+#s1 <- left_channel / 2^(audiofile_short@bit -1) # 32 Bit - 1
+#plot(s1)
+
+## Plotten der Druckwerte nach der Zeitachse
+#timeArray <- (0:(61-1)) / audio@samp.rate  # Korrigierte Syntax
+#plot(timeArray, s1, type='l', col='black', xlab='Time (ms)', ylab='Amplitude')
