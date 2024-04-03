@@ -30,9 +30,13 @@ Lesen Sie einen selbst gewählten Datensatz in R ein und beschreiben Sie die Var
 library(tuneR)
 library(readr)
 library(wrassp)
+library(tibble)
 
 # Einlesen der Audio-Datei
 audiofile_long <- readWave("1727.wav")
+
+# Fehlende Werte entfernen
+audiofile_long <- na.omit(audiofile_long)
 
 # Audiodatei kuerzen
 start_time <- 2000  # Start bei 2000
@@ -56,27 +60,34 @@ timeArray <- (0:(150000-1)) / audiofile_short@samp.rate
 plot(timeArray, s1, type='l', col='black', xlab='Time (s)', ylab='Amplitude')
 
 ```
-Diskussion: Die wav-Datei hat einen Kanal (links). Variablen:
-Die Datei "1727_gekuerzt.wav" beinhaltet die gekuerte Datei.
+Diskussion: Die wav-Datei hat einen Kanal (links).Die Datei "1727_gekuerzt.wav" beinhaltet die gekuerte Datei.
+Variablen:
   ..@ left     : num [1:150001]  -> Nominale Werte, Aussage ueber Schalldruckwerte die Intensitaet und Lautstaerke. Die Datei hat nur ein Kanal.
-  ..@ right    : num(0) -> Keine Werte auf dem rechten Kanal.
+  ..@ right    : num(0) -> Keine Werte auf dem rechten Kanal
   ..@ stereo   : logi FALSE -> Kein Stereo
   ..@ samp.rate: int 44100 -> Abtastrate
   ..@ bit      : int 32 -> Werte-Bit-Tiefe ist auf 32 ganzzahlwerten
   ..@ pcm      : logi FALSE -> Keine Pulse-code Modulation
-
 ```{r}
 library(tuneR)
 
 # Definition Funkion
-  analyze_audio <- function(audio) {
-  duration <- length(audio@left) / audio@samp.rate # Dauer in Sekunden
-  samples <- length(audio@left) # Anzahl Samples
+analyze_audio <- function(audio) {
+duration <- length(audio@left) / audio@samp.rate # Dauer in Sekunden
+samples <- length(audio@left) # Anzahl Samples
+variance <- var(audio_data@left) # Varianz
+percentiles <- quantile(abs(audio_data@left), c(0.25, 0.50, 0.75, 0.90, 0.95, 0.99))
   
-  analysis_audio <- list(
-    duration = duration,
-    samples = samples
-  )
+analysis_audio <- list(
+duration = duration,
+samples = samples,
+variance = variance,
+percentiles_1 = percentiles[1],
+percentiles_2 = percentiles[2],
+percentiles_3 = percentiles[3],
+percentiles_4 = percentiles[4],
+percentiles_5 = percentiles[5]
+)
   
   return(analysis_audio)
 }
@@ -85,7 +96,7 @@ library(tuneR)
 audio_file <- readWave("1727_gekuerzt.wav")
 print(audio_file)
 result <- analyze_audio(audio_file)
-print(result) # Ausgabe
+print(result)
 ```
 ## Lage- und Streumasse der numerischen Variablen
 Fertigen Sie einen Überblick über Lage- und Streumasse der numerischen Variablen an.
@@ -95,71 +106,71 @@ Fertigen Sie einen Überblick über Lage- und Streumasse der numerischen Variabl
 library(tuneR)
 library(signal)
 
-```
+analyze_audio <- function(audio) {
+  #Funktion Lagemass/Mittelwert
+  amplitude_mean <- mean(abs(audio@left)) # Mean amplitude
+  #Funktion Standardabweichung/Streuungsmass
+  std_deviation <- sd(audio_data@left)
 
+analysis_audio <- list(
+  amplitude_mean = amplitude_mean,
+  std_deviation = std_deviation
+)
+  
+  return(analysis_audio)
+}
+# Ausgabe
+audio_file <- readWave("1727_gekuerzt.wav")
+print(audio_file)
+result <- analyze_audio(audio_file)
+print(result)
+```
+Die Standardabweichung von 0.027 bedeutet, dass die Datenpunkte sehr homogen sind und keine starken Abweichungen vom Mittelwert haben.
 
 ## Zwei Forschungsfragen
-Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer eindimensionaler Diagramme, wie Histogramme, Balkendiagrammen oder Boxplots beantworten können/möchten. 
+Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer eindimensionaler Diagramme, wie Histogramme, Balkendiagrammen oder Boxplots beantworten können/möchten.
 
+1. Forschungsfrage: Es handelt sich um ein Instrument
+2. Forschungsfrage: Audioumwandlung beeinflusst die qualitaet nicht
+
+```{r}
+audio_file <- readWave("1727_gekuerzt.wav")
+
+# Histogramme
+hist(audio_file, main = "Histogramm der Daten", xlab = "Amlitude", ylab = "Häufigkeit", col = "skyblue", border = "black")
+
+# Balkendiagramm
+freq_table <- table(cut(audio_file, breaks = seq(min(data), max(data), by = 2)))
+
+# Erstellung einer Häufigkeitstabelle
+barplot(freq_table, main = "Balkendiagramm der Daten", xlab = "Intervalle", ylab = "Häufigkeit", col = "lightgreen")
+
+# Boxplots
+boxplot(audio_file, main = "Boxplot der Daten", ylab = "Werte", col = "lightblue")
+
+
+# ### 
+# Laden der benötigten Bibliotheken
+library(tuneR)
+
+# Funktion zum Erstellen eines Histogramms aus Audiodaten
+create_audio_histogram <- function(audio_file) {
+  # Audiodatei einlesen
+  audio <- readWave(audio_file)
+
+  # Mono-Audio erzeugen
+  audio_mono <- audio@left
+
+  # Histogramm der Audiodaten erstellen
+  hist(audio_mono, main = "Histogramm der Audiodaten", xlab = "Amplitude", ylab = "Häufigkeit", col = "skyblue", border = "black")
+}
+
+# Pfad zur Audiodatei
+audio_file <- "1727_gekuerzt.wav"
+
+# Histogramm der Audiodaten erstellen
+create_audio_histogram(audio_file)
+
+```
 ## Sortieren Datensatz
 Sortieren Sie den Datensatz nach mindestens einer Variablen.
-
-### Zusatz
-## Audio einlesen funktion
-# analyze_audio <- function(audio_file) {
-# audio <- readWave(audio_file)
-
-## Statistikwerte
-# duration <- length(audio@left) / audio@samp.rate  # Dauer in Sekunden
-# samples <- length(audio@left)
-# sample_rate <- audio@samp.rate
-# amplitude_mean <- mean(abs(audio@left))
-# amplitude_max <- max(abs(audio@left))
-# amplitude_min <- min(abs(audio@left))
-# energy <- sum(audio_data@left^2)
-# variance <- var(audio_data@left)
-# std_deviation <- sd(audio_data@left)
-# percentiles <- quantile(abs(audio_data@left), c(0.25, 0.50, 0.75, 0.90, 0.95, 0.99))
-
-## Rückgabe der analysierten Daten
-# analysis_result <- list(
-# duration = duration,
-# samples = samples,
-# sample_rate = sample_rate,
-# amplitude_mean = amplitude_mean,
-# amplitude_max = amplitude_max,
-# amplitude_min = amplitude_min,
-# energy = energy,
-# variance = variance,
-# std_deviation = std_deviation,
-# percentiles_1 = percentiles[1],
-# percentiles_2 = percentiles[2],
-# percentiles_3 = percentiles[3],
-# percentiles_4 = percentiles[4],
-# percentiles_5 = percentiles[5],
-# )
-
-# return(analysis_result)
-# }
-
-## Beispielaufruf
-# audio_file <- "1727.wav"  # Pfad Audiodatei
-# print(audio_file)
-#result <- analyze_audio(audio_file)
-#print(data_no_na) #result
-
-# ############################################################################
-## Path wav file, source kaggle - 1 min
-#audiofile_short <- readWave("1727_gekuerzt.wav")
-
-## Structure audio file
-#str(audiofile_short)
-
-## Einzelne Schalldruckwerte des monokanals konvertieren in Werte von -1 bis 1
-#left_channel <- audiofile_short@left
-#s1 <- left_channel / 2^(audiofile_short@bit -1) # 32 Bit - 1
-#plot(s1)
-
-## Plotten der Druckwerte nach der Zeitachse
-#timeArray <- (0:(61-1)) / audio@samp.rate  # Korrigierte Syntax
-#plot(timeArray, s1, type='l', col='black', xlab='Time (ms)', ylab='Amplitude')
