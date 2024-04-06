@@ -130,8 +130,11 @@ Die Standardabweichung von 0.027 bedeutet, dass die Datenpunkte sehr homogen sin
 ## Zwei Forschungsfragen
 Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer eindimensionaler Diagramme, wie Histogramme, Balkendiagrammen oder Boxplots beantworten können/möchten.
 
-1. Forschungsfrage: Es handelt sich um ein Instrument
-2. Forschungsfrage: Audioumwandlung beeinflusst die qualitaet nicht
+1. Forschungsfrage:
+- Ich erkenne das Instrument
+- Der gleiche Ton ist in anderst in einem kleinen und einem grossen Raum
+- Ein Daempfer bei der Trompete veraendert die Frequenz beim gleichen Ton
+2. Forschungsfrage: 
 
 ```{r}
 # Bibliothek
@@ -148,7 +151,39 @@ hist(audio_mono, main = "Histogramm der Audiodaten", xlab = "Amplitude", ylab = 
 audio_file <- "1727_gekuerzt.wav" # Pfad zur Audiodatei
 create_audio_histogram(audio_file) # Histogramm der Audiodaten erstellen
 
-# Funktion Bo
+## Funktion Balkendiagramm
+
+# Pfad zum Audio-File
+audio_file <- "pfad/zum/audiofile.mp3"
+
+# Audio-File einlesen
+audio <- readMP3(audio_file)
+
+# Zeitvektor für das Audio-File erstellen
+time <- (1:length(audio@left))/audio@samp.rate
+
+# Amplituden des linken Audiokanals extrahieren
+amplitudes <- audio@left
+
+# Balkendiagramm erstellen
+barplot(amplitudes, names.arg = time, xlab = "Zeit (s)", ylab = "Amplitude", col = "blue", main = "Amplitudenverlauf des Audio-Files")
+
+# Pfad zum Audio-File
+audio_file <- "pfad/zum/audiofile.mp3"
+
+# Audio-File einlesen
+audio <- readMP3(audio_file)
+
+# Amplituden des linken Audiokanals extrahieren
+amplitudes <- audio@left
+
+# Boxplot erstellen
+boxplot(amplitudes, ylab = "Amplitude", main = "Boxplot der Amplituden des Audio-Files")
+
 ```
+Analyse-Historgram: 
+Analyse-Balkendiagramm:
+Analyse-Boxplots:
+
 ## Sortieren Datensatz
 Sortieren Sie den Datensatz nach mindestens einer Variablen.
