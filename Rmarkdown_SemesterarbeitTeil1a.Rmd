@@ -134,43 +134,21 @@ Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer
 2. Forschungsfrage: Audioumwandlung beeinflusst die qualitaet nicht
 
 ```{r}
-audio_file <- readWave("1727_gekuerzt.wav")
-
-# Histogramme
-hist(audio_file, main = "Histogramm der Daten", xlab = "Amlitude", ylab = "Häufigkeit", col = "skyblue", border = "black")
-
-# Balkendiagramm
-freq_table <- table(cut(audio_file, breaks = seq(min(data), max(data), by = 2)))
-
-# Erstellung einer Häufigkeitstabelle
-barplot(freq_table, main = "Balkendiagramm der Daten", xlab = "Intervalle", ylab = "Häufigkeit", col = "lightgreen")
-
-# Boxplots
-boxplot(audio_file, main = "Boxplot der Daten", ylab = "Werte", col = "lightblue")
-
-
-# ### 
-# Laden der benötigten Bibliotheken
+# Bibliothek
 library(tuneR)
 
-# Funktion zum Erstellen eines Histogramms aus Audiodaten
-create_audio_histogram <- function(audio_file) {
-  # Audiodatei einlesen
-  audio <- readWave(audio_file)
-
-  # Mono-Audio erzeugen
-  audio_mono <- audio@left
-
-  # Histogramm der Audiodaten erstellen
-  hist(audio_mono, main = "Histogramm der Audiodaten", xlab = "Amplitude", ylab = "Häufigkeit", col = "skyblue", border = "black")
+# Funktion Histogramm
+create_audio_histogram <- function(audio) {
+audio <- readWave(audio_file) # Audiodatei einlesen
+audio_mono <- audio@left # Mono-Audio erzeugen um einen x-Wert zu bekommen
+hist(audio_mono, main = "Histogramm der Audiodaten", xlab = "Amplitude", ylab = "Häufigkeit", col = "skyblue", border = "black") # Histogramm
 }
 
-# Pfad zur Audiodatei
-audio_file <- "1727_gekuerzt.wav"
+# Erstellen des Histogramms
+audio_file <- "1727_gekuerzt.wav" # Pfad zur Audiodatei
+create_audio_histogram(audio_file) # Histogramm der Audiodaten erstellen
 
-# Histogramm der Audiodaten erstellen
-create_audio_histogram(audio_file)
-
+# Funktion Bo
 ```
 ## Sortieren Datensatz
 Sortieren Sie den Datensatz nach mindestens einer Variablen.
