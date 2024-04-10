@@ -25,6 +25,8 @@ summary(cars)
 ## Aufgabe - Einlesen Datensatz R, Variablen beschreiben, 
 Lesen Sie einen selbst gewählten Datensatz in R ein und beschreiben Sie die Variablen in einer Tabelle, worin jeder Variablenname benannt wird, welches Skalenniveau (z.B. numerisch, kategorisch, nominal, etc.) sie besitzt und welche Bedeutung sie hat (z.B. Höhe des Einkommens, Alter eines Patienten etc.)
 
+Loesung fuer das Audiofile 1727.wav Band audiofile:
+
 ```{r}
 # Bibliothek laden
 library(tuneR)
@@ -33,30 +35,30 @@ library(wrassp)
 library(tibble)
 
 # Einlesen der Audio-Datei
-audiofile_long <- readWave("1727.wav")
+audiofile_band <- readWave("1727.wav") # Klassische Band
 
 # Fehlende Werte entfernen
-audiofile_long <- na.omit(audiofile_long)
+audiofile_band <- na.omit(audiofile_band)
 
 # Audiodatei kuerzen
 start_time <- 2000  # Start bei 2000
 end_time <- 152000  # Ende nach 152000
-trimmed_audio <- extractWave(audiofile_long, from = start_time, to = end_time)
-writeWave(trimmed_audio, "1727_gekuerzt.wav")
+trimmed_band <- extractWave(audiofile_band, from = start_time, to = end_time)
+writeWave(trimmed_band, "1727_gekuerzt.wav")
 
 # Path wav file, source kaggle - 1 min
-audiofile_short <- readWave("1727_gekuerzt.wav")
+audiofile_band_short <- readWave("1727_gekuerzt.wav")
 
 # Structure audio file
-str(audiofile_short)
+str(audiofile_band_short)
 
 # Einzelne Schalldruckwerte des monokanals konvertieren in Werte von -1 bis 1
-left_channel <- audiofile_short@left
-s1 <- left_channel / 2^(audiofile_short@bit -1) # 32 Bit - 1
+left_channel <- audiofile_band_short@left
+s1 <- left_channel / 2^(audiofile_band_short@bit -1) # 32 Bit - 1
 plot(s1)
 
 # Plotten der Druckwerte nach der Zeitachse
-timeArray <- (0:(150000-1)) / audiofile_short@samp.rate
+timeArray <- (0:(150000-1)) / audiofile_band_short@samp.rate
 plot(timeArray, s1, type='l', col='black', xlab='Time (s)', ylab='Amplitude')
 
 ```
@@ -68,6 +70,11 @@ Variablen:
   ..@ samp.rate: int 44100 -> Abtastrate
   ..@ bit      : int 32 -> Werte-Bit-Tiefe ist auf 32 ganzzahlwerten
   ..@ pcm      : logi FALSE -> Keine Pulse-code Modulation
+  
+  Loesung fuer das Audiofile .m4a CornetB audifiles:
+  
+  
+ Loesung fuer das Audiofile 1727.wav Band audiofile:
 ```{r}
 library(tuneR)
 
@@ -130,11 +137,8 @@ Die Standardabweichung von 0.027 bedeutet, dass die Datenpunkte sehr homogen sin
 ## Zwei Forschungsfragen
 Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer eindimensionaler Diagramme, wie Histogramme, Balkendiagrammen oder Boxplots beantworten können/möchten.
 
-1. Forschungsfrage:
-- Ich erkenne das Instrument
-- Der gleiche Ton ist in anderst in einem kleinen und einem grossen Raum
-- Ein Daempfer bei der Trompete veraendert die Frequenz beim gleichen Ton
-2. Forschungsfrage: 
+1. Forschungsfrage: Es ist moeglich durch die statistischen Auswertungen die Toene und Lautstaerke zu unterscheiden?
+2. Forschungsfrage: Es ist moeglich durch die Auswertungen zu erkennen an welchem Ort der jeweilige Ton gespielt wurde?
 
 ```{r}
 # Bibliothek
@@ -147,40 +151,26 @@ audio_mono <- audio@left # Mono-Audio erzeugen um einen x-Wert zu bekommen
 hist(audio_mono, main = "Histogramm der Audiodaten", xlab = "Amplitude", ylab = "Häufigkeit", col = "skyblue", border = "black") # Histogramm
 }
 
-# Erstellen des Histogramms
+# Histogramm erstellen
 audio_file <- "1727_gekuerzt.wav" # Pfad zur Audiodatei
 create_audio_histogram(audio_file) # Histogramm der Audiodaten erstellen
 
 ## Funktion Balkendiagramm
-
-# Pfad zum Audio-File
-audio_file <- "pfad/zum/audiofile.mp3"
-
-# Audio-File einlesen
-audio <- readMP3(audio_file)
-
-# Zeitvektor für das Audio-File erstellen
-time <- (1:length(audio@left))/audio@samp.rate
-
-# Amplituden des linken Audiokanals extrahieren
-amplitudes <- audio@left
-
-# Balkendiagramm erstellen
-barplot(amplitudes, names.arg = time, xlab = "Zeit (s)", ylab = "Amplitude", col = "blue", main = "Amplitudenverlauf des Audio-Files")
-
-# Pfad zum Audio-File
-audio_file <- "pfad/zum/audiofile.mp3"
-
-# Audio-File einlesen
-audio <- readMP3(audio_file)
-
-# Amplituden des linken Audiokanals extrahieren
-amplitudes <- audio@left
+create_audio_boxplot <- function(audio) {
+audio_file <- "pfad/zum/audiofile.mp3" # Pfad zum Audio-File
+audio <- readMP3(audio_file) # Audio-File einlesen
+time <- (1:length(audio@left))/audio@samp.rate # Zeitvektor für das Audio-File erstellen
+amplitudes <- audio@left # Amplituden des linken Audiokanals extrahieren
+barplot(amplitudes, names.arg = time, xlab = "Zeit (s)", ylab = "Amplitude", col = "blue", main = "Amplitudenverlauf des Audio-Files") # Balkendiagramm erstellen
+audio_file <- "pfad/zum/audiofile.mp3" # Pfad zum Audio-File
+audio <- readMP3(audio_file) # Audio-File einlesen
+amplitudes <- audio@left # Amplituden des linken Audiokanals extrahieren
+}
 
 # Boxplot erstellen
 boxplot(amplitudes, ylab = "Amplitude", main = "Boxplot der Amplituden des Audio-Files")
 
-```
+```# Balkendiagramm erstellen
 Analyse-Historgram: 
 Analyse-Balkendiagramm:
 Analyse-Boxplots:
