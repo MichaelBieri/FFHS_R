@@ -1,8 +1,10 @@
 ---
-title: "Semsterarbeit_Teil1a"
-author: "MB"
+title: "CAS Grundlagen der Statistik - R - Semsterarbeit_Teil1a"
+author: "Michael Bieri"
 date: "2024-03-29"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -10,23 +12,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-## Lernziel
-- Ich kann (eigene) Daten (ggf. unterschiedliche Formate) in R einlesen/importieren und dabei Importfunktionen anpassen. 
-- Ich kann mir einen Überblick über Datentypen, Grössen,  Lagemasse, Streumasse etc.  verschaffen.
-- Ich kann einfache Anpassungen ( Data Cleaning/Wrangling), wie dem Ersetzen/Entfernen von NAs, Konvertierungen von Datentypen oder Definition neuer Variablen vornehmen. 
-- Ich kann einfache/erste Forschungsfragen an meinen Datensatz im Sinne einer explorativen Datenanalyse stellen und auswählen, welche explorativen Diagramme sinnvoll sind. 
-- Ich kann explorative Diagramme, wie Histogramme oder Boxplots mit ggplot2  erzeugen und deren Parameter anpassen.
-- Ich kann einen Bericht über meine Datenanalyse verfasse (s. Wegleitung und Diskussion an der PVA) (wahlweise auch mit RMarkdown)
+## Ziel der Arbeit/Roter Faden
+Analyse von Audiodateien. Die Datei "1727.wav" von kaggle ist klassische Musik mit unbekannten Instruenten und Anzahl. Die Aufnahmen "CornetB" sind mit dem Smartphone aufgenommene Recordings. Ziel ist die Audiodateien zu analysieren und die zwei Forschungsfragen zu beantworten.
 
 ```{r cars}
 summary(cars)
 ```
-
-## Aufgabe - Einlesen Datensatz R, Variablen beschreiben, 
-Lesen Sie einen selbst gewählten Datensatz in R ein und beschreiben Sie die Variablen in einer Tabelle, worin jeder Variablenname benannt wird, welches Skalenniveau (z.B. numerisch, kategorisch, nominal, etc.) sie besitzt und welche Bedeutung sie hat (z.B. Höhe des Einkommens, Alter eines Patienten etc.)
-
+## Aufgabe1: Einlesen Datensatz .wav und .mp3, Analysieren und Variablen beschreiben
 Loesung fuer das Audiofile 1727.wav Band audiofile:
-
 ```{r}
 # Bibliothek laden
 library(tuneR)
@@ -46,78 +39,80 @@ end_time <- 152000  # Ende nach 152000
 trimmed_band <- extractWave(audiofile_band, from = start_time, to = end_time)
 writeWave(trimmed_band, "1727_gekuerzt.wav")
 
-# Path wav file, source kaggle - 1 min
+# Path wav file - 1 min
 audiofile_band_short <- readWave("1727_gekuerzt.wav")
 
 # Structure audio file
 str(audiofile_band_short)
+summary(audiofile_band_short)
+plot(audiofile_band_short)
 
 # Einzelne Schalldruckwerte des monokanals konvertieren in Werte von -1 bis 1
 left_channel <- audiofile_band_short@left
 s1 <- left_channel / 2^(audiofile_band_short@bit -1) # 32 Bit - 1
 plot(s1)
-
-# Plotten der Druckwerte nach der Zeitachse
-timeArray <- (0:(150000-1)) / audiofile_band_short@samp.rate
-plot(timeArray, s1, type='l', col='black', xlab='Time (s)', ylab='Amplitude')
-
 ```
-Diskussion: Die wav-Datei hat einen Kanal (links).Die Datei "1727_gekuerzt.wav" beinhaltet die gekuerte Datei.
-Variablen:
-  ..@ left     : num [1:150001]  -> Nominale Werte, Aussage ueber Schalldruckwerte die Intensitaet und Lautstaerke. Die Datei hat nur ein Kanal.
-  ..@ right    : num(0) -> Keine Werte auf dem rechten Kanal
-  ..@ stereo   : logi FALSE -> Kein Stereo
-  ..@ samp.rate: int 44100 -> Abtastrate
-  ..@ bit      : int 32 -> Werte-Bit-Tiefe ist auf 32 ganzzahlwerten
-  ..@ pcm      : logi FALSE -> Keine Pulse-code Modulation
-  
-  Loesung fuer das Audiofile .m4a CornetB audifiles:
-  
-  
- Loesung fuer das Audiofile 1727.wav Band audiofile:
+Kommentar Plot1 und Plot 2: Die beiden Plots bilden das gleiche dar die Amplitude in der y-Achse und die Zeit in der x-Achse. Im zweiten Plots hat es mehr Werte.
+
 ```{r}
-library(tuneR)
+# Analyse in Tabellenform
+Parameter <- c("@left", "@right", "@stereo", "@samp.rate", "@bit", "@pcm", "Min", "1st Quartil", "Median", "Mittelwert", "3rt Quartil", "Max")
+Wert <- c("num [1:150001]", "num(0)", "logi FALSE", "int 44100", "int 32", "logi FALSE", "-0,09506", "-0,009918", "0,0004883", "0,00001139", "0,01096", "0,08026")
+Beschreibung <- c("Nominale Werte, Aussage ueber Schalldruckwerte die Intensitaet und Lautstaerke. Die Datei hat nur ein Kanal.", "Keine Werte auf dem rechten Kanal", "Kein Stereo", "Abtastrate", "Werte-Bit-Tiefe ist auf 32 ganzzahlwerte", "Keine Pulse-code Modulation", "Kleinste Wert im Datensatz", "25% der Werte liegen unterhalb dieses Wertes", "Haelfte der Daten oberhalb und die andere Haelfte unterhalb", "Durchschnitt", "75% der Werte liegen unter diesem Wert", "Groesste Wert")
 
-# Definition Funkion
-analyze_audio <- function(audio) {
-duration <- length(audio@left) / audio@samp.rate # Dauer in Sekunden
-samples <- length(audio@left) # Anzahl Samples
-variance <- var(audio_data@left) # Varianz
-percentiles <- quantile(abs(audio_data@left), c(0.25, 0.50, 0.75, 0.90, 0.95, 0.99))
-  
-analysis_audio <- list(
-duration = duration,
-samples = samples,
-variance = variance,
-percentiles_1 = percentiles[1],
-percentiles_2 = percentiles[2],
-percentiles_3 = percentiles[3],
-percentiles_4 = percentiles[4],
-percentiles_5 = percentiles[5]
-)
-  
-  return(analysis_audio)
-}
+# Daten in einem Dataframe kombinieren
+Table_1727_gekuerzt.wav <- data.frame(Parameter, Wert, Beschreibung)
 
-# Ausgabe
-audio_file <- readWave("1727_gekuerzt.wav")
-print(audio_file)
-result <- analyze_audio(audio_file)
-print(result)
+# Tabelle erstellen und anzeigen
+knitr::kable(Table_1727_gekuerzt.wav, caption = "Tab1: Parameter der Audiodatei 1727_gekuerzt.wav")
 ```
-## Lage- und Streumasse der numerischen Variablen
+Loesung fuer das Audiofile CornetB_C1_GrosserRaum:
+```{r}
+# Bibliothek laden
+library(tuneR)
+library(readr)
+library(wrassp)
+library(tibble)
+
+# Einlesen der Audio-Datei
+CornetB_C1_GrosserRaum <- readMP3("CornetB_C1_GrosserRaum.mp3")
+
+# Fehlende Werte entfernen
+CornetB_C1_GrosserRaum <- na.omit(CornetB_C1_GrosserRaum) # Hier nicht zwingend
+
+# Structure audio file
+str(CornetB_C1_GrosserRaum)
+summary(CornetB_C1_GrosserRaum)
+plot(CornetB_C1_GrosserRaum)
+
+# Analyse in Tabellenform
+Parameter <- c("@left", "@right", "@stereo", "@samp.rate", "@bit", "@pcm")
+Wert <- c("int[1:222336]", "int[1:222336]", "logi TRUE", "int 44100", "int 16", "logi TRUE") 
+Beschreibung <- c("Nominale Werte Aussage ueber Schalldruckwerte die Intensitaet und Lautstaerke beim linken Kanal", "Nominale Werte Aussage ueber Schalldruckwerte die Intensitaet und Lautstaerke beim rechten Kanal", "Information dass es ein Stero-Signal ist", "Abtastrate", "Werte-Bit-Tiefe ist auf 16 ganzzahlwerte", "Mit Pulse-code Modulation")
+
+# Daten in einem Dataframe kombinieren
+CornetB_C1_GrosserRaum <- data.frame(Parameter, Wert, Beschreibung)
+
+# Tabelle erstellen und anzeigen
+knitr::kable(CornetB_C1_GrosserRaum, caption = "Tab2: Parameter der Audiodatei CornetB_C1_GrosserRaum.mp3")
+```
+Analyse: Die Band-Datei ist eine Mono-Aufnahme, die Amplitudenwerte sind in Dezimalwerten von -1 bis 1. Die CornetB-Aufnahme ist Stereo, sowie mit der PCM-Methode um analoge Signale in digitaler Form darzustellen. Die beiden Stereo sind die gleichen.
+
+# Variablen
+Metrische: Amplitudenwerte, Frequenz, Signaldauer sie sind alle klar messbar.
+Kategorale: Format, Kanalzahl, Samplingrate, Bitrate, Instrument. Es sind nominale. Kategorien.
+
+## Aufgabe2: Lage- und Streumasse der numerischen Variablen mit dem CornetB file
 Fertigen Sie einen Überblick über Lage- und Streumasse der numerischen Variablen an.
 
 ```{r}
-# Lage der numerischen Variablen
+# Laden der Bibliothek
 library(tuneR)
-library(signal)
 
+# Definition Funktion
 analyze_audio <- function(audio) {
-  #Funktion Lagemass/Mittelwert
   amplitude_mean <- mean(abs(audio@left)) # Mean amplitude
-  #Funktion Standardabweichung/Streuungsmass
-  std_deviation <- sd(audio_data@left)
+  std_deviation <- sd(audio_data@left) # Standardabweichung
 
 analysis_audio <- list(
   amplitude_mean = amplitude_mean,
@@ -126,54 +121,159 @@ analysis_audio <- list(
   
   return(analysis_audio)
 }
-# Ausgabe
-audio_file <- readWave("1727_gekuerzt.wav")
+
+# Analyse fuer File "CornetB_C1_GrosserRaum.mp3"
+audio_file <- readMP3("CornetB_C1_GrosserRaum.mp3")
 print(audio_file)
 result <- analyze_audio(audio_file)
 print(result)
 ```
-Die Standardabweichung von 0.027 bedeutet, dass die Datenpunkte sehr homogen sind und keine starken Abweichungen vom Mittelwert haben.
+Diese Standardabweichung bedeutet, dass die Datenpunkte homogen sind und keine starken Abweichungen vom Mittelwert haben. Die Amplitudentwerte sind hoch, weil es eine lautes Instrument ist und nahe aufgenommen wurde (30Cm Entfernung).
 
-## Zwei Forschungsfragen
-Formulieren Sie mindestens zwei Forschungsfragen, die Sie mit Hilfe explorativer eindimensionaler Diagramme, wie Histogramme, Balkendiagrammen oder Boxplots beantworten können/möchten.
+## Augabe3: Zwei Forschungsfragen
+1. Frage: Es ist moeglich durch die statistischen Auswertungen die Toene zu unterscheiden?
+2. Frage: Es ist moeglich durch die Auswertungen zu erkennen an welchem Ort der jeweilige Ton gespielt wurde?
 
-1. Forschungsfrage: Es ist moeglich durch die statistischen Auswertungen die Toene und Lautstaerke zu unterscheiden?
-2. Forschungsfrage: Es ist moeglich durch die Auswertungen zu erkennen an welchem Ort der jeweilige Ton gespielt wurde?
-
+Frage 1: Analyse und Plots von CornetB_C1_GrosserRaum.mp3:
 ```{r}
 # Bibliothek
 library(tuneR)
 
 # Funktion Histogramm
-create_audio_histogram <- function(audio) {
-audio <- readWave(audio_file) # Audiodatei einlesen
-audio_mono <- audio@left # Mono-Audio erzeugen um einen x-Wert zu bekommen
-hist(audio_mono, main = "Histogramm der Audiodaten", xlab = "Amplitude", ylab = "Häufigkeit", col = "skyblue", border = "black") # Histogramm
+create_audio_histogram <- function(audio_file) {
+  audio <- readMP3(audio_file) # Audiodatei einlesen
+  audio_mono <- audio@left # Mono-Audio erzeugen um einen x-Wert zu bekommen
+  return(hist(audio_mono, plot = FALSE))
 }
 
-# Histogramm erstellen
-audio_file <- "1727_gekuerzt.wav" # Pfad zur Audiodatei
-create_audio_histogram(audio_file) # Histogramm der Audiodaten erstellen
+# Histogramm erstellen CornetB_C1_GrosserRaum.mp3
+audio_file <- "CornetB_C1_GrosserRaum.mp3"
+result_histogram <- create_audio_histogram(audio_file)
+plot(result_histogram, main = "Histogram CornetB_C1_GrosserRaum", xlab = "Amplitude", ylab = "Häufigkeit")
 
-## Funktion Balkendiagramm
-create_audio_boxplot <- function(audio) {
-audio_file <- "pfad/zum/audiofile.mp3" # Pfad zum Audio-File
-audio <- readMP3(audio_file) # Audio-File einlesen
-time <- (1:length(audio@left))/audio@samp.rate # Zeitvektor für das Audio-File erstellen
-amplitudes <- audio@left # Amplituden des linken Audiokanals extrahieren
-barplot(amplitudes, names.arg = time, xlab = "Zeit (s)", ylab = "Amplitude", col = "blue", main = "Amplitudenverlauf des Audio-Files") # Balkendiagramm erstellen
-audio_file <- "pfad/zum/audiofile.mp3" # Pfad zum Audio-File
-audio <- readMP3(audio_file) # Audio-File einlesen
-amplitudes <- audio@left # Amplituden des linken Audiokanals extrahieren
+# Histogramm erstellen CornetB_G_GrosserRaum.mp3 fuer Frage1 und Frage2
+audio_file <- "CornetB_G_GrosserRaum.mp3"
+result_histogram <- create_audio_histogram(audio_file)
+plot(result_histogram, main = "Histogram CornetB_G_GrosserRaum.mp3", xlab = "Amplitude", ylab = "Häufigkeit")
+
+# Histogramm erstellen CornetB_C2_GrosserRaum.mp3
+audio_file <- "CornetB_C2_GrosserRaum.mp3"
+result_histogram <- create_audio_histogram(audio_file)
+plot(result_histogram, main = "Histogram CornetB_C2_GrosserRaum.mp3", xlab = "Amplitude", ylab = "Häufigkeit")
+
+# Histogramm erstellen CornetB_C1_GrosserRaumWeit.mp3 fuer Frage 2
+audio_file <- "CornetB_C1_GrosserRaumWeit.mp3"
+result_histogram <- create_audio_histogram(audio_file)
+plot(result_histogram, main = "CornetB_C1_GrosserRaumWeit.mp3", xlab = "Amplitude", ylab = "Häufigkeit")
+
+# Histogramm erstellen CornetB_C1_Schutzraum.mp3 fuer Frage 2
+audio_file <- "CornetB_C1_Schutzraum.mp3"
+result_histogram <- create_audio_histogram(audio_file)
+plot(result_histogram, main = "CornetB_C1_Schutzraum.mp3", xlab = "Amplitude", ylab = "Häufigkeit")
+
+##############################################
+
+# Funktion Balkendiagramm CornetB_C1_GrosserRaum.mp3
+create_audio_barplot <- function(audio_file) {
+  audio <- readMP3(audio_file)
+  amplitudes <- audio@left
+  rounded_amplitudes <- round(amplitudes)
+  amplitude_counts <- table(rounded_amplitudes)
+  barplot(amplitude_counts, main = "Barplot CornetB_C1_GrosserRaum.mp3", xlab = "Amplitude", ylab = "Häufigkeit")
 }
 
-# Boxplot erstellen
-boxplot(amplitudes, ylab = "Amplitude", main = "Boxplot der Amplituden des Audio-Files")
+# Balkendiagramm erstellen CornetB_C1_GrosserRaum.mp3
+audio_file <- "CornetB_C1_GrosserRaum.mp3"
+create_audio_barplot(audio_file)
 
-```# Balkendiagramm erstellen
-Analyse-Historgram: 
-Analyse-Balkendiagramm:
-Analyse-Boxplots:
+# Funktion Balkendiagramm CornetB_G_GrosserRaum.mp3
+create_audio_barplot <- function(audio_file) {
+  audio <- readMP3(audio_file)
+  amplitudes <- audio@left
+  rounded_amplitudes <- round(amplitudes)
+  amplitude_counts <- table(rounded_amplitudes)
+  barplot(amplitude_counts, main = "Barplot CornetB_G_GrosserRaum.mp3", xlab = "Amplitude", ylab = "Häufigkeit")
+}
 
-## Sortieren Datensatz
-Sortieren Sie den Datensatz nach mindestens einer Variablen.
+# Balkendiagramm erstellen CornetB_G_GrosserRaum.mp3
+audio_file <- "CornetB_G_GrosserRaum.mp3"
+create_audio_barplot(audio_file)
+
+# Funktion Balkendiagramm CornetB_C2_GrosserRaum.mp3
+create_audio_barplot <- function(audio_file) {
+  audio <- readMP3(audio_file)
+  amplitudes <- audio@left
+  rounded_amplitudes <- round(amplitudes)
+  amplitude_counts <- table(rounded_amplitudes)
+  barplot(amplitude_counts, main = "Barplot CornetB_C2_GrosserRaum.mp3", xlab = "Amplitude", ylab = "Häufigkeit")
+}
+
+# Balkendiagramm erstellen CornetB_C2_GrosserRaum.mp3
+audio_file <- "CornetB_C2_GrosserRaum.mp3"
+create_audio_barplot(audio_file)
+
+##############################################
+
+# Funktion Boxplot CornetB_C1_GrosserRaum.mp3
+create_audio_boxplot <- function(audio_fil) {
+  audio <- readMP3(audio_file)
+  amplitudes <- audio@left
+  boxplot(amplitudes, main = "Boxplot CornetB_C1_GrosserRaum.mp3", ylab = "Amplituden")
+}
+  
+# Boxplot erstellen CornetB_C1_GrosserRaum.mp3
+audio_file <- "CornetB_C1_GrosserRaum.mp3"
+result_boxplot <- create_audio_boxplot(audio_file)
+print(result_boxplot)
+
+# Funktion Boxplot CornetB_G_GrosserRaum.mp3
+create_audio_boxplot <- function(audio_file) {
+  audio <- readMP3(audio_file)
+  amplitudes <- audio@left
+  boxplot(amplitudes, main = "Boxplot CornetB_G_GrosserRaum.mp3", ylab = "Amplituden")
+}
+  
+# Boxplot erstellen CornetB_G_GrosserRaum.mp3
+audio_file <- "CornetB_G_GrosserRaum.mp3"
+result_boxplot <- create_audio_boxplot(audio_file)
+print(result_boxplot)
+
+# Funktion Boxplot CornetB_C2_GrosserRaum.mp3
+create_audio_boxplot <- function(audio_file) {
+  audio <- readMP3(audio_file)
+  amplitudes <- audio@left
+  boxplot(amplitudes, main = "Boxplot CornetB_C2_GrosserRaum.mp3", ylab = "Amplituden")
+}
+  
+# Boxplot erstellen CornetB_C2_GrosserRaum.mp3
+audio_file <- "CornetB_C2_GrosserRaum.mp3"
+result_boxplot <- create_audio_boxplot(audio_file)
+print(result_boxplot)
+```
+Beantwortung Forschungsfrage1:Am Histogram kann man erkennen, dass ich das C1 am leisesten gespielt habe. Da es der tiefste Ton ist. Der Ton C2 ist der hoechste deshalb hat es da am meisten positive Amplituden.Aus dem Boxplots erkennt man das der Bereich der Werte kleiner wird desto hoeher man spielt. Die Boxplots zeigen dies staerker.
+
+Beantwortung Forschungsfrage2: Ja, die verschiedenen Raueme zeigen eine Auswirkung auf das Histogram. Im Schutzraum war die hoechste Lautstarke zu messen.
+
+## Sortieren Datensatz nach einer Variablen sortieren
+```{r}
+library(tuneR)
+
+# Funktion Sortien
+sort_audio_amplitude <- function(audio_file) {
+  audio <- readMP3(audio_file)
+  amplitudes <- audio@left
+  time_points <- seq(1, length(amplitudes)) #Linear
+  sorted_indices <- order(amplitudes)
+  sorted_amplitudes <- amplitudes[sorted_indices]
+  sorted_time_points <- time_points[sorted_indices]
+  Sortierte_Daten <- data.frame(Zeitpunkt = sorted_time_points, Amplitude = sorted_amplitudes)
+  return(Sortierte_Daten)
+}
+
+# Ausgabe der Amplitudenwerte nach der Zeit
+audio_file <- "CornetB_C1_GrosserRaum.mp3"
+sorted_audio <- sort_audio_amplitude(audio_file)
+print(sorted_audio)
+
+```
+
