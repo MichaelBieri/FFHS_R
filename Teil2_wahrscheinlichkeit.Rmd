@@ -20,35 +20,197 @@ summary(cars)
 ```
 
 ## Aufgabe 1
-- Wuerfel 50 mal werfen
-- Werte in eine Tabelle
-- Nach jedem Wurf berechnen der Differenz zwischen beobachteter kumulierter absoluter Häufigkeit einer Sechs und erwarteter kumulierter absoluter Häufigkeit einer Sechs
+- a) Done: Wuerfel 50 mal werfen
+- b) Done: Werte in eine Tabelle
+- c) Nach jedem Wurf berechnen der Differenz zwischen beobachteter kumulierter absoluter Häufigkeit einer Sechs (Wie oft wurde die 6 gewuerfelt) und erwarteter kumulierter absoluter Häufigkeit einer Sechs
 sowie:
-- zwischen beobachteter kumulierter relativer Häufigkeit einer Sechs und erwarteter kumulierter relativer Häufigkeit einer Sechs
+- d) Zwischen beobachteter kumulierter relativer Häufigkeit einer Sechs und erwarteter kumulierter relativer Häufigkeit einer Sechs
+
+# Repetition
+Absolute Haeufigkeit: Anzahl der Wuerfe die 6 waren.
+Relative Haeufigkeit: Anzahl 6 Wuerfe durch die 50 Versuche.
+Beobachtete: Wie war es tatsaechlich
+Erwartete: Theoretisches Soll
+
 
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
+# Aufgabe 1 bis teilb
 wuerfel_werfen <- function() {
-  # Vektor für die Ergebnisse initialisieren
   wurf_ergebnisse <- numeric(0)
   
-  # 50 Mal würfeln
   for (i in 1:50) {
     zahl <- sample(1:6, 1, replace = TRUE)
-    wurf_ergebnis <- c(wurf_ergebnisse, zahl)  # Ergebnis zum Vektor hinzufügen
+    wurf_ergebnisse <- c(wurf_ergebnisse, zahl)
   }
   
-  # Tabelle erstellen
-  tabelle_ergebnisse <- data.frame(Wurfnummer = 1:50, Ergebnis = wurf_ergebnis)
-  
+  tabelle_ergebnisse <- data.frame(Wurfnummer = 1:50, Ergebnis = wurf_ergebnisse)
   return(tabelle_ergebnisse)
 }
 
-# Testen der Funktion
 result <- wuerfel_werfen()
 print(result)
+```
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+### Aufgabe 1 - bis teilc
+
+wuerfel_werfen <- function() {
+  wurf_ergebnisse <- sample(1:6, 50, replace = TRUE)  # 50 Mal würfeln
+  return(wurf_ergebnisse)
+}
+
+wuerfel_ergebnisse <- wuerfel_werfen()
+beob_kum_abs_H <- cumsum(wuerfel_ergebnisse == 6)
+
+tabelle <- data.frame(Wurf = 1:50, Wurfzahl = wuerfel_ergebnisse, beob.kum.abs.H. = beob_kum_abs_H)
+
+print(tabelle)
+```
+```{r}
+### Aufgabe 1 - bis teild
+
+# Funktion zum Würfeln
+wuerfel_werfen <- function() {
+  wurf_ergebnisse <- sample(1:6, 50, replace = TRUE)  # 50 Mal würfeln mit replace true dass es mehrmals das gleiche ergebnis liefern kann
+  return(wurf_ergebnisse)
+}
+
+# Ergebnis
+wuerfel_ergebnisse <- wuerfel_werfen()
+
+# Kumulierte absolute Häufigkeit von 6 - Aufzaehlen der 6er
+beob_kum_abs_H <- cumsum(wuerfel_ergebnisse == 6)
+
+# Erwartete kumulierte absolute Hauefigkeit von 6 fuer 50 wuerfe
+erw_kum_abs_H <- cumsum(rep(1/6, 50))
+
+# Differenz von beob_kum_abs_H und erw_kum_abs_H
+diff_kum_abs_H = cumsum(erw_kum_abs_H-beob_kum_abs_H)
+
+# Beobachtet kumulierte relative Haeufigkeit - summierte 6er durch die gesamtanzahl versuche
+beob_kum_rel_H = cumsum((wuerfel_ergebnisse == 6)/50)
+
+# Erwartete kumulierte relative Haeufigkeit - summierte theoretische 6er durch die gesamtanzahl
+erw_kum_rel_H = cumsum(erw_kum_abs_H/50)
+
+# Differenz von Diff. kum. rel. H.
+diff_kum_rel_H = cumsum(beob_kum_rel_H - erw_kum_rel_H)
+
+# Tabelle darstellen
+tabelle <- data.frame(Wurf = 1:50, Wurfzahl = wuerfel_ergebnisse, beob.kum.abs.H. = beob_kum_abs_H, erw.kum.abs.H. = erw_kum_abs_H, diff.kum.abs.H. = diff_kum_abs_H, beob.kum.rel.H. = beob_kum_rel_H, erw.kum.rel.H. = erw_kum_rel_H, Diff.kum.rel.H. = Diff_kum_rel_H)
+
+# Tabelle printen
+print(tabelle)
+```
+Diskussion:
+Die Daten machen Sinn. Die erwarteten und die absoluten Werte sollten kumuliert zunehmen da ja die Anzahl an Versuchen steigt.
+Die beobachteten und die erwarteten Ergebnisse sollten nahe beieinander liegen. Ansonsten ist der Wuerfel nicht korrekt. Passt soweit alles.
+
+## Aufgabe 2
+Illustrieren Sie in R an einem selbst gewählten Datensatz die Gültigkeit des Satzes von Bayes (allerdings für Anteile, d.h. relative Häufigkeiten, statt für theoretische Wahrscheinlichkeiten).
+a)Definieren Sie dazu anhand zweier Variablen jeweils zwei sich ausschliessende Ereignisse A und A¯ sowie B und B¯
+b) Bestimmen Sie anschliessend aus geeigneten Anteilen rechnerisch mit dem Satz von Bayes den Anteil P(A|B)und vergleichen Sie mit dem tatsächlichen Anteil P(A|B)
+ im Datensatz. D.h. Vergleichen Sie die empirischen Daten mit den Berechneten nach dem Satz von Bayes.
+ 
+Datensatz ist von Jugend und Sport. Die Fragestellung ist:
+Wenn es ein Teilnehmer von der Sportart Orientierungslauf ist, wie hoch ist die Wahrscheinlichkeit das es ein Mann ist.
+P(A) = Wahrscheinlichkeit Mann
+P(B) = Wahrscheinlichkeit Frau
+P(Ā) = Wahrscheinlichkeit nicht Mann
+P(A|B) = Differenzmenge Mann nicht Orientierungslauf
+
+Satz von Bayes = P(Wahrscheinlichkeit ist Mann und macht Orientierungslauf)=(P(Wahrscheinlichkeit Person die Orientierungslauf macht un ein Mann ist x Wahrscheinlichkeit Person Mann)/ Wahrscheinlichkeit Person Orientierungslauf
+```{r}
+data <- read.csv2("Jugend_und_Sport_Anzahl_Kurse_Teilnehmende_und_Leitende_nach_Sportart_und_Jahr_(seit 2005).csv", header = TRUE) #csv2 weil ;
+
+# Annahmen:
+# Ereignis A: Sportart Orientierungslauf
+# Ereignis B: Geschlecht männlich
+# Fragestellung: Wie hoch ist die Wahrscheinlichkeit das ein Teilnehmer ein Mann ist wenn es eine Person bei der Sportart Orientierungslauf ist?
+
+num_obs <- nrow(data) # Der Datensatz hat 2908 Zeilen
+print(num_obs)
+str(data)
+
+# Nur die Zeilen die mit der Sportart Orientierungslauf zu tun haben
+orientierungslauf_data <- data[data[,2] == "Orientierungslauf", ]
+print(orientierungslauf_data) #test print
+
+# Anzahl in Spalte geschlecht maennlich
+num_männlich <- sum(data$geschlecht == "männlich")
+print(num_männlich)
+
+# Anzahl der Beobachtungen, in denen die Sportart Orientierungslauf ist und das Geschlecht männlich ist
+num_orientierungslauf_und_männlich <- sum(data$sportart == "Orientierungslauf" & data$geschlecht == "männlich")
+print(num_orientierungslauf_und_männlich)
+
+# Wahrscheinlichkeit Sportart Orientierungslauf von allen zeilen
+wahrschein_orientierungslauf <- num_orientierungslauf / num_obs
+
+# Wahrscheinlichkeit Geschlecht männlich von allen zeilen
+wahrschein_männlich <- num_männlich / num_obs
+
+# Wahrscheinlichkeit Sportart Orientierungslauf ist und das Geschlecht männlich ist
+wahrschein_orientierungslauf_und_männlich <- num_orientierungslauf_und_männlich / num_obs
+
+# Bedingte Wahrscheinlichkeit Geschlecht männlich mit gegeben das es die Sportart Orientierungslauf ist
+wahrschein_männlich_bei_orientierungslauf <- wahrschein_orientierungslauf_und_männlich / prob_orientierungslauf
+
+# print
+print(wahrschein_männlich_bei_orientierungslauf)
+```
+
+## Aufgabe 3
+Wir wollen einen Covid-19 Antigentest genauer untersuchen. Suchen Sie anhand der von den Herstellern gelieferten Daten sowohl einen Antigen, als auch einen PCR-Test und ermitteln Sie aus den Spezifikationen die Sensitivität und Spezifität der Tests.
+Anm.: In der Medizin heisst die bedingte Wahrscheinlichkeit P(T|D), dass ein medizinischer Test ein positives Testresultat liefert (Ereignis T ), wenn jemand krank ist (Ereignis D für “diseased”). Als sogenannte "Prävalenz" nennt man die Wahrscheinlichkeit, eine erkrankte Person anzutreffen: P(D).
+Für die nachfolgenden Betrachtung gehen wir davon aus, dass die Prävalenz von Covid-19 in der Schweiz nur 2% beträgt.
+
+Spezifikationen von Quelle:
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9909630/
+https://inselgruppe.ch/fileadmin/Insel_Gruppe/Bilder/Mediendienst/News/WissKomm/Wisskomm_divers/2021_Int_J_Infect_Dis_Jegerlehner.pdf
+
+Antigen: Sensitivität (% wieviele richtig, positive Faelle erkannt werden): 65.3%; Spezifität (wie gut erkennt er negative faelle korrekt): 99.9%
+PCR: Sensitivität: 95%; Spezifität: 98.89%
+
+
+a) Bestimmen Sie die Wahrscheinlichkeit
+
+i) dass eine zufällig aus der Schweizer Bevölkerung herausgegriffene Person tatsächlich Covid-19 hat, wenn das Testresultat des oben beschriebenen Antigentests positiv ist,
+ii) dass eine zufällig aus der Schweizer Bevölkerung herausgegriffene Person tatsächlich Covid-19 negativ ist, wenn das Testresultat des oben beschriebenen Antigentests negativ ist,
+und diskutieren/kommentieren Sie ihre Resultate.
+
+b) Es ist gängige Praxis in medizinischen Laboren, bei allen Testproben, welche im oben beschriebenen Antigentest ein positives Testresultat lieferten, einen PCR ("polymerase chain reaction")-Bestätigungstest mit sehr hoher Spezifität durchzuführen, um den Befund des ersten Tests zu bestätigen oder zu verwerfen. 
+
+Wie gross ist dann die Wahrscheinlichkeit, dass eine Speichelprobe tatsächlich Covid-19-positiv ist, wenn sie sowohl beim Antigentest als auch beim anschliessenden PCR-Bestätigungstest jeweils ein positives Testresultat liefert?
+
+c) Die Bedingtewahrscheinlichkeit P(D|T) hängt von der Prävalenz ab. Plotten Sie P(D|T) in Abhängigkeit von P(D). Was beobachten Sie? Diskutieren Sie was Sie beobachten.
+```{r}
+# a_i) fuer antigen
+sensitivitaet <- 0.65
+spezifitaet <- 0.99
+p <- 1 / 9000000  # Rate fuer eine Person der Schweiz
+
+
+wahre_positive_rate <- sensitivitaet * p # Wahre positive Rate fuer eine Person
+
+
+falsch_positive_rate <- 1 - spezifitaet # Falsch positive Rate, resultat 0.01
+print(falsch_positive_rate) # test
+
+gesamtwahrscheinlichkeit_positiver_test <- wahre_positive_rate + falsch_positive_rate
+# Gesamtwahrscheinlichkeit positive Test
+
+
+wahrscheinlichkeit_tatsächlich_positiv <- wahre_positive_rate / gesamtwahrscheinlichkeit_positiver_test # Bedingte Wahrscheinlichkeit tatsächlich positiv | positiver Test
+
+print(wahrscheinlichkeit_tatsächlich_positiv)
+
+
+# a_ii) fuer antigen aber person wahre negativ corona und test negativ
+falsche_negativ_rate <- 1 - sensitivitaet # So viele werden nicht erkannt obwohl sie positiv sind
+
 
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
