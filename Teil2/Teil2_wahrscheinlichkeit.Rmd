@@ -172,7 +172,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9909630/
 https://inselgruppe.ch/fileadmin/Insel_Gruppe/Bilder/Mediendienst/News/WissKomm/Wisskomm_divers/2021_Int_J_Infect_Dis_Jegerlehner.pdf
 
 Antigen: Sensitivität (% wieviele richtig, positive Faelle erkannt werden): 65.3%; Spezifität (wie gut erkennt er negative faelle korrekt): 99.9%
-PCR: Sensitivität: 95%; Spezifität: 98.89%
+PCR: Sensitivität(p(positiv-krank): 95%; Spezifität p(nicht positiv-nicht krank): 98.89%
 
 
 a) Bestimmen Sie die Wahrscheinlichkeit
@@ -180,37 +180,61 @@ a) Bestimmen Sie die Wahrscheinlichkeit
 i) dass eine zufällig aus der Schweizer Bevölkerung herausgegriffene Person tatsächlich Covid-19 hat, wenn das Testresultat des oben beschriebenen Antigentests positiv ist,
 ii) dass eine zufällig aus der Schweizer Bevölkerung herausgegriffene Person tatsächlich Covid-19 negativ ist, wenn das Testresultat des oben beschriebenen Antigentests negativ ist,
 und diskutieren/kommentieren Sie ihre Resultate.
+```{r}
+## a_i) fuer antigen, p(positiv/positiv)?
+sensitivitaet <- 0.65
+spezifitaet <- 0.99
 
-b) Es ist gängige Praxis in medizinischen Laboren, bei allen Testproben, welche im oben beschriebenen Antigentest ein positives Testresultat lieferten, einen PCR ("polymerase chain reaction")-Bestätigungstest mit sehr hoher Spezifität durchzuführen, um den Befund des ersten Tests zu bestätigen oder zu verwerfen. 
+bevoelkerung <- 9000000000 #9Millionen Personen
+p_krank <- 0.03 # Es sind immer 3% krank
+p_nichtkrank <- 0.97
+p_treffen <- 0.02  # Praevalenz eine kranke Person anzutreffen
+
+p_positiv_krank <- sensitivitaet
+p_positiv_nichtkrank <- 1-sensitivitaet
+
+#Gleichung: p_krank * P_positiv_krank = p_positiv * p_krank_positiv
+p_positiv <- p_positiv_krank * p_krank + p_positiv_nichtkrank * p_nichtkrank #ergibt alles p_positiv durch streichen
+p_krank_positiv = (p_positiv_krank * p_krank) / p_positiv
+print("Loesung 3a_i ist:")
+print(p_krank_positiv)
+
+## a_ii) fuer antigen, p(negativ/negativ)?
+#Gleichung: P_nichtkrank_negativ * p_negativ = p_nichtkrank * p_negativ_nichtkrank
+#Loesung: p_nichtkrank_negativ = (p(nichtkrank) * p(negativ_nichtkrank))/p(negativ)
+p_negativ = (p_nichtkrank * p_positiv_nichtkrank / p_krank_positiv) #Wahrscheinlichkeit das es negativ ist ware 97% mit der Unsicherheit der Tests
+print(p_negativ) #ergebnis falsch
+p_negativ_nichtkrank = ((p_nichtkrank * p_negativ) / p_nichtkrank) #korrekt
+p_nichtkrank_negativ = ((p_nichtkrank * p_negativ_nichtkrank) / p_negativ) #korrekt
+print("Loesung 3a_ii ist:")
+print(p_nichtkrank_negativ) # Vermutlich korrekt, 97% sind wirklich negativ
+```
+Loesung a_i):
+Die Wahrscheinlichkeit liegt bei 5.43% moeglicherweise weil die Praevalenz besagt das man zuefaellig jemanden zieht.
+
+Loesung a_ii):
+Falsch
+
+Aufgabe 3 b) Es ist gängige Praxis in medizinischen Laboren, bei allen Testproben, welche im oben beschriebenen Antigentest ein positives Testresultat lieferten, einen PCR ("polymerase chain reaction")-Bestätigungstest mit sehr hoher Spezifität durchzuführen, um den Befund des ersten Tests zu bestätigen oder zu verwerfen. 
 
 Wie gross ist dann die Wahrscheinlichkeit, dass eine Speichelprobe tatsächlich Covid-19-positiv ist, wenn sie sowohl beim Antigentest als auch beim anschliessenden PCR-Bestätigungstest jeweils ein positives Testresultat liefert?
+```{r}
+#p(negativ) + p(Spezifaet mit PCR)
+#p(A/B1+B2) = ((p(B1/A) * p(B2/A) * p(A)) / p(B1 * B2)
+```
 
 c) Die Bedingtewahrscheinlichkeit P(D|T) hängt von der Prävalenz ab. Plotten Sie P(D|T) in Abhängigkeit von P(D). Was beobachten Sie? Diskutieren Sie was Sie beobachten.
 ```{r}
-# a_i) fuer antigen
-sensitivitaet <- 0.65
-spezifitaet <- 0.99
-p <- 1 / 9000000  # Rate fuer eine Person der Schweiz
+# Prävalenz-Wert (P(D))
+P_D <- 0.02 # 2% Prävalenz
 
+# Bedingte Wahrscheinlichkeit P(D|T)
+P_D_given_T <- 0.05431755 # Aus Aufg 3i)
 
-wahre_positive_rate <- sensitivitaet * p # Wahre positive Rate fuer eine Person
-
-
-falsch_positive_rate <- 1 - spezifitaet # Falsch positive Rate, resultat 0.01
-print(falsch_positive_rate) # test
-
-gesamtwahrscheinlichkeit_positiver_test <- wahre_positive_rate + falsch_positive_rate
-# Gesamtwahrscheinlichkeit positive Test
-
-
-wahrscheinlichkeit_tatsächlich_positiv <- wahre_positive_rate / gesamtwahrscheinlichkeit_positiver_test # Bedingte Wahrscheinlichkeit tatsächlich positiv | positiver Test
-
-print(wahrscheinlichkeit_tatsächlich_positiv)
-
-
-# a_ii) fuer antigen aber person wahre negativ corona und test negativ
-falsche_negativ_rate <- 1 - sensitivitaet # So viele werden nicht erkannt obwohl sie positiv sind
-
+# Plot
+plot(P_D, P_D_given_T, type = "l", col = "blue",
+     xlab = "P(D)", ylab = "P(D|T)",
+     main = "Bedingte Wahrscheinlichkeit P(D|T) in Abhängigkeit von P(D)")
 
 ```
 

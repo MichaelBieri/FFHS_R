@@ -1,0 +1,108 @@
+
+```{r}
+ausfaelle <- read.csv("ausfaelle.csv", header = FALSE, stringsAsFactors = FALSE)
+```
+
+
+Aufgabe 1 a):
+```{r}
+# Laden der notwendigen Bibliothek
+library(dplyr)
+
+# Einlesen der CSV-Datei
+ausfaelle <- read.csv("ausfaelle.csv", header = TRUE, stringsAsFactors = FALSE)
+
+# Löschen der ersten Spalte
+ausfaelle <- ausfaelle[ , -1]
+
+# Konvertieren der Spalten in numerische Werte, ohne dies doppelte Werte
+ausfaelle_df <- ausfaelle %>% mutate(across(everything(), as.numeric))
+
+# Summieren der Ausfälle pro Jahr pro Monat und in eine Liste speichern
+row_sums <- ausfaelle_df %>%
+  rowwise() %>%
+  mutate(Total_Ausfaelle = sum(c_across(everything()))) %>%
+  pull(Total_Ausfaelle)
+
+# Jede Zeilensumme in eine eigene Variable in einer Liste speichern
+Ausfaelle_pro_Jahr <- list()
+for (i in seq_along(row_sums)) {
+  Ausfaelle_pro_Jahr[[paste0("Ausfaelle_pro_Jahr", i)]] <- row_sums[i]
+}
+print(Ausfaelle_pro_Jahr)
+
+# Ausgabe erste Zeile, gleiches fuer die anderen
+Summe_jahr_1 <- Ausfaelle_pro_Jahr[["Ausfaelle_pro_Jahr1"]]
+print(Summe_jahr_1)
+```
+Aufgabe 1 b):
+Theorie:
+"ppois" kumulatie Verteilungsfunktion, berechnet die Wahrscheinlichkeit, dass die Anzahl der Ereignisse (k) kleiner oder gleich einem bestimmten Wert ist.
+"dpois" Wahrschenlichkeitsdichtefunktion, dpois berechnet die Wahrscheinlichkeit dass eine bestimmte Anzahl von Ereignissen(k) bei einer gegebenen durchschnittlichen Rate in einem festen Intervall auftritt. Berechnet der Wahrscheinlichkeit eines genauen Werts.
+```{r}
+# Laden der notwendigen Bibliothek
+library(dplyr)
+
+# Einlesen der CSV-Datei
+ausfaelle <- read.csv("ausfaelle.csv", header = TRUE, stringsAsFactors = FALSE)
+
+# Entfernen der ersten Spalte
+ausfaelle <- ausfaelle[ , -1]
+
+# Konvertieren der Spalten in numerische Werte
+ausfaelle <- ausfaelle %>% mutate(across(everything(), as.numeric))
+
+# Summieren der Ausfälle pro Jahr
+ausfaelle <- ausfaelle %>%
+  rowwise() %>%
+  mutate(Total_Ausfaelle = sum(c_across(everything())))
+
+# Extrahieren der Totalausfälle pro Jahr
+total_ausfaelle_pro_jahr <- ausfaelle$Total_Ausfaelle
+
+# Berechnen des Mittelwerts der Ausfälle pro Jahr
+lambda <- mean(total_ausfaelle_pro_jahr)
+
+# Berechnen der Wahrscheinlichkeit, dass sich pro Jahr zwischen 15 und 20 Ausfälle ereignen
+prob <- ppois(20, lambda) - ppois(14, lambda)
+
+# Ausgabe der Wahrscheinlichkeit
+print(paste("Die Wahrscheinlichkeit, dass sich pro Jahr zwischen 15 und 20 Ausfälle ereignen, beträgt:", prob))
+```
+Aufgabe 1 c):
+Der Kehrwert der Wahrscheinlichkeit ist da, um die durchschnittliche Anzahl von Versuchen oder Zeitrauemen zwischen seltenen Ereignissen zu bestimmen.
+```{r}
+# Daten laden
+data <- read.csv("ausfaelle.csv", header = TRUE, sep = ",")
+
+# Struktur der Daten anzeigen
+str(data)
+
+# Erste Spalte (Jahr) ignorieren und sicherstellen, dass alle Spalten numerisch sind
+data <- data[,-1]
+data <- data.frame(lapply(data, as.numeric))
+
+# Gesamtanzahl der Ausfälle pro Jahr berechnen
+data$Total_Ausfaelle <- rowSums(data) 
+
+# Durchschnittliche Anzahl von Ausfällen pro Jahr Rate-Ausfall pro Jahr (λ)
+lambda <- mean(data$Total_Ausfaelle)
+print(paste("Durchschnittliche Anzahl von Ausfällen pro Jahr (λ):", lambda))
+
+# Berechnung der Wahrscheinlichkeit, dass in einem Jahr mindestens 25 Ausfälle auftreten
+prob_min_25_failures <- 1 - ppois(24, lambda)
+print(paste("Die Wahrscheinlichkeit, dass in einem Jahr mindestens 25 Ausfälle auftreten, beträgt:", round(prob_min_25_failures, 2)))
+
+# Mittlere Anzahl Jahre zwischen zwei Jahren mit mindestens 25 Ausfällen
+mean_years_between_25_failures <- 1 / prob_min_25_failures
+print(paste("Die mittlere Anzahl Jahre zwischen zwei Jahren mit mindestens 25 Ausfällen beträgt:", round(mean_years_between_25_failures, 2)))
+```
+Aufgabe 2 a):
+Metrisch skalierte Variablen.
+Diskrete metrische Variablen: Diese Variablen nehmen nur endliche oder abzählbar unendliche Werte an. Beispiele sind die Anzahl von Personen in einem Raum oder die Anzahl von Autos, die eine Ampel in einer Stunde passieren.
+Stetige metrische Variablen: Diese Variablen können jeden Wert innerhalb eines Intervalls annehmen. Beispiele sind Körpergröße, Temperatur oder Zeit.
+```{r}
+# Anzahl Personen pro Jahr
+data <- read.csv("Jugend_und_Sport_Anzahl_Kurse_Teilnehmende_und_Leitende_nach_Sportart_und_Jahr_(seit 2005).csv", header = TRUE, sep = ";")
+```
+
