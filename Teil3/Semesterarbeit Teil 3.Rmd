@@ -98,11 +98,281 @@ mean_years_between_25_failures <- 1 / prob_min_25_failures
 print(paste("Die mittlere Anzahl Jahre zwischen zwei Jahren mit mindestens 25 Ausfällen beträgt:", round(mean_years_between_25_failures, 2)))
 ```
 Aufgabe 2 a):
+
 Metrisch skalierte Variablen.
 Diskrete metrische Variablen: Diese Variablen nehmen nur endliche oder abzählbar unendliche Werte an. Beispiele sind die Anzahl von Personen in einem Raum oder die Anzahl von Autos, die eine Ampel in einer Stunde passieren.
-Stetige metrische Variablen: Diese Variablen können jeden Wert innerhalb eines Intervalls annehmen. Beispiele sind Körpergröße, Temperatur oder Zeit.
+Stetige metrische Variablen: Diese Variablen können jeden Wert innerhalb eines Intervalls annehmen. Beispiele sind Körpergröße, Temperatur oder Zeit. Alter, Gewicht.
+
+Einfaches Histogramm = Zeigt Haeufigkeit in unterschiedlichen klassen und intervallen
+Histogramm mit Dichtekurve = Fuer eine glattere Darstellung der Verteilung
+Histogramm mit ggplot2 = 
 ```{r}
-# Anzahl Personen pro Jahr
-data <- read.csv("Jugend_und_Sport_Anzahl_Kurse_Teilnehmende_und_Leitende_nach_Sportart_und_Jahr_(seit 2005).csv", header = TRUE, sep = ";")
+library(dplyr)
+library(ggplot2)
+
+# CSV-Datei einlesen
+data <- read.csv("Jugend_und_Sport_Anzahl_Kurse_Teilnehmende_und_Leitende_nach_Sportart_und_Jahr_(seit 2005).csv", header = TRUE, sep = ";", stringsAsFactors = FALSE)
+
+# Überprüfen auf NA-Werte
+sum(is.na(data))
+
+# Falls es NA-Werte gibt, können Sie sie entfernen
+data <- na.omit(data)
+
+# Anzahl Personen pro Jahr aggregieren
+Teilnehmer_pro_jahr <- data %>%
+  group_by(jahr) %>%
+  summarise(summe = sum(anzahl))
+
+# Ausgabe der aggregierten Ergebnisse
+print(Teilnehmer_pro_jahr)
+
+# Teilnehmer nach Anzahl plotten
+x <- data$jahr
+y <- data$anzahl
+
+plot(x,y, col="blue", ylab="Anzahl Teilnehmer", xlab="Jahre", 
+          main="Anzahl Teilenehmer pro Jahr",pch=13) 
+
+# Histogramm erstellen
+ggplot(Teilnehmer_pro_jahr, aes(x = jahr, y = summe)) +
+  geom_histogram(stat = "identity", fill = "lightblue", color = "black") +
+  labs(title = "Histogramm Anzahl Teilnehmer pro Jahr", x = "Jahre", y = "Anzahl Teilnehmer") +
+  theme_minimal()
+```
+Daten sind ungeeignet. Normalverteilung.
+```{r}
+library(readxl)
+library(ggplot2)
+
+load("zeitdauerGesamtheit.RData", values <- new.env())
+ls.str(values)
+```
+```{r}
+load("zeitdauerGesamtheit.RData")
+
+# Laden der erforderlichen Pakete
+library(ggplot2)
+
+# Laden der Daten
+load("zeitdauerGesamtheit.RData", values <- new.env())
+
+# Einfacher plot der Values zeitdauer
+#plot(zeitdauerGesamtheit)
+
+# Histogramm erstellen
+ggplot(data.frame(zeitdauer = zeitdauerGesamtheit), aes(x = zeitdauer)) +
+  geom_histogram(binwidth = 1, fill = "lightblue", color = "black") +
+  labs(title = "Histogramm der Zeitdauer", x = "Zeitdauer", y = "Häufigkeit")
 ```
 
+
+
+
+Aufgabe 2 b): Eine Exponentialverteilung.
+Aufgabe 2 c): Dichtefunktion
+```{r}
+load("zeitdauerGesamtheit.RData")
+
+# Laden der erforderlichen Pakete
+library(ggplot2)
+
+# Laden der Daten
+load("zeitdauerGesamtheit.RData", values <- new.env())
+
+# Histogramm erstellen
+ggplot(data.frame(zeitdauer = zeitdauerGesamtheit), aes(x = zeitdauer)) +
+  geom_histogram(binwidth = 1, fill = "lightblue", color = "black") +
+  labs(title = "Histogramm der Zeitdauer", x = "Zeitdauer", y = "Haeufigkeit")
+
+# Histogram mit Dichtefunktion
+ggplot(data.frame(zeitdauer = zeitdauerGesamtheit), aes(x = zeitdauer)) +
+  geom_histogram(aes(y = after_stat(density)), binwidth = 1, fill = "lightblue", color = "black") +
+  geom_density(color = "red") +
+  labs(title = "Histogramm der Zeitdauer mit Wahrscheinlichkeitsdichtefunktion", x = "Zeitdauer", y = "Hauefigkeit")
+```
+Aufgabe 2 d): Quantile-Quantile-Plot
+```{r}
+# Laden der erforderlichen Pakete
+library(ggplot2)
+library(stats)
+
+# Laden der Daten
+load("zeitdauerGesamtheit.RData", values <- new.env())
+
+# Ggplot
+ggplot(data.frame(zeitdauer = zeitdauerGesamtheit), aes(x = zeitdauer)) + geom_qq(distribution = qexp, dparams = list(rate = 1/mean(zeitdauer)), color = "blue") + geom_abline(intercept = 0, slope = 1, color = "red") + labs(title = "Quantil-Quantil-Plot (Q-Q-Plot) der Zeitdauer", x = "Theoretische Quantile (Exponentialverteilung)", y = "Empirische Quantile") +
+  theme_minimal()
+```
+Aufgabe 3 a)
+```{r}
+library(readxl)
+library(ggplot2)
+
+# Laden der .RData-Datei
+load("zeitdauerGesamtheit.RData", envir = values <- new.env())
+
+# Annahme: Der Name des geladenen Objekts in der .RData-Datei ist "zeitdauerGesamtheit"
+zeitdauer <- values$zeitdauerGesamtheit
+
+# Konvertieren in numerische Werte und NA-Werte entfernen
+zeitdauer <- na.omit(zeitdauer)
+zeitdauer <- as.numeric(unlist(zeitdauer))
+
+# Funktion sample() zur Entnahme von 100 Stichproben mit unterschiedlichem Umfang
+entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100, 500, 1000)) {
+  set.seed(123)  # Seed für Reproduzierbarkeit
+  probensammlung <- list()
+  
+  for (i in 1:num_proben) {
+    stichprobenumfang <- sample(sample_sizes, 1)  # Zufälliger Stichprobenumfang aus den angegebenen Größen
+    probe <- sample(data, stichprobenumfang, replace = TRUE)
+    probensammlung[[i]] <- probe
+  }
+  
+  return(probensammlung)
+}
+
+# Proben entnehmen
+proben <- entnehme_proben(zeitdauer)
+
+# Ausgabe der ersten Probe zur Überprüfung
+print(proben[[1]])
+```
+Aufgabe 3 b)
+```{r}
+library(readxl)
+library(ggplot2)
+
+# Laden der .RData-Datei
+load("zeitdauerGesamtheit.RData", envir = values <- new.env())
+
+# Annahme: Der Name des geladenen Objekts in der .RData-Datei ist "zeitdauerGesamtheit"
+zeitdauer <- values$zeitdauerGesamtheit
+
+# Konvertieren in numerische Werte und NA-Werte entfernen
+zeitdauer <- na.omit(zeitdauer)
+zeitdauer <- as.numeric(unlist(zeitdauer))
+
+# Funktion zur Entnahme von 100 Proben mit unterschiedlichem Stichprobenumfang
+entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100, 500, 1000)) {
+  set.seed(123)  # Seed für Reproduzierbarkeit
+  probensammlung <- list()
+  
+  for (i in 1:num_proben) {
+    stichprobenumfang <- sample(sample_sizes, 1)  # Zufälliger Stichprobenumfang aus den angegebenen Größen
+    probe <- sample(data, stichprobenumfang, replace = TRUE)
+    probensammlung[[i]] <- probe
+  }
+  
+  return(probensammlung)
+}
+
+# Proben entnehmen
+proben <- entnehme_proben(zeitdauer)
+
+# Funktion auf mehrere Elemente anwenden, Berechnet arithmetrisches Mittel jeder Probe
+mittelwerte <- sapply(proben, mean)
+
+# Berechnung der Varianz der Mittelwerte
+var_mittelwerte <- var(mittelwerte)
+
+# Berechnung der Grenzen für die Normalverteilung
+min_wert <- min(mittelwerte) - 3 * sqrt(var_mittelwerte)
+max_wert <- max(mittelwerte) + 3 * sqrt(var_mittelwerte)
+x <- seq(min_wert, max_wert, length.out = 100)
+
+# Dichte der Normalverteilung
+y <- dnorm(x, mean = mean(mittelwerte), sd = sqrt(var_mittelwerte))
+
+# Histogramm der Mittelwerte mit Normalverteilung
+hist(mittelwerte, probability = TRUE, col = "lightblue", border = "black", 
+     main = "Histogramm der Mittelwerte der Stichproben",
+     xlab = "Mittelwerte", ylab = "Dichte")
+lines(x, y, col = "red", lwd = 2)
+
+```
+Aufgabe 3 c)
+library(readxl)
+library(ggplot2)
+
+# Laden der .RData-Datei
+load("zeitdauerGesamtheit.RData", envir = values <- new.env())
+
+# Annahme: Der Name des geladenen Objekts in der .RData-Datei ist "zeitdauerGesamtheit"
+zeitdauer <- values$zeitdauerGesamtheit
+
+# Konvertieren in numerische Werte und NA-Werte entfernen
+zeitdauer <- na.omit(zeitdauer)
+zeitdauer <- as.numeric(unlist(zeitdauer))
+
+# Funktion zur Entnahme von 100 Proben mit unterschiedlichem Stichprobenumfang
+entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100, 500, 1000)) {
+  set.seed(123)  # Seed für Reproduzierbarkeit
+  probensammlung <- list()
+  
+  for (i in 1:num_proben) {
+    stichprobenumfang <- sample(sample_sizes, 1)  # Zufälliger Stichprobenumfang aus den angegebenen Größen
+    probe <- sample(data, stichprobenumfang, replace = TRUE)
+    probensammlung[[i]] <- probe
+  }
+  
+  return(probensammlung)
+}
+
+# Proben entnehmen
+proben <- entnehme_proben(zeitdauer)
+
+```{r}
+library(readxl)
+library(ggplot2)
+
+# Laden der .RData-Datei
+load("zeitdauerGesamtheit.RData", envir = values <- new.env())
+
+# Annahme: Der Name des geladenen Objekts in der .RData-Datei ist "zeitdauerGesamtheit"
+zeitdauer <- values$zeitdauerGesamtheit
+
+# Konvertieren in numerische Werte und NA-Werte entfernen
+zeitdauer <- na.omit(zeitdauer)
+zeitdauer <- as.numeric(unlist(zeitdauer))
+
+# Funktion zur Entnahme von 100 Proben mit unterschiedlichem Stichprobenumfang
+entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100, 500, 1000)) {
+  set.seed(123)  # Seed für Reproduzierbarkeit
+  probensammlung <- list()
+  
+  for (size in sample_sizes) {
+    proben <- replicate(num_proben, sample(data, size, replace = TRUE), simplify = FALSE)
+    probensammlung[[as.character(size)]] <- proben
+  }
+  
+  return(probensammlung)
+}
+
+# Proben entnehmen
+proben <- entnehme_proben(zeitdauer)
+
+# Funktion zum Erstellen von Q-Q-Plots für jede Stichprobengröße
+plot_qq_plots <- function(proben_list) {
+  par(mfrow = c(2, 3))  # Layout für mehrere Plots
+  
+  for (size in names(proben_list)) {
+    mittelwerte <- sapply(proben_list[[size]], mean)
+    
+    qqnorm(mittelwerte, main = paste("Q-Q-Plot der Mittelwerte\nStichprobenumfang:", size),
+           xlab = "Theoretische Quantile", ylab = "Empirische Quantile")
+    qqline(mittelwerte, col = "red")
+  }
+  
+  par(mfrow = c(1, 1))  # Layout zurücksetzen
+}
+
+# Q-Q-Plots erstellen
+plot_qq_plots(proben)
+
+```
+IM Q-Q-Plot ist die Normalverteilungslinie die Diagonale. Wenn die Werte nahe an der Diagonale sind, ist das ein Zeichen, dass sie normalverteilt sind
+
+Aufgabe 3 d)
+Der Stichprobenmittelwert ist naherungsweise normalverteilt. Je mehr Werte desto kleiner werden die Intervalle der Balken und desto naeher gleicht sich das Histogram an die Normalverteilungskurve an.
