@@ -1,21 +1,13 @@
-
-```{r}
-ausfaelle <- read.csv("ausfaelle.csv", header = FALSE, stringsAsFactors = FALSE)
-```
-
-
 Aufgabe 1 a):
 ```{r}
-# Laden der notwendigen Bibliothek
 library(dplyr)
-
-# Einlesen der CSV-Datei
+#Character vectors will not be transformed
 ausfaelle <- read.csv("ausfaelle.csv", header = TRUE, stringsAsFactors = FALSE)
 
 # Löschen der ersten Spalte
 ausfaelle <- ausfaelle[ , -1]
 
-# Konvertieren der Spalten in numerische Werte, ohne dies doppelte Werte
+# Konvertieren der Spalten in numerische Werte ohne doppelte Werte
 ausfaelle_df <- ausfaelle %>% mutate(across(everything(), as.numeric))
 
 # Summieren der Ausfälle pro Jahr pro Monat und in eine Liste speichern
@@ -31,7 +23,7 @@ for (i in seq_along(row_sums)) {
 }
 print(Ausfaelle_pro_Jahr)
 
-# Ausgabe erste Zeile, gleiches fuer die anderen
+# Ausgabe erste Zeile und die anderen
 Summe_jahr_1 <- Ausfaelle_pro_Jahr[["Ausfaelle_pro_Jahr1"]]
 print(Summe_jahr_1)
 ```
@@ -40,16 +32,13 @@ Theorie:
 "ppois" kumulatie Verteilungsfunktion, berechnet die Wahrscheinlichkeit, dass die Anzahl der Ereignisse (k) kleiner oder gleich einem bestimmten Wert ist.
 "dpois" Wahrschenlichkeitsdichtefunktion, dpois berechnet die Wahrscheinlichkeit dass eine bestimmte Anzahl von Ereignissen(k) bei einer gegebenen durchschnittlichen Rate in einem festen Intervall auftritt. Berechnet der Wahrscheinlichkeit eines genauen Werts.
 ```{r}
-# Laden der notwendigen Bibliothek
+
 library(dplyr)
 
-# Einlesen der CSV-Datei
 ausfaelle <- read.csv("ausfaelle.csv", header = TRUE, stringsAsFactors = FALSE)
 
-# Entfernen der ersten Spalte
 ausfaelle <- ausfaelle[ , -1]
 
-# Konvertieren der Spalten in numerische Werte
 ausfaelle <- ausfaelle %>% mutate(across(everything(), as.numeric))
 
 # Summieren der Ausfälle pro Jahr
@@ -63,19 +52,19 @@ total_ausfaelle_pro_jahr <- ausfaelle$Total_Ausfaelle
 # Berechnen des Mittelwerts der Ausfälle pro Jahr
 lambda <- mean(total_ausfaelle_pro_jahr)
 
-# Berechnen der Wahrscheinlichkeit, dass sich pro Jahr zwischen 15 und 20 Ausfälle ereignen
+# Berechnen der Wahrscheinlichkeit fuer 15 und 20 Ausfälle
 prob <- ppois(20, lambda) - ppois(14, lambda)
 
 # Ausgabe der Wahrscheinlichkeit
-print(paste("Die Wahrscheinlichkeit, dass sich pro Jahr zwischen 15 und 20 Ausfälle ereignen, beträgt:", prob))
+print(paste("Die Wahrscheinlichkeit dass sich pro Jahr zwischen 15 und 20 Ausfälle ereignen ist:", prob))
 ```
 Aufgabe 1 c):
 Der Kehrwert der Wahrscheinlichkeit ist da, um die durchschnittliche Anzahl von Versuchen oder Zeitrauemen zwischen seltenen Ereignissen zu bestimmen.
 ```{r}
-# Daten laden
+
 data <- read.csv("ausfaelle.csv", header = TRUE, sep = ",")
 
-# Struktur der Daten anzeigen
+# Struktur
 str(data)
 
 # Erste Spalte (Jahr) ignorieren und sicherstellen, dass alle Spalten numerisch sind
@@ -89,13 +78,13 @@ data$Total_Ausfaelle <- rowSums(data)
 lambda <- mean(data$Total_Ausfaelle)
 print(paste("Durchschnittliche Anzahl von Ausfällen pro Jahr (λ):", lambda))
 
-# Berechnung der Wahrscheinlichkeit, dass in einem Jahr mindestens 25 Ausfälle auftreten
+# Berechnung der Wahrscheinlichkeit dass in einem Jahr mindestens 25 Ausfälle auftreten
 prob_min_25_failures <- 1 - ppois(24, lambda)
-print(paste("Die Wahrscheinlichkeit, dass in einem Jahr mindestens 25 Ausfälle auftreten, beträgt:", round(prob_min_25_failures, 2)))
+print(paste("Die Wahrscheinlichkeit dass in einem Jahr mindestens 25 Ausfälle auftreten:", round(prob_min_25_failures, 2)))
 
 # Mittlere Anzahl Jahre zwischen zwei Jahren mit mindestens 25 Ausfällen
 mean_years_between_25_failures <- 1 / prob_min_25_failures
-print(paste("Die mittlere Anzahl Jahre zwischen zwei Jahren mit mindestens 25 Ausfällen beträgt:", round(mean_years_between_25_failures, 2)))
+print(paste("Die mittlere Anzahl Jahre zwischen zwei Jahren mit mindestens 25 Ausfällen ist:", round(mean_years_between_25_failures, 2)))
 ```
 Aufgabe 2 a):
 
@@ -110,21 +99,20 @@ Histogramm mit ggplot2 =
 library(dplyr)
 library(ggplot2)
 
-# CSV-Datei einlesen
 data <- read.csv("Jugend_und_Sport_Anzahl_Kurse_Teilnehmende_und_Leitende_nach_Sportart_und_Jahr_(seit 2005).csv", header = TRUE, sep = ";", stringsAsFactors = FALSE)
 
-# Überprüfen auf NA-Werte
+# Überprüfen ob NA-Werte
 sum(is.na(data))
 
-# Falls es NA-Werte gibt, können Sie sie entfernen
+# Falls es NA-Werte gibt können Sie sie entfernen
 data <- na.omit(data)
 
-# Anzahl Personen pro Jahr aggregieren
+# Anzahl Personen pro Jahr zusammenfuegen
 Teilnehmer_pro_jahr <- data %>%
   group_by(jahr) %>%
   summarise(summe = sum(anzahl))
 
-# Ausgabe der aggregierten Ergebnisse
+# Ausgabe der zusammengefuegten Ergebnisse
 print(Teilnehmer_pro_jahr)
 
 # Teilnehmer nach Anzahl plotten
@@ -151,13 +139,11 @@ ls.str(values)
 ```{r}
 load("zeitdauerGesamtheit.RData")
 
-# Laden der erforderlichen Pakete
 library(ggplot2)
 
-# Laden der Daten
 load("zeitdauerGesamtheit.RData", values <- new.env())
 
-# Einfacher plot der Values zeitdauer
+# Einfacher plot der Values zeitdauer (bringt nichts, lange rechenzeit)
 #plot(zeitdauerGesamtheit)
 
 # Histogramm erstellen
@@ -174,13 +160,10 @@ Aufgabe 2 c): Dichtefunktion
 ```{r}
 load("zeitdauerGesamtheit.RData")
 
-# Laden der erforderlichen Pakete
 library(ggplot2)
 
-# Laden der Daten
 load("zeitdauerGesamtheit.RData", values <- new.env())
 
-# Histogramm erstellen
 ggplot(data.frame(zeitdauer = zeitdauerGesamtheit), aes(x = zeitdauer)) +
   geom_histogram(binwidth = 1, fill = "lightblue", color = "black") +
   labs(title = "Histogramm der Zeitdauer", x = "Zeitdauer", y = "Haeufigkeit")
@@ -193,14 +176,11 @@ ggplot(data.frame(zeitdauer = zeitdauerGesamtheit), aes(x = zeitdauer)) +
 ```
 Aufgabe 2 d): Quantile-Quantile-Plot
 ```{r}
-# Laden der erforderlichen Pakete
 library(ggplot2)
 library(stats)
 
-# Laden der Daten
 load("zeitdauerGesamtheit.RData", values <- new.env())
 
-# Ggplot
 ggplot(data.frame(zeitdauer = zeitdauerGesamtheit), aes(x = zeitdauer)) + geom_qq(distribution = qexp, dparams = list(rate = 1/mean(zeitdauer)), color = "blue") + geom_abline(intercept = 0, slope = 1, color = "red") + labs(title = "Quantil-Quantil-Plot (Q-Q-Plot) der Zeitdauer", x = "Theoretische Quantile (Exponentialverteilung)", y = "Empirische Quantile") +
   theme_minimal()
 ```
@@ -209,17 +189,17 @@ Aufgabe 3 a)
 library(readxl)
 library(ggplot2)
 
-# Laden der .RData-Datei
+# .RData-Datei
 load("zeitdauerGesamtheit.RData", envir = values <- new.env())
 
-# Annahme: Der Name des geladenen Objekts in der .RData-Datei ist "zeitdauerGesamtheit"
+
 zeitdauer <- values$zeitdauerGesamtheit
 
 # Konvertieren in numerische Werte und NA-Werte entfernen
 zeitdauer <- na.omit(zeitdauer)
 zeitdauer <- as.numeric(unlist(zeitdauer))
 
-# Funktion sample() zur Entnahme von 100 Stichproben mit unterschiedlichem Umfang
+# Funktion sample() zur Entnahme von 100 Stichproben mit unterschiedlichem Umfang aber auswahl
 entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100, 500, 1000)) {
   set.seed(123)  # Seed für Reproduzierbarkeit
   probensammlung <- list()
@@ -236,7 +216,7 @@ entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100
 # Proben entnehmen
 proben <- entnehme_proben(zeitdauer)
 
-# Ausgabe der ersten Probe zur Überprüfung
+# Ausgabe der ersten Probe
 print(proben[[1]])
 ```
 Aufgabe 3 b)
@@ -244,23 +224,20 @@ Aufgabe 3 b)
 library(readxl)
 library(ggplot2)
 
-# Laden der .RData-Datei
+# Mit neuer Umgebung
 load("zeitdauerGesamtheit.RData", envir = values <- new.env())
 
-# Annahme: Der Name des geladenen Objekts in der .RData-Datei ist "zeitdauerGesamtheit"
 zeitdauer <- values$zeitdauerGesamtheit
 
-# Konvertieren in numerische Werte und NA-Werte entfernen
 zeitdauer <- na.omit(zeitdauer)
 zeitdauer <- as.numeric(unlist(zeitdauer))
 
-# Funktion zur Entnahme von 100 Proben mit unterschiedlichem Stichprobenumfang
 entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100, 500, 1000)) {
-  set.seed(123)  # Seed für Reproduzierbarkeit
+  set.seed(123)
   probensammlung <- list()
   
   for (i in 1:num_proben) {
-    stichprobenumfang <- sample(sample_sizes, 1)  # Zufälliger Stichprobenumfang aus den angegebenen Größen
+    stichprobenumfang <- sample(sample_sizes, 1)
     probe <- sample(data, stichprobenumfang, replace = TRUE)
     probensammlung[[i]] <- probe
   }
@@ -268,10 +245,9 @@ entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100
   return(probensammlung)
 }
 
-# Proben entnehmen
 proben <- entnehme_proben(zeitdauer)
 
-# Funktion auf mehrere Elemente anwenden, Berechnet arithmetrisches Mittel jeder Probe
+# Funktion auf mehrere Elemente anwenden und es berechnet arithmetrisches Mittel jeder Probe
 mittelwerte <- sapply(proben, mean)
 
 # Berechnung der Varianz der Mittelwerte
@@ -293,53 +269,18 @@ lines(x, y, col = "red", lwd = 2)
 
 ```
 Aufgabe 3 c)
-library(readxl)
-library(ggplot2)
-
-# Laden der .RData-Datei
-load("zeitdauerGesamtheit.RData", envir = values <- new.env())
-
-# Annahme: Der Name des geladenen Objekts in der .RData-Datei ist "zeitdauerGesamtheit"
-zeitdauer <- values$zeitdauerGesamtheit
-
-# Konvertieren in numerische Werte und NA-Werte entfernen
-zeitdauer <- na.omit(zeitdauer)
-zeitdauer <- as.numeric(unlist(zeitdauer))
-
-# Funktion zur Entnahme von 100 Proben mit unterschiedlichem Stichprobenumfang
-entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100, 500, 1000)) {
-  set.seed(123)  # Seed für Reproduzierbarkeit
-  probensammlung <- list()
-  
-  for (i in 1:num_proben) {
-    stichprobenumfang <- sample(sample_sizes, 1)  # Zufälliger Stichprobenumfang aus den angegebenen Größen
-    probe <- sample(data, stichprobenumfang, replace = TRUE)
-    probensammlung[[i]] <- probe
-  }
-  
-  return(probensammlung)
-}
-
-# Proben entnehmen
-proben <- entnehme_proben(zeitdauer)
-
 ```{r}
 library(readxl)
 library(ggplot2)
 
-# Laden der .RData-Datei
 load("zeitdauerGesamtheit.RData", envir = values <- new.env())
-
-# Annahme: Der Name des geladenen Objekts in der .RData-Datei ist "zeitdauerGesamtheit"
 zeitdauer <- values$zeitdauerGesamtheit
 
-# Konvertieren in numerische Werte und NA-Werte entfernen
 zeitdauer <- na.omit(zeitdauer)
 zeitdauer <- as.numeric(unlist(zeitdauer))
 
-# Funktion zur Entnahme von 100 Proben mit unterschiedlichem Stichprobenumfang
 entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100, 500, 1000)) {
-  set.seed(123)  # Seed für Reproduzierbarkeit
+  set.seed(123)
   probensammlung <- list()
   
   for (size in sample_sizes) {
@@ -350,12 +291,11 @@ entnehme_proben <- function(data, num_proben = 100, sample_sizes = c(10, 50, 100
   return(probensammlung)
 }
 
-# Proben entnehmen
 proben <- entnehme_proben(zeitdauer)
 
 # Funktion zum Erstellen von Q-Q-Plots für jede Stichprobengröße
 plot_qq_plots <- function(proben_list) {
-  par(mfrow = c(2, 3))  # Layout für mehrere Plots
+  par(mfrow = c(2, 3))  # Layout fuer zwei zeilen plots und 3 spalten
   
   for (size in names(proben_list)) {
     mittelwerte <- sapply(proben_list[[size]], mean)
@@ -365,10 +305,9 @@ plot_qq_plots <- function(proben_list) {
     qqline(mittelwerte, col = "red")
   }
   
-  par(mfrow = c(1, 1))  # Layout zurücksetzen
+  par(mfrow = c(1, 1))  # Layour zuruuecksetyen
 }
 
-# Q-Q-Plots erstellen
 plot_qq_plots(proben)
 
 ```
