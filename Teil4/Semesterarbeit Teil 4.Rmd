@@ -1,0 +1,59 @@
+Semesterarbeit Teil 4 - Michael Bieri
+Aufgabe 1 a) Histogrra alle Werte
+Aufgabe 1 b) Passende Verteilung mit angepassten Parametern
+
+```{r}
+library(readxl)
+library(ggplot2)
+
+load("zeitdauerGesamtheit.RData")
+
+# Assuming zeitdauerGesamtheit is already loaded
+zeitdauer <- as.numeric(zeitdauerGesamtheit$zeitdauer)
+
+# Calculate the mean of 'zeitdauer'
+lambda_zeitdauer <- mean(zeitdauer)
+
+# Create a data frame for observed data
+zeitdauerdf <- data.frame(Zeitdauer = zeitdauer)
+
+# Inspect the range of zeitdauer to ensure correct categorization
+print(range(zeitdauer))
+
+# Kategorien - Adjusted breaks to cover all values
+kategorien <- cut(zeitdauer, 
+                  breaks = c(min(zeitdauer),0,50,100,150,200,250,300, 350,400,450,500,550,600,650,700,750,800,850,900,950,1000,1050,1100,1150,1200,1250,1300,1350, max(zeitdauer)), 
+                  labels = c("-0", "0-50", "50-100", "100-150", "150-200", "200-250", "250-300", "300-350", "350-400", "400-450", "450-500", "500-550", "550-600", "600-650","650-700", "700-750", "750-800", "800-850", "850-900", "900-950", "950-1000", "1000-1050","1050-1100", "1100-1150", "1150-1200", "1200-1250", "1250-1300", "1300-1350", "1350+"))
+
+# Add the categories to the data frame
+zeitdauerdf$Kategorien <- kategorien
+
+# Generate Poisson distribution data
+poisson_data <- data.frame(
+  Zeitdauer = 0:max(zeitdauer),
+  Probability = dpois(0:max(zeitdauer), lambda_zeitdauer)
+)
+
+# Plot the frequency distribution of 'zeitdauer' categories
+ggplot(zeitdauerdf, aes(x = Kategorien)) +
+  geom_bar(color = "black", fill = "green", alpha = 0.7, na.rm = TRUE) +
+  labs(title = "Häufigkeitsverteilung der Zeitdauerkategorien", x = "Kategorien", y = "Häufigkeit") +
+  scale_y_continuous(labels = scales::number_format(accuracy = 0.1)) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Create a data frame for observed data in the histogram
+observed_data <- data.frame(Zeitdauer = zeitdauer)
+
+# Poissonverteilung
+ggplot() +
+  geom_line(data = poisson_data, aes(x = Zeitdauer, y = Probability), color = "red", linewidth = 0.1) +
+  scale_x_continuous(breaks = seq(60, 150, by = 10), limits = c(60, 150)) +
+  labs(title = "Poisson-Verteilung der Zeitreihenwerte", x = "Zeitdauer mit Wertebereich von 60 - 150", y = "Dichte") +
+  theme_minimal()
+ + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+```{r}
+
+```
+
