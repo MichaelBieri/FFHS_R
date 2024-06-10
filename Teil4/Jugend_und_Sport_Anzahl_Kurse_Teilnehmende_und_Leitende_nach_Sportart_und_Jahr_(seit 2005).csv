@@ -1,0 +1,2909 @@
+jahr;sportart;indikator;geschlecht;anzahl
+2005;Badminton;Kurse/Lager;;46
+2005;Badminton;Leitende;;149
+2005;Badminton;Teilnehmende;männlich;231
+2005;Badminton;Teilnehmende;weiblich;217
+2005;Baseball/Softball;Kurse/Lager;;12
+2005;Baseball/Softball;Leitende;;37
+2005;Baseball/Softball;Teilnehmende;männlich;86
+2005;Baseball/Softball;Teilnehmende;weiblich;12
+2005;Basketball und Korbball;Kurse/Lager;;59
+2005;Basketball und Korbball;Leitende;;113
+2005;Basketball und Korbball;Teilnehmende;männlich;531
+2005;Basketball und Korbball;Teilnehmende;weiblich;338
+2005;Bergsport;Kurse/Lager;;1
+2005;Bergsport;Leitende;;15
+2005;Bergsport;Teilnehmende;männlich;5
+2005;Bergsport;Teilnehmende;weiblich;1
+2005;Curling;Kurse/Lager;;5
+2005;Curling;Leitende;;5
+2005;Curling;Teilnehmende;männlich;14
+2005;Curling;Teilnehmende;weiblich;13
+2005;Diverse Sportarten;Kurse/Lager;;5
+2005;Diverse Sportarten;Leitende;;24
+2005;Diverse Sportarten;Teilnehmende;männlich;31
+2005;Diverse Sportarten;Teilnehmende;weiblich;25
+2005;Eishockey;Kurse/Lager;;7
+2005;Eishockey;Leitende;;13
+2005;Eishockey;Teilnehmende;männlich;112
+2005;Eishockey;Teilnehmende;weiblich;1
+2005;Eiskunstlauf/Eistanz;Kurse/Lager;;11
+2005;Eiskunstlauf/Eistanz;Leitende;;16
+2005;Eiskunstlauf/Eistanz;Teilnehmende;männlich;2
+2005;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;97
+2005;Fussball;Kurse/Lager;;368
+2005;Fussball;Leitende;;476
+2005;Fussball;Teilnehmende;männlich;5506
+2005;Fussball;Teilnehmende;weiblich;392
+2005;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;23
+2005;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;39
+2005;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;34
+2005;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;216
+2005;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;11
+2005;Gymnastik, Tanz und Tanzsport;Leitende;;19
+2005;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;5
+2005;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;153
+2005;Handball;Kurse/Lager;;70
+2005;Handball;Leitende;;142
+2005;Handball;Teilnehmende;männlich;627
+2005;Handball;Teilnehmende;weiblich;342
+2005;Judo;Kurse/Lager;;72
+2005;Judo;Leitende;;173
+2005;Judo;Teilnehmende;männlich;636
+2005;Judo;Teilnehmende;weiblich;280
+2005;Ju-Jitsu;Kurse/Lager;;9
+2005;Ju-Jitsu;Leitende;;20
+2005;Ju-Jitsu;Teilnehmende;männlich;90
+2005;Ju-Jitsu;Teilnehmende;weiblich;72
+2005;Karate;Kurse/Lager;;7
+2005;Karate;Leitende;;24
+2005;Karate;Teilnehmende;männlich;120
+2005;Karate;Teilnehmende;weiblich;54
+2005;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;258
+2005;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;990
+2005;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;3939
+2005;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;3408
+2005;Lagersport/Trekking;Kurse/Lager;;106
+2005;Lagersport/Trekking;Leitende;;384
+2005;Lagersport/Trekking;Teilnehmende;männlich;1516
+2005;Lagersport/Trekking;Teilnehmende;weiblich;1434
+2005;Leichtathletik;Kurse/Lager;;67
+2005;Leichtathletik;Leitende;;121
+2005;Leichtathletik;Teilnehmende;männlich;367
+2005;Leichtathletik;Teilnehmende;weiblich;538
+2005;Orientierungslauf;Kurse/Lager;;8
+2005;Orientierungslauf;Leitende;;36
+2005;Orientierungslauf;Teilnehmende;männlich;122
+2005;Orientierungslauf;Teilnehmende;weiblich;94
+2005;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;7
+2005;Pferdesport (Reiten und Voltigieren);Leitende;;9
+2005;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;4
+2005;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;47
+2005;Polysportive Lager und Kurse;Kurse/Lager;;182
+2005;Polysportive Lager und Kurse;Leitende;;623
+2005;Polysportive Lager und Kurse;Teilnehmende;männlich;3119
+2005;Polysportive Lager und Kurse;Teilnehmende;weiblich;3048
+2005;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;10
+2005;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;37
+2005;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;73
+2005;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;42
+2005;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;78
+2005;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;171
+2005;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;348
+2005;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;485
+2005;Schwingen;Kurse/Lager;;3
+2005;Schwingen;Leitende;;7
+2005;Schwingen;Teilnehmende;männlich;26
+2005;Schwingen;Teilnehmende;weiblich;0
+2005;Segeln;Kurse/Lager;;2
+2005;Segeln;Leitende;;13
+2005;Segeln;Teilnehmende;männlich;13
+2005;Segeln;Teilnehmende;weiblich;13
+2005;Skifahren;Kurse/Lager;;5
+2005;Skifahren;Leitende;;17
+2005;Skifahren;Teilnehmende;männlich;59
+2005;Skifahren;Teilnehmende;weiblich;57
+2005;Skilanglauf;Kurse/Lager;;4
+2005;Skilanglauf;Leitende;;12
+2005;Skilanglauf;Teilnehmende;männlich;19
+2005;Skilanglauf;Teilnehmende;weiblich;8
+2005;Skitouren;Kurse/Lager;;2
+2005;Skitouren;Leitende;;14
+2005;Skitouren;Teilnehmende;männlich;20
+2005;Skitouren;Teilnehmende;weiblich;6
+2005;Snowboard;Kurse/Lager;;2
+2005;Snowboard;Leitende;;9
+2005;Snowboard;Teilnehmende;männlich;30
+2005;Snowboard;Teilnehmende;weiblich;19
+2005;Speedskating;Kurse/Lager;;4
+2005;Speedskating;Leitende;;11
+2005;Speedskating;Teilnehmende;männlich;15
+2005;Speedskating;Teilnehmende;weiblich;16
+2005;Sportklettern;Kurse/Lager;;3
+2005;Sportklettern;Leitende;;21
+2005;Sportklettern;Teilnehmende;männlich;25
+2005;Sportklettern;Teilnehmende;weiblich;17
+2005;Squash;Kurse/Lager;;2
+2005;Squash;Leitende;;5
+2005;Squash;Teilnehmende;männlich;12
+2005;Squash;Teilnehmende;weiblich;8
+2005;Tennis;Kurse/Lager;;200
+2005;Tennis;Leitende;;217
+2005;Tennis;Teilnehmende;männlich;614
+2005;Tennis;Teilnehmende;weiblich;472
+2005;Tischtennis;Kurse/Lager;;11
+2005;Tischtennis;Leitende;;32
+2005;Tischtennis;Teilnehmende;männlich;108
+2005;Tischtennis;Teilnehmende;weiblich;23
+2005;Turnen und Rhönrad;Kurse/Lager;;282
+2005;Turnen und Rhönrad;Leitende;;631
+2005;Turnen und Rhönrad;Teilnehmende;männlich;1261
+2005;Turnen und Rhönrad;Teilnehmende;weiblich;2369
+2005;Unihockey;Kurse/Lager;;22
+2005;Unihockey;Leitende;;38
+2005;Unihockey;Teilnehmende;männlich;259
+2005;Unihockey;Teilnehmende;weiblich;78
+2005;Volleyball;Kurse/Lager;;87
+2005;Volleyball;Leitende;;168
+2005;Volleyball;Teilnehmende;männlich;277
+2005;Volleyball;Teilnehmende;weiblich;809
+2006;Badminton;Kurse/Lager;;32
+2006;Badminton;Leitende;;81
+2006;Badminton;Teilnehmende;männlich;181
+2006;Badminton;Teilnehmende;weiblich;140
+2006;Baseball/Softball;Kurse/Lager;;15
+2006;Baseball/Softball;Leitende;;33
+2006;Baseball/Softball;Teilnehmende;männlich;98
+2006;Baseball/Softball;Teilnehmende;weiblich;18
+2006;Basketball und Korbball;Kurse/Lager;;51
+2006;Basketball und Korbball;Leitende;;96
+2006;Basketball und Korbball;Teilnehmende;männlich;355
+2006;Basketball und Korbball;Teilnehmende;weiblich;315
+2006;Bergsport;Kurse/Lager;;1
+2006;Bergsport;Leitende;;3
+2006;Bergsport;Teilnehmende;männlich;11
+2006;Bergsport;Teilnehmende;weiblich;8
+2006;Curling;Kurse/Lager;;5
+2006;Curling;Leitende;;9
+2006;Curling;Teilnehmende;männlich;18
+2006;Curling;Teilnehmende;weiblich;8
+2006;Diverse Sportarten;Kurse/Lager;;3
+2006;Diverse Sportarten;Leitende;;10
+2006;Diverse Sportarten;Teilnehmende;männlich;21
+2006;Diverse Sportarten;Teilnehmende;weiblich;7
+2006;Eishockey;Kurse/Lager;;12
+2006;Eishockey;Leitende;;18
+2006;Eishockey;Teilnehmende;männlich;155
+2006;Eishockey;Teilnehmende;weiblich;5
+2006;Eiskunstlauf/Eistanz;Kurse/Lager;;14
+2006;Eiskunstlauf/Eistanz;Leitende;;17
+2006;Eiskunstlauf/Eistanz;Teilnehmende;männlich;4
+2006;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;97
+2006;Faustball;Kurse/Lager;;2
+2006;Faustball;Leitende;;4
+2006;Faustball;Teilnehmende;männlich;22
+2006;Faustball;Teilnehmende;weiblich;7
+2006;Fussball;Kurse/Lager;;270
+2006;Fussball;Leitende;;367
+2006;Fussball;Teilnehmende;männlich;4082
+2006;Fussball;Teilnehmende;weiblich;219
+2006;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;23
+2006;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;77
+2006;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;61
+2006;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;258
+2006;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;20
+2006;Gymnastik, Tanz und Tanzsport;Leitende;;30
+2006;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;31
+2006;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;211
+2006;Handball;Kurse/Lager;;64
+2006;Handball;Leitende;;127
+2006;Handball;Teilnehmende;männlich;705
+2006;Handball;Teilnehmende;weiblich;318
+2006;Judo;Kurse/Lager;;65
+2006;Judo;Leitende;;150
+2006;Judo;Teilnehmende;männlich;509
+2006;Judo;Teilnehmende;weiblich;225
+2006;Ju-Jitsu;Kurse/Lager;;7
+2006;Ju-Jitsu;Leitende;;15
+2006;Ju-Jitsu;Teilnehmende;männlich;74
+2006;Ju-Jitsu;Teilnehmende;weiblich;71
+2006;Karate;Kurse/Lager;;13
+2006;Karate;Leitende;;36
+2006;Karate;Teilnehmende;männlich;172
+2006;Karate;Teilnehmende;weiblich;97
+2006;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;645
+2006;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;1015
+2006;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;4045
+2006;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;3649
+2006;Lagersport/Trekking;Kurse/Lager;;112
+2006;Lagersport/Trekking;Leitende;;413
+2006;Lagersport/Trekking;Teilnehmende;männlich;1578
+2006;Lagersport/Trekking;Teilnehmende;weiblich;1464
+2006;Leichtathletik;Kurse/Lager;;75
+2006;Leichtathletik;Leitende;;149
+2006;Leichtathletik;Teilnehmende;männlich;403
+2006;Leichtathletik;Teilnehmende;weiblich;592
+2006;Orientierungslauf;Kurse/Lager;;6
+2006;Orientierungslauf;Leitende;;35
+2006;Orientierungslauf;Teilnehmende;männlich;121
+2006;Orientierungslauf;Teilnehmende;weiblich;101
+2006;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;7
+2006;Pferdesport (Reiten und Voltigieren);Leitende;;8
+2006;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;2
+2006;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;41
+2006;Polysportive Lager und Kurse;Kurse/Lager;;189
+2006;Polysportive Lager und Kurse;Leitende;;580
+2006;Polysportive Lager und Kurse;Teilnehmende;männlich;3124
+2006;Polysportive Lager und Kurse;Teilnehmende;weiblich;3078
+2006;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;6
+2006;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;23
+2006;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;29
+2006;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;4
+2006;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;46
+2006;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;102
+2006;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;189
+2006;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;290
+2006;Schwingen;Kurse/Lager;;3
+2006;Schwingen;Leitende;;6
+2006;Schwingen;Teilnehmende;männlich;18
+2006;Schwingen;Teilnehmende;weiblich;0
+2006;Segeln;Kurse/Lager;;3
+2006;Segeln;Leitende;;8
+2006;Segeln;Teilnehmende;männlich;14
+2006;Segeln;Teilnehmende;weiblich;9
+2006;Skifahren;Kurse/Lager;;7
+2006;Skifahren;Leitende;;16
+2006;Skifahren;Teilnehmende;männlich;92
+2006;Skifahren;Teilnehmende;weiblich;60
+2006;Skilanglauf;Kurse/Lager;;2
+2006;Skilanglauf;Leitende;;4
+2006;Skilanglauf;Teilnehmende;männlich;12
+2006;Skilanglauf;Teilnehmende;weiblich;0
+2006;Skitouren;Kurse/Lager;;2
+2006;Skitouren;Leitende;;8
+2006;Skitouren;Teilnehmende;männlich;27
+2006;Skitouren;Teilnehmende;weiblich;9
+2006;Snowboard;Kurse/Lager;;1
+2006;Snowboard;Leitende;;5
+2006;Snowboard;Teilnehmende;männlich;16
+2006;Snowboard;Teilnehmende;weiblich;10
+2006;Speedskating;Kurse/Lager;;3
+2006;Speedskating;Leitende;;10
+2006;Speedskating;Teilnehmende;männlich;11
+2006;Speedskating;Teilnehmende;weiblich;11
+2006;Sportklettern;Kurse/Lager;;2
+2006;Sportklettern;Leitende;;4
+2006;Sportklettern;Teilnehmende;männlich;11
+2006;Sportklettern;Teilnehmende;weiblich;13
+2006;Squash;Kurse/Lager;;1
+2006;Squash;Leitende;;4
+2006;Squash;Teilnehmende;männlich;1
+2006;Squash;Teilnehmende;weiblich;3
+2006;Tennis;Kurse/Lager;;231
+2006;Tennis;Leitende;;314
+2006;Tennis;Teilnehmende;männlich;641
+2006;Tennis;Teilnehmende;weiblich;462
+2006;Tischtennis;Kurse/Lager;;11
+2006;Tischtennis;Leitende;;38
+2006;Tischtennis;Teilnehmende;männlich;98
+2006;Tischtennis;Teilnehmende;weiblich;19
+2006;Turnen und Rhönrad;Kurse/Lager;;214
+2006;Turnen und Rhönrad;Leitende;;472
+2006;Turnen und Rhönrad;Teilnehmende;männlich;941
+2006;Turnen und Rhönrad;Teilnehmende;weiblich;1734
+2006;Unihockey;Kurse/Lager;;18
+2006;Unihockey;Leitende;;26
+2006;Unihockey;Teilnehmende;männlich;203
+2006;Unihockey;Teilnehmende;weiblich;43
+2006;Volleyball;Kurse/Lager;;83
+2006;Volleyball;Leitende;;161
+2006;Volleyball;Teilnehmende;männlich;203
+2006;Volleyball;Teilnehmende;weiblich;838
+2007;Badminton;Kurse/Lager;;51
+2007;Badminton;Leitende;;154
+2007;Badminton;Teilnehmende;männlich;266
+2007;Badminton;Teilnehmende;weiblich;192
+2007;Baseball/Softball;Kurse/Lager;;16
+2007;Baseball/Softball;Leitende;;34
+2007;Baseball/Softball;Teilnehmende;männlich;127
+2007;Baseball/Softball;Teilnehmende;weiblich;21
+2007;Basketball und Korbball;Kurse/Lager;;41
+2007;Basketball und Korbball;Leitende;;84
+2007;Basketball und Korbball;Teilnehmende;männlich;378
+2007;Basketball und Korbball;Teilnehmende;weiblich;216
+2007;Bergsport;Kurse/Lager;;4
+2007;Bergsport;Leitende;;34
+2007;Bergsport;Teilnehmende;männlich;430
+2007;Bergsport;Teilnehmende;weiblich;432
+2007;Curling;Kurse/Lager;;6
+2007;Curling;Leitende;;12
+2007;Curling;Teilnehmende;männlich;24
+2007;Curling;Teilnehmende;weiblich;17
+2007;Diverse Sportarten;Kurse/Lager;;3
+2007;Diverse Sportarten;Leitende;;9
+2007;Diverse Sportarten;Teilnehmende;männlich;20
+2007;Diverse Sportarten;Teilnehmende;weiblich;8
+2007;Eishockey;Kurse/Lager;;14
+2007;Eishockey;Leitende;;22
+2007;Eishockey;Teilnehmende;männlich;170
+2007;Eishockey;Teilnehmende;weiblich;5
+2007;Eiskunstlauf/Eistanz;Kurse/Lager;;14
+2007;Eiskunstlauf/Eistanz;Leitende;;15
+2007;Eiskunstlauf/Eistanz;Teilnehmende;männlich;0
+2007;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;113
+2007;Faustball;Kurse/Lager;;3
+2007;Faustball;Leitende;;5
+2007;Faustball;Teilnehmende;männlich;23
+2007;Faustball;Teilnehmende;weiblich;7
+2007;Fussball;Kurse/Lager;;414
+2007;Fussball;Leitende;;547
+2007;Fussball;Teilnehmende;männlich;5769
+2007;Fussball;Teilnehmende;weiblich;551
+2007;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;24
+2007;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;62
+2007;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;47
+2007;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;273
+2007;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;16
+2007;Gymnastik, Tanz und Tanzsport;Leitende;;23
+2007;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;4
+2007;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;194
+2007;Handball;Kurse/Lager;;71
+2007;Handball;Leitende;;148
+2007;Handball;Teilnehmende;männlich;947
+2007;Handball;Teilnehmende;weiblich;286
+2007;Judo;Kurse/Lager;;77
+2007;Judo;Leitende;;180
+2007;Judo;Teilnehmende;männlich;548
+2007;Judo;Teilnehmende;weiblich;237
+2007;Ju-Jitsu;Kurse/Lager;;11
+2007;Ju-Jitsu;Leitende;;23
+2007;Ju-Jitsu;Teilnehmende;männlich;93
+2007;Ju-Jitsu;Teilnehmende;weiblich;74
+2007;Karate;Kurse/Lager;;17
+2007;Karate;Leitende;;58
+2007;Karate;Teilnehmende;männlich;253
+2007;Karate;Teilnehmende;weiblich;127
+2007;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;685
+2007;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;1037
+2007;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;4364
+2007;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;3684
+2007;Lagersport/Trekking;Kurse/Lager;;93
+2007;Lagersport/Trekking;Leitende;;321
+2007;Lagersport/Trekking;Teilnehmende;männlich;1274
+2007;Lagersport/Trekking;Teilnehmende;weiblich;1285
+2007;Leichtathletik;Kurse/Lager;;64
+2007;Leichtathletik;Leitende;;137
+2007;Leichtathletik;Teilnehmende;männlich;341
+2007;Leichtathletik;Teilnehmende;weiblich;470
+2007;Orientierungslauf;Kurse/Lager;;4
+2007;Orientierungslauf;Leitende;;23
+2007;Orientierungslauf;Teilnehmende;männlich;81
+2007;Orientierungslauf;Teilnehmende;weiblich;64
+2007;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;4
+2007;Pferdesport (Reiten und Voltigieren);Leitende;;4
+2007;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;1
+2007;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;23
+2007;Polysportive Lager und Kurse;Kurse/Lager;;176
+2007;Polysportive Lager und Kurse;Leitende;;559
+2007;Polysportive Lager und Kurse;Teilnehmende;männlich;2999
+2007;Polysportive Lager und Kurse;Teilnehmende;weiblich;2842
+2007;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;8
+2007;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;28
+2007;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;51
+2007;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;10
+2007;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;57
+2007;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;123
+2007;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;288
+2007;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;368
+2007;Schwingen;Kurse/Lager;;4
+2007;Schwingen;Leitende;;11
+2007;Schwingen;Teilnehmende;männlich;27
+2007;Schwingen;Teilnehmende;weiblich;0
+2007;Segeln;Kurse/Lager;;2
+2007;Segeln;Leitende;;13
+2007;Segeln;Teilnehmende;männlich;12
+2007;Segeln;Teilnehmende;weiblich;4
+2007;Skifahren;Kurse/Lager;;5
+2007;Skifahren;Leitende;;14
+2007;Skifahren;Teilnehmende;männlich;61
+2007;Skifahren;Teilnehmende;weiblich;50
+2007;Skilanglauf;Kurse/Lager;;2
+2007;Skilanglauf;Leitende;;4
+2007;Skilanglauf;Teilnehmende;männlich;12
+2007;Skilanglauf;Teilnehmende;weiblich;0
+2007;Skitouren;Kurse/Lager;;4
+2007;Skitouren;Leitende;;23
+2007;Skitouren;Teilnehmende;männlich;23
+2007;Skitouren;Teilnehmende;weiblich;15
+2007;Snowboard;Kurse/Lager;;3
+2007;Snowboard;Leitende;;9
+2007;Snowboard;Teilnehmende;männlich;44
+2007;Snowboard;Teilnehmende;weiblich;25
+2007;Sportklettern;Kurse/Lager;;2
+2007;Sportklettern;Leitende;;9
+2007;Sportklettern;Teilnehmende;männlich;11
+2007;Sportklettern;Teilnehmende;weiblich;11
+2007;Squash;Kurse/Lager;;1
+2007;Squash;Leitende;;2
+2007;Squash;Teilnehmende;männlich;4
+2007;Squash;Teilnehmende;weiblich;3
+2007;Tennis;Kurse/Lager;;263
+2007;Tennis;Leitende;;312
+2007;Tennis;Teilnehmende;männlich;708
+2007;Tennis;Teilnehmende;weiblich;451
+2007;Tischtennis;Kurse/Lager;;10
+2007;Tischtennis;Leitende;;30
+2007;Tischtennis;Teilnehmende;männlich;107
+2007;Tischtennis;Teilnehmende;weiblich;7
+2007;Turnen und Rhönrad;Kurse/Lager;;287
+2007;Turnen und Rhönrad;Leitende;;643
+2007;Turnen und Rhönrad;Teilnehmende;männlich;1176
+2007;Turnen und Rhönrad;Teilnehmende;weiblich;2212
+2007;Unihockey;Kurse/Lager;;29
+2007;Unihockey;Leitende;;45
+2007;Unihockey;Teilnehmende;männlich;292
+2007;Unihockey;Teilnehmende;weiblich;80
+2007;Volleyball;Kurse/Lager;;84
+2007;Volleyball;Leitende;;141
+2007;Volleyball;Teilnehmende;männlich;187
+2007;Volleyball;Teilnehmende;weiblich;864
+2008;Badminton;Kurse/Lager;;38
+2008;Badminton;Leitende;;90
+2008;Badminton;Teilnehmende;männlich;215
+2008;Badminton;Teilnehmende;weiblich;158
+2008;Baseball/Softball;Kurse/Lager;;16
+2008;Baseball/Softball;Leitende;;31
+2008;Baseball/Softball;Teilnehmende;männlich;110
+2008;Baseball/Softball;Teilnehmende;weiblich;30
+2008;Basketball und Korbball;Kurse/Lager;;40
+2008;Basketball und Korbball;Leitende;;76
+2008;Basketball und Korbball;Teilnehmende;männlich;324
+2008;Basketball und Korbball;Teilnehmende;weiblich;182
+2008;Bergsport;Kurse/Lager;;3
+2008;Bergsport;Leitende;;23
+2008;Bergsport;Teilnehmende;männlich;40
+2008;Bergsport;Teilnehmende;weiblich;38
+2008;Curling;Kurse/Lager;;6
+2008;Curling;Leitende;;14
+2008;Curling;Teilnehmende;männlich;25
+2008;Curling;Teilnehmende;weiblich;12
+2008;Diverse Sportarten;Kurse/Lager;;4
+2008;Diverse Sportarten;Leitende;;9
+2008;Diverse Sportarten;Teilnehmende;männlich;29
+2008;Diverse Sportarten;Teilnehmende;weiblich;5
+2008;Eishockey;Kurse/Lager;;10
+2008;Eishockey;Leitende;;18
+2008;Eishockey;Teilnehmende;männlich;113
+2008;Eishockey;Teilnehmende;weiblich;4
+2008;Eiskunstlauf/Eistanz;Kurse/Lager;;16
+2008;Eiskunstlauf/Eistanz;Leitende;;18
+2008;Eiskunstlauf/Eistanz;Teilnehmende;männlich;3
+2008;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;147
+2008;Faustball;Kurse/Lager;;2
+2008;Faustball;Leitende;;5
+2008;Faustball;Teilnehmende;männlich;21
+2008;Faustball;Teilnehmende;weiblich;2
+2008;Fussball;Kurse/Lager;;286
+2008;Fussball;Leitende;;375
+2008;Fussball;Teilnehmende;männlich;3727
+2008;Fussball;Teilnehmende;weiblich;461
+2008;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;14
+2008;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;42
+2008;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;25
+2008;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;174
+2008;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;8
+2008;Gymnastik, Tanz und Tanzsport;Leitende;;8
+2008;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;3
+2008;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;96
+2008;Handball;Kurse/Lager;;51
+2008;Handball;Leitende;;93
+2008;Handball;Teilnehmende;männlich;507
+2008;Handball;Teilnehmende;weiblich;252
+2008;Judo;Kurse/Lager;;40
+2008;Judo;Leitende;;93
+2008;Judo;Teilnehmende;männlich;304
+2008;Judo;Teilnehmende;weiblich;127
+2008;Ju-Jitsu;Kurse/Lager;;6
+2008;Ju-Jitsu;Leitende;;16
+2008;Ju-Jitsu;Teilnehmende;männlich;56
+2008;Ju-Jitsu;Teilnehmende;weiblich;33
+2008;Karate;Kurse/Lager;;12
+2008;Karate;Leitende;;54
+2008;Karate;Teilnehmende;männlich;130
+2008;Karate;Teilnehmende;weiblich;84
+2008;Kids und Allround;Kurse/Lager;;2
+2008;Kids und Allround;Leitende;;3
+2008;Kids und Allround;Teilnehmende;männlich;21
+2008;Kids und Allround;Teilnehmende;weiblich;14
+2008;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;963
+2008;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;1141
+2008;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;4860
+2008;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;3771
+2008;Lagersport/Trekking;Kurse/Lager;;96
+2008;Lagersport/Trekking;Leitende;;379
+2008;Lagersport/Trekking;Teilnehmende;männlich;1309
+2008;Lagersport/Trekking;Teilnehmende;weiblich;1248
+2008;Leichtathletik;Kurse/Lager;;63
+2008;Leichtathletik;Leitende;;135
+2008;Leichtathletik;Teilnehmende;männlich;350
+2008;Leichtathletik;Teilnehmende;weiblich;450
+2008;Orientierungslauf;Kurse/Lager;;3
+2008;Orientierungslauf;Leitende;;14
+2008;Orientierungslauf;Teilnehmende;männlich;27
+2008;Orientierungslauf;Teilnehmende;weiblich;19
+2008;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;5
+2008;Pferdesport (Reiten und Voltigieren);Leitende;;5
+2008;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;2
+2008;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;28
+2008;Polysportive Lager und Kurse;Kurse/Lager;;161
+2008;Polysportive Lager und Kurse;Leitende;;520
+2008;Polysportive Lager und Kurse;Teilnehmende;männlich;2810
+2008;Polysportive Lager und Kurse;Teilnehmende;weiblich;2604
+2008;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;9
+2008;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;23
+2008;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;67
+2008;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;9
+2008;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;54
+2008;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;94
+2008;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;320
+2008;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;353
+2008;Schwingen;Kurse/Lager;;3
+2008;Schwingen;Leitende;;6
+2008;Schwingen;Teilnehmende;männlich;29
+2008;Schwingen;Teilnehmende;weiblich;1
+2008;Segeln;Kurse/Lager;;2
+2008;Segeln;Leitende;;13
+2008;Segeln;Teilnehmende;männlich;11
+2008;Segeln;Teilnehmende;weiblich;7
+2008;Skifahren;Kurse/Lager;;3
+2008;Skifahren;Leitende;;12
+2008;Skifahren;Teilnehmende;männlich;23
+2008;Skifahren;Teilnehmende;weiblich;18
+2008;Skilanglauf;Kurse/Lager;;1
+2008;Skilanglauf;Leitende;;2
+2008;Skilanglauf;Teilnehmende;männlich;5
+2008;Skilanglauf;Teilnehmende;weiblich;0
+2008;Skitouren;Kurse/Lager;;3
+2008;Skitouren;Leitende;;16
+2008;Skitouren;Teilnehmende;männlich;22
+2008;Skitouren;Teilnehmende;weiblich;9
+2008;Snowboard;Kurse/Lager;;1
+2008;Snowboard;Leitende;;2
+2008;Snowboard;Teilnehmende;männlich;4
+2008;Snowboard;Teilnehmende;weiblich;1
+2008;Speedskating;Kurse/Lager;;2
+2008;Speedskating;Leitende;;5
+2008;Speedskating;Teilnehmende;männlich;10
+2008;Speedskating;Teilnehmende;weiblich;14
+2008;Sportklettern;Kurse/Lager;;4
+2008;Sportklettern;Leitende;;18
+2008;Sportklettern;Teilnehmende;männlich;46
+2008;Sportklettern;Teilnehmende;weiblich;41
+2008;Squash;Kurse/Lager;;2
+2008;Squash;Leitende;;3
+2008;Squash;Teilnehmende;männlich;12
+2008;Squash;Teilnehmende;weiblich;14
+2008;Tennis;Kurse/Lager;;289
+2008;Tennis;Leitende;;319
+2008;Tennis;Teilnehmende;männlich;799
+2008;Tennis;Teilnehmende;weiblich;470
+2008;Tischtennis;Kurse/Lager;;14
+2008;Tischtennis;Leitende;;65
+2008;Tischtennis;Teilnehmende;männlich;123
+2008;Tischtennis;Teilnehmende;weiblich;11
+2008;Turnen und Rhönrad;Kurse/Lager;;262
+2008;Turnen und Rhönrad;Leitende;;617
+2008;Turnen und Rhönrad;Teilnehmende;männlich;1033
+2008;Turnen und Rhönrad;Teilnehmende;weiblich;2151
+2008;Unihockey;Kurse/Lager;;40
+2008;Unihockey;Leitende;;68
+2008;Unihockey;Teilnehmende;männlich;427
+2008;Unihockey;Teilnehmende;weiblich;55
+2008;Volleyball;Kurse/Lager;;78
+2008;Volleyball;Leitende;;140
+2008;Volleyball;Teilnehmende;männlich;156
+2008;Volleyball;Teilnehmende;weiblich;775
+2009;Badminton;Kurse/Lager;;42
+2009;Badminton;Leitende;;132
+2009;Badminton;Teilnehmende;männlich;177
+2009;Badminton;Teilnehmende;weiblich;121
+2009;Baseball/Softball;Kurse/Lager;;8
+2009;Baseball/Softball;Leitende;;16
+2009;Baseball/Softball;Teilnehmende;männlich;33
+2009;Baseball/Softball;Teilnehmende;weiblich;10
+2009;Basketball und Korbball;Kurse/Lager;;28
+2009;Basketball und Korbball;Leitende;;56
+2009;Basketball und Korbball;Teilnehmende;männlich;205
+2009;Basketball und Korbball;Teilnehmende;weiblich;74
+2009;Bergsport;Kurse/Lager;;3
+2009;Bergsport;Leitende;;22
+2009;Bergsport;Teilnehmende;männlich;20
+2009;Bergsport;Teilnehmende;weiblich;11
+2009;Curling;Kurse/Lager;;4
+2009;Curling;Leitende;;15
+2009;Curling;Teilnehmende;männlich;18
+2009;Curling;Teilnehmende;weiblich;4
+2009;Diverse Sportarten;Kurse/Lager;;1
+2009;Diverse Sportarten;Leitende;;2
+2009;Diverse Sportarten;Teilnehmende;männlich;6
+2009;Diverse Sportarten;Teilnehmende;weiblich;0
+2009;Eishockey;Kurse/Lager;;9
+2009;Eishockey;Leitende;;26
+2009;Eishockey;Teilnehmende;männlich;89
+2009;Eishockey;Teilnehmende;weiblich;4
+2009;Eiskunstlauf/Eistanz;Kurse/Lager;;45
+2009;Eiskunstlauf/Eistanz;Leitende;;64
+2009;Eiskunstlauf/Eistanz;Teilnehmende;männlich;12
+2009;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;301
+2009;Faustball;Kurse/Lager;;2
+2009;Faustball;Leitende;;4
+2009;Faustball;Teilnehmende;männlich;19
+2009;Faustball;Teilnehmende;weiblich;0
+2009;Fussball;Kurse/Lager;;333
+2009;Fussball;Leitende;;477
+2009;Fussball;Teilnehmende;männlich;4338
+2009;Fussball;Teilnehmende;weiblich;342
+2009;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;33
+2009;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;88
+2009;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;90
+2009;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;330
+2009;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;19
+2009;Gymnastik, Tanz und Tanzsport;Leitende;;28
+2009;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;8
+2009;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;181
+2009;Handball;Kurse/Lager;;61
+2009;Handball;Leitende;;126
+2009;Handball;Teilnehmende;männlich;554
+2009;Handball;Teilnehmende;weiblich;182
+2009;Judo;Kurse/Lager;;87
+2009;Judo;Leitende;;267
+2009;Judo;Teilnehmende;männlich;517
+2009;Judo;Teilnehmende;weiblich;239
+2009;Ju-Jitsu;Kurse/Lager;;12
+2009;Ju-Jitsu;Leitende;;31
+2009;Ju-Jitsu;Teilnehmende;männlich;93
+2009;Ju-Jitsu;Teilnehmende;weiblich;50
+2009;Karate;Kurse/Lager;;15
+2009;Karate;Leitende;;57
+2009;Karate;Teilnehmende;männlich;121
+2009;Karate;Teilnehmende;weiblich;84
+2009;Kids und Allround;Kurse/Lager;;224
+2009;Kids und Allround;Leitende;;368
+2009;Kids und Allround;Teilnehmende;männlich;1332
+2009;Kids und Allround;Teilnehmende;weiblich;893
+2009;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;540
+2009;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;825
+2009;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;3036
+2009;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;3002
+2009;Lagersport/Trekking;Kurse/Lager;;89
+2009;Lagersport/Trekking;Leitende;;359
+2009;Lagersport/Trekking;Teilnehmende;männlich;1226
+2009;Lagersport/Trekking;Teilnehmende;weiblich;1164
+2009;Leichtathletik;Kurse/Lager;;64
+2009;Leichtathletik;Leitende;;147
+2009;Leichtathletik;Teilnehmende;männlich;284
+2009;Leichtathletik;Teilnehmende;weiblich;437
+2009;Orientierungslauf;Kurse/Lager;;2
+2009;Orientierungslauf;Leitende;;12
+2009;Orientierungslauf;Teilnehmende;männlich;12
+2009;Orientierungslauf;Teilnehmende;weiblich;16
+2009;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;3
+2009;Pferdesport (Reiten und Voltigieren);Leitende;;3
+2009;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;0
+2009;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;12
+2009;Polysportive Lager und Kurse;Kurse/Lager;;107
+2009;Polysportive Lager und Kurse;Leitende;;512
+2009;Polysportive Lager und Kurse;Teilnehmende;männlich;2021
+2009;Polysportive Lager und Kurse;Teilnehmende;weiblich;1805
+2009;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;13
+2009;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;27
+2009;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;30
+2009;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;16
+2009;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;149
+2009;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;251
+2009;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;562
+2009;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;516
+2009;Schwingen;Kurse/Lager;;4
+2009;Schwingen;Leitende;;7
+2009;Schwingen;Teilnehmende;männlich;29
+2009;Schwingen;Teilnehmende;weiblich;1
+2009;Segeln;Kurse/Lager;;2
+2009;Segeln;Leitende;;8
+2009;Segeln;Teilnehmende;männlich;11
+2009;Segeln;Teilnehmende;weiblich;13
+2009;Skifahren;Kurse/Lager;;10
+2009;Skifahren;Leitende;;33
+2009;Skifahren;Teilnehmende;männlich;108
+2009;Skifahren;Teilnehmende;weiblich;121
+2009;Skilanglauf;Kurse/Lager;;3
+2009;Skilanglauf;Leitende;;9
+2009;Skilanglauf;Teilnehmende;männlich;14
+2009;Skilanglauf;Teilnehmende;weiblich;0
+2009;Skitouren;Kurse/Lager;;4
+2009;Skitouren;Leitende;;16
+2009;Skitouren;Teilnehmende;männlich;40
+2009;Skitouren;Teilnehmende;weiblich;12
+2009;Snowboard;Kurse/Lager;;2
+2009;Snowboard;Leitende;;6
+2009;Snowboard;Teilnehmende;männlich;28
+2009;Snowboard;Teilnehmende;weiblich;12
+2009;Speedskating;Kurse/Lager;;2
+2009;Speedskating;Leitende;;2
+2009;Speedskating;Teilnehmende;männlich;6
+2009;Speedskating;Teilnehmende;weiblich;6
+2009;Sportklettern;Kurse/Lager;;1
+2009;Sportklettern;Leitende;;11
+2009;Sportklettern;Teilnehmende;männlich;5
+2009;Sportklettern;Teilnehmende;weiblich;3
+2009;Squash;Kurse/Lager;;8
+2009;Squash;Leitende;;17
+2009;Squash;Teilnehmende;männlich;41
+2009;Squash;Teilnehmende;weiblich;24
+2009;Tennis;Kurse/Lager;;184
+2009;Tennis;Leitende;;210
+2009;Tennis;Teilnehmende;männlich;614
+2009;Tennis;Teilnehmende;weiblich;230
+2009;Tischtennis;Kurse/Lager;;7
+2009;Tischtennis;Leitende;;25
+2009;Tischtennis;Teilnehmende;männlich;68
+2009;Tischtennis;Teilnehmende;weiblich;9
+2009;Turnen und Rhönrad;Kurse/Lager;;279
+2009;Turnen und Rhönrad;Leitende;;784
+2009;Turnen und Rhönrad;Teilnehmende;männlich;1243
+2009;Turnen und Rhönrad;Teilnehmende;weiblich;1956
+2009;Unihockey;Kurse/Lager;;30
+2009;Unihockey;Leitende;;45
+2009;Unihockey;Teilnehmende;männlich;274
+2009;Unihockey;Teilnehmende;weiblich;62
+2009;Volleyball;Kurse/Lager;;69
+2009;Volleyball;Leitende;;130
+2009;Volleyball;Teilnehmende;männlich;86
+2009;Volleyball;Teilnehmende;weiblich;580
+2010;Badminton;Kurse/Lager;;45
+2010;Badminton;Leitende;;106
+2010;Badminton;Teilnehmende;männlich;280
+2010;Badminton;Teilnehmende;weiblich;149
+2010;Baseball/Softball;Kurse/Lager;;6
+2010;Baseball/Softball;Leitende;;12
+2010;Baseball/Softball;Teilnehmende;männlich;25
+2010;Baseball/Softball;Teilnehmende;weiblich;12
+2010;Basketball und Korbball;Kurse/Lager;;40
+2010;Basketball und Korbball;Leitende;;102
+2010;Basketball und Korbball;Teilnehmende;männlich;274
+2010;Basketball und Korbball;Teilnehmende;weiblich;93
+2010;Bergsport;Kurse/Lager;;2
+2010;Bergsport;Leitende;;26
+2010;Bergsport;Teilnehmende;männlich;29
+2010;Bergsport;Teilnehmende;weiblich;23
+2010;Curling;Kurse/Lager;;5
+2010;Curling;Leitende;;13
+2010;Curling;Teilnehmende;männlich;23
+2010;Curling;Teilnehmende;weiblich;7
+2010;Diverse Sportarten;Kurse/Lager;;1
+2010;Diverse Sportarten;Leitende;;2
+2010;Diverse Sportarten;Teilnehmende;männlich;11
+2010;Diverse Sportarten;Teilnehmende;weiblich;4
+2010;Eishockey;Kurse/Lager;;19
+2010;Eishockey;Leitende;;35
+2010;Eishockey;Teilnehmende;männlich;154
+2010;Eishockey;Teilnehmende;weiblich;7
+2010;Eiskunstlauf/Eistanz;Kurse/Lager;;45
+2010;Eiskunstlauf/Eistanz;Leitende;;69
+2010;Eiskunstlauf/Eistanz;Teilnehmende;männlich;11
+2010;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;347
+2010;Fussball;Kurse/Lager;;319
+2010;Fussball;Leitende;;485
+2010;Fussball;Teilnehmende;männlich;3685
+2010;Fussball;Teilnehmende;weiblich;399
+2010;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;34
+2010;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;75
+2010;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;93
+2010;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;290
+2010;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;16
+2010;Gymnastik, Tanz und Tanzsport;Leitende;;19
+2010;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;8
+2010;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;147
+2010;Handball;Kurse/Lager;;67
+2010;Handball;Leitende;;150
+2010;Handball;Teilnehmende;männlich;504
+2010;Handball;Teilnehmende;weiblich;231
+2010;Judo;Kurse/Lager;;97
+2010;Judo;Leitende;;170
+2010;Judo;Teilnehmende;männlich;519
+2010;Judo;Teilnehmende;weiblich;133
+2010;Ju-Jitsu;Kurse/Lager;;15
+2010;Ju-Jitsu;Leitende;;30
+2010;Ju-Jitsu;Teilnehmende;männlich;72
+2010;Ju-Jitsu;Teilnehmende;weiblich;44
+2010;Karate;Kurse/Lager;;21
+2010;Karate;Leitende;;73
+2010;Karate;Teilnehmende;männlich;139
+2010;Karate;Teilnehmende;weiblich;124
+2010;Kids und Allround;Kurse/Lager;;148
+2010;Kids und Allround;Leitende;;313
+2010;Kids und Allround;Teilnehmende;männlich;847
+2010;Kids und Allround;Teilnehmende;weiblich;1005
+2010;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;121
+2010;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;255
+2010;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;2066
+2010;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;1687
+2010;Lagersport/Trekking;Kurse/Lager;;73
+2010;Lagersport/Trekking;Leitende;;292
+2010;Lagersport/Trekking;Teilnehmende;männlich;858
+2010;Lagersport/Trekking;Teilnehmende;weiblich;971
+2010;Leichtathletik;Kurse/Lager;;73
+2010;Leichtathletik;Leitende;;156
+2010;Leichtathletik;Teilnehmende;männlich;371
+2010;Leichtathletik;Teilnehmende;weiblich;472
+2010;Orientierungslauf;Kurse/Lager;;3
+2010;Orientierungslauf;Leitende;;15
+2010;Orientierungslauf;Teilnehmende;männlich;22
+2010;Orientierungslauf;Teilnehmende;weiblich;15
+2010;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;5
+2010;Pferdesport (Reiten und Voltigieren);Leitende;;7
+2010;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;0
+2010;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;19
+2010;Polysportive Lager und Kurse;Kurse/Lager;;101
+2010;Polysportive Lager und Kurse;Leitende;;505
+2010;Polysportive Lager und Kurse;Teilnehmende;männlich;1911
+2010;Polysportive Lager und Kurse;Teilnehmende;weiblich;1860
+2010;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;22
+2010;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;74
+2010;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;134
+2010;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;12
+2010;Schiessen (Gewehr und Pistole);Kurse/Lager;;12
+2010;Schiessen (Gewehr und Pistole);Leitende;;21
+2010;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;65
+2010;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;14
+2010;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;107
+2010;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;192
+2010;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;399
+2010;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;424
+2010;Schwingen;Kurse/Lager;;8
+2010;Schwingen;Leitende;;15
+2010;Schwingen;Teilnehmende;männlich;48
+2010;Schwingen;Teilnehmende;weiblich;0
+2010;Segeln;Kurse/Lager;;2
+2010;Segeln;Leitende;;8
+2010;Segeln;Teilnehmende;männlich;6
+2010;Segeln;Teilnehmende;weiblich;19
+2010;Skifahren;Kurse/Lager;;19
+2010;Skifahren;Leitende;;62
+2010;Skifahren;Teilnehmende;männlich;347
+2010;Skifahren;Teilnehmende;weiblich;339
+2010;Skilanglauf;Kurse/Lager;;1
+2010;Skilanglauf;Leitende;;3
+2010;Skilanglauf;Teilnehmende;männlich;4
+2010;Skilanglauf;Teilnehmende;weiblich;0
+2010;Skitouren;Kurse/Lager;;4
+2010;Skitouren;Leitende;;20
+2010;Skitouren;Teilnehmende;männlich;41
+2010;Skitouren;Teilnehmende;weiblich;8
+2010;Snowboard;Kurse/Lager;;5
+2010;Snowboard;Leitende;;13
+2010;Snowboard;Teilnehmende;männlich;69
+2010;Snowboard;Teilnehmende;weiblich;61
+2010;Sportklettern;Kurse/Lager;;3
+2010;Sportklettern;Leitende;;15
+2010;Sportklettern;Teilnehmende;männlich;25
+2010;Sportklettern;Teilnehmende;weiblich;28
+2010;Squash;Kurse/Lager;;14
+2010;Squash;Leitende;;59
+2010;Squash;Teilnehmende;männlich;89
+2010;Squash;Teilnehmende;weiblich;25
+2010;Synchronized Skating;Kurse/Lager;;4
+2010;Synchronized Skating;Leitende;;4
+2010;Synchronized Skating;Teilnehmende;männlich;0
+2010;Synchronized Skating;Teilnehmende;weiblich;48
+2010;Tennis;Kurse/Lager;;201
+2010;Tennis;Leitende;;256
+2010;Tennis;Teilnehmende;männlich;669
+2010;Tennis;Teilnehmende;weiblich;302
+2010;Tischtennis;Kurse/Lager;;12
+2010;Tischtennis;Leitende;;51
+2010;Tischtennis;Teilnehmende;männlich;78
+2010;Tischtennis;Teilnehmende;weiblich;16
+2010;Turnen und Rhönrad;Kurse/Lager;;242
+2010;Turnen und Rhönrad;Leitende;;659
+2010;Turnen und Rhönrad;Teilnehmende;männlich;1091
+2010;Turnen und Rhönrad;Teilnehmende;weiblich;1729
+2010;Unihockey;Kurse/Lager;;23
+2010;Unihockey;Leitende;;38
+2010;Unihockey;Teilnehmende;männlich;228
+2010;Unihockey;Teilnehmende;weiblich;42
+2010;Volleyball;Kurse/Lager;;80
+2010;Volleyball;Leitende;;131
+2010;Volleyball;Teilnehmende;männlich;120
+2010;Volleyball;Teilnehmende;weiblich;705
+2011;Badminton;Kurse/Lager;;71
+2011;Badminton;Leitende;;114
+2011;Badminton;Teilnehmende;männlich;306
+2011;Badminton;Teilnehmende;weiblich;195
+2011;Baseball/Softball;Kurse/Lager;;6
+2011;Baseball/Softball;Leitende;;6
+2011;Baseball/Softball;Teilnehmende;männlich;32
+2011;Baseball/Softball;Teilnehmende;weiblich;4
+2011;Basketball und Korbball;Kurse/Lager;;47
+2011;Basketball und Korbball;Leitende;;86
+2011;Basketball und Korbball;Teilnehmende;männlich;230
+2011;Basketball und Korbball;Teilnehmende;weiblich;123
+2011;Bergsport;Kurse/Lager;;6
+2011;Bergsport;Leitende;;21
+2011;Bergsport;Teilnehmende;männlich;94
+2011;Bergsport;Teilnehmende;weiblich;48
+2011;Curling;Kurse/Lager;;6
+2011;Curling;Leitende;;7
+2011;Curling;Teilnehmende;männlich;24
+2011;Curling;Teilnehmende;weiblich;1
+2011;Diverse Sportarten;Kurse/Lager;;2
+2011;Diverse Sportarten;Leitende;;2
+2011;Diverse Sportarten;Teilnehmende;männlich;10
+2011;Diverse Sportarten;Teilnehmende;weiblich;0
+2011;Eishockey;Kurse/Lager;;21
+2011;Eishockey;Leitende;;29
+2011;Eishockey;Teilnehmende;männlich;179
+2011;Eishockey;Teilnehmende;weiblich;13
+2011;Eiskunstlauf/Eistanz;Kurse/Lager;;46
+2011;Eiskunstlauf/Eistanz;Leitende;;60
+2011;Eiskunstlauf/Eistanz;Teilnehmende;männlich;2
+2011;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;292
+2011;Fussball;Kurse/Lager;;471
+2011;Fussball;Leitende;;590
+2011;Fussball;Teilnehmende;männlich;5060
+2011;Fussball;Teilnehmende;weiblich;514
+2011;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;86
+2011;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;138
+2011;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;110
+2011;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;612
+2011;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;33
+2011;Gymnastik, Tanz und Tanzsport;Leitende;;32
+2011;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;8
+2011;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;190
+2011;Handball;Kurse/Lager;;114
+2011;Handball;Leitende;;186
+2011;Handball;Teilnehmende;männlich;668
+2011;Handball;Teilnehmende;weiblich;310
+2011;Judo;Kurse/Lager;;95
+2011;Judo;Leitende;;207
+2011;Judo;Teilnehmende;männlich;475
+2011;Judo;Teilnehmende;weiblich;120
+2011;Ju-Jitsu;Kurse/Lager;;22
+2011;Ju-Jitsu;Leitende;;28
+2011;Ju-Jitsu;Teilnehmende;männlich;84
+2011;Ju-Jitsu;Teilnehmende;weiblich;41
+2011;Karate;Kurse/Lager;;20
+2011;Karate;Leitende;;58
+2011;Karate;Teilnehmende;männlich;137
+2011;Karate;Teilnehmende;weiblich;111
+2011;Kids und Allround;Kurse/Lager;;299
+2011;Kids und Allround;Leitende;;401
+2011;Kids und Allround;Teilnehmende;männlich;1194
+2011;Kids und Allround;Teilnehmende;weiblich;1370
+2011;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;115
+2011;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;159
+2011;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;1190
+2011;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;1000
+2011;Lagersport/Trekking;Kurse/Lager;;129
+2011;Lagersport/Trekking;Leitende;;326
+2011;Lagersport/Trekking;Teilnehmende;männlich;1103
+2011;Lagersport/Trekking;Teilnehmende;weiblich;1051
+2011;Leichtathletik;Kurse/Lager;;105
+2011;Leichtathletik;Leitende;;189
+2011;Leichtathletik;Teilnehmende;männlich;430
+2011;Leichtathletik;Teilnehmende;weiblich;566
+2011;Orientierungslauf;Kurse/Lager;;6
+2011;Orientierungslauf;Leitende;;20
+2011;Orientierungslauf;Teilnehmende;männlich;17
+2011;Orientierungslauf;Teilnehmende;weiblich;12
+2011;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;10
+2011;Pferdesport (Reiten und Voltigieren);Leitende;;10
+2011;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;0
+2011;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;29
+2011;Polysportive Lager und Kurse;Kurse/Lager;;162
+2011;Polysportive Lager und Kurse;Leitende;;560
+2011;Polysportive Lager und Kurse;Teilnehmende;männlich;1971
+2011;Polysportive Lager und Kurse;Teilnehmende;weiblich;1859
+2011;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;36
+2011;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;71
+2011;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;134
+2011;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;16
+2011;Schiessen (Gewehr und Pistole);Kurse/Lager;;41
+2011;Schiessen (Gewehr und Pistole);Leitende;;38
+2011;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;146
+2011;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;21
+2011;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;158
+2011;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;202
+2011;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;494
+2011;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;491
+2011;Schwingen;Kurse/Lager;;10
+2011;Schwingen;Leitende;;13
+2011;Schwingen;Teilnehmende;männlich;36
+2011;Schwingen;Teilnehmende;weiblich;0
+2011;Segeln;Kurse/Lager;;3
+2011;Segeln;Leitende;;4
+2011;Segeln;Teilnehmende;männlich;12
+2011;Segeln;Teilnehmende;weiblich;7
+2011;Skifahren;Kurse/Lager;;29
+2011;Skifahren;Leitende;;55
+2011;Skifahren;Teilnehmende;männlich;262
+2011;Skifahren;Teilnehmende;weiblich;254
+2011;Skilanglauf;Kurse/Lager;;4
+2011;Skilanglauf;Leitende;;6
+2011;Skilanglauf;Teilnehmende;männlich;3
+2011;Skilanglauf;Teilnehmende;weiblich;3
+2011;Skitouren;Kurse/Lager;;4
+2011;Skitouren;Leitende;;13
+2011;Skitouren;Teilnehmende;männlich;43
+2011;Skitouren;Teilnehmende;weiblich;33
+2011;Snowboard;Kurse/Lager;;6
+2011;Snowboard;Leitende;;10
+2011;Snowboard;Teilnehmende;männlich;45
+2011;Snowboard;Teilnehmende;weiblich;50
+2011;Sportklettern;Kurse/Lager;;15
+2011;Sportklettern;Leitende;;44
+2011;Sportklettern;Teilnehmende;männlich;166
+2011;Sportklettern;Teilnehmende;weiblich;91
+2011;Squash;Kurse/Lager;;24
+2011;Squash;Leitende;;64
+2011;Squash;Teilnehmende;männlich;90
+2011;Squash;Teilnehmende;weiblich;39
+2011;Synchronized Skating;Kurse/Lager;;7
+2011;Synchronized Skating;Leitende;;8
+2011;Synchronized Skating;Teilnehmende;männlich;0
+2011;Synchronized Skating;Teilnehmende;weiblich;62
+2011;Tennis;Kurse/Lager;;232
+2011;Tennis;Leitende;;314
+2011;Tennis;Teilnehmende;männlich;667
+2011;Tennis;Teilnehmende;weiblich;281
+2011;Tischtennis;Kurse/Lager;;18
+2011;Tischtennis;Leitende;;49
+2011;Tischtennis;Teilnehmende;männlich;74
+2011;Tischtennis;Teilnehmende;weiblich;17
+2011;Turnen und Rhönrad;Kurse/Lager;;399
+2011;Turnen und Rhönrad;Leitende;;781
+2011;Turnen und Rhönrad;Teilnehmende;männlich;1275
+2011;Turnen und Rhönrad;Teilnehmende;weiblich;1946
+2011;Unihockey;Kurse/Lager;;44
+2011;Unihockey;Leitende;;55
+2011;Unihockey;Teilnehmende;männlich;308
+2011;Unihockey;Teilnehmende;weiblich;59
+2011;Volleyball;Kurse/Lager;;106
+2011;Volleyball;Leitende;;152
+2011;Volleyball;Teilnehmende;männlich;162
+2011;Volleyball;Teilnehmende;weiblich;654
+2012;Badminton;Kurse/Lager;;51
+2012;Badminton;Leitende;;131
+2012;Badminton;Teilnehmende;männlich;269
+2012;Badminton;Teilnehmende;weiblich;176
+2012;Baseball/Softball;Kurse/Lager;;9
+2012;Baseball/Softball;Leitende;;26
+2012;Baseball/Softball;Teilnehmende;männlich;42
+2012;Baseball/Softball;Teilnehmende;weiblich;14
+2012;Basketball und Korbball;Kurse/Lager;;33
+2012;Basketball und Korbball;Leitende;;88
+2012;Basketball und Korbball;Teilnehmende;männlich;245
+2012;Basketball und Korbball;Teilnehmende;weiblich;82
+2012;Bergsport;Kurse/Lager;;1
+2012;Bergsport;Leitende;;9
+2012;Bergsport;Teilnehmende;männlich;35
+2012;Bergsport;Teilnehmende;weiblich;15
+2012;Curling;Kurse/Lager;;6
+2012;Curling;Leitende;;21
+2012;Curling;Teilnehmende;männlich;38
+2012;Curling;Teilnehmende;weiblich;3
+2012;Diverse Sportarten;Kurse/Lager;;4
+2012;Diverse Sportarten;Leitende;;10
+2012;Diverse Sportarten;Teilnehmende;männlich;29
+2012;Diverse Sportarten;Teilnehmende;weiblich;10
+2012;Eishockey;Kurse/Lager;;18
+2012;Eishockey;Leitende;;32
+2012;Eishockey;Teilnehmende;männlich;162
+2012;Eishockey;Teilnehmende;weiblich;6
+2012;Eiskunstlauf/Eistanz;Kurse/Lager;;41
+2012;Eiskunstlauf/Eistanz;Leitende;;66
+2012;Eiskunstlauf/Eistanz;Teilnehmende;männlich;4
+2012;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;275
+2012;Fussball;Kurse/Lager;;318
+2012;Fussball;Leitende;;532
+2012;Fussball;Teilnehmende;männlich;3943
+2012;Fussball;Teilnehmende;weiblich;511
+2012;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;45
+2012;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;115
+2012;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;83
+2012;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;439
+2012;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;23
+2012;Gymnastik, Tanz und Tanzsport;Leitende;;37
+2012;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;8
+2012;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;233
+2012;Handball;Kurse/Lager;;59
+2012;Handball;Leitende;;138
+2012;Handball;Teilnehmende;männlich;459
+2012;Handball;Teilnehmende;weiblich;173
+2012;Judo;Kurse/Lager;;39
+2012;Judo;Leitende;;108
+2012;Judo;Teilnehmende;männlich;246
+2012;Judo;Teilnehmende;weiblich;82
+2012;Ju-Jitsu;Kurse/Lager;;8
+2012;Ju-Jitsu;Leitende;;26
+2012;Ju-Jitsu;Teilnehmende;männlich;57
+2012;Ju-Jitsu;Teilnehmende;weiblich;26
+2012;Karate;Kurse/Lager;;15
+2012;Karate;Leitende;;45
+2012;Karate;Teilnehmende;männlich;119
+2012;Karate;Teilnehmende;weiblich;86
+2012;Kids und Allround;Kurse/Lager;;222
+2012;Kids und Allround;Leitende;;513
+2012;Kids und Allround;Teilnehmende;männlich;1462
+2012;Kids und Allround;Teilnehmende;weiblich;1488
+2012;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;90
+2012;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;203
+2012;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;1175
+2012;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;896
+2012;Lagersport/Trekking;Kurse/Lager;;74
+2012;Lagersport/Trekking;Leitende;;373
+2012;Lagersport/Trekking;Teilnehmende;männlich;944
+2012;Lagersport/Trekking;Teilnehmende;weiblich;954
+2012;Leichtathletik;Kurse/Lager;;84
+2012;Leichtathletik;Leitende;;203
+2012;Leichtathletik;Teilnehmende;männlich;449
+2012;Leichtathletik;Teilnehmende;weiblich;612
+2012;Orientierungslauf;Kurse/Lager;;2
+2012;Orientierungslauf;Leitende;;13
+2012;Orientierungslauf;Teilnehmende;männlich;10
+2012;Orientierungslauf;Teilnehmende;weiblich;2
+2012;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;22
+2012;Pferdesport (Reiten und Voltigieren);Leitende;;24
+2012;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;6
+2012;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;91
+2012;Polysportive Lager und Kurse;Kurse/Lager;;99
+2012;Polysportive Lager und Kurse;Leitende;;689
+2012;Polysportive Lager und Kurse;Teilnehmende;männlich;1996
+2012;Polysportive Lager und Kurse;Teilnehmende;weiblich;1904
+2012;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;16
+2012;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;50
+2012;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;82
+2012;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;16
+2012;Schiessen (Gewehr und Pistole);Kurse/Lager;;28
+2012;Schiessen (Gewehr und Pistole);Leitende;;67
+2012;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;168
+2012;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;34
+2012;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;173
+2012;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;302
+2012;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;640
+2012;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;718
+2012;Schwingen;Kurse/Lager;;4
+2012;Schwingen;Leitende;;10
+2012;Schwingen;Teilnehmende;männlich;22
+2012;Schwingen;Teilnehmende;weiblich;0
+2012;Segeln;Kurse/Lager;;2
+2012;Segeln;Leitende;;10
+2012;Segeln;Teilnehmende;männlich;16
+2012;Segeln;Teilnehmende;weiblich;6
+2012;Skifahren;Kurse/Lager;;14
+2012;Skifahren;Leitende;;63
+2012;Skifahren;Teilnehmende;männlich;215
+2012;Skifahren;Teilnehmende;weiblich;189
+2012;Skilanglauf;Kurse/Lager;;2
+2012;Skilanglauf;Leitende;;9
+2012;Skilanglauf;Teilnehmende;männlich;2
+2012;Skilanglauf;Teilnehmende;weiblich;6
+2012;Skitouren;Kurse/Lager;;2
+2012;Skitouren;Leitende;;20
+2012;Skitouren;Teilnehmende;männlich;52
+2012;Skitouren;Teilnehmende;weiblich;17
+2012;Snowboard;Kurse/Lager;;4
+2012;Snowboard;Leitende;;18
+2012;Snowboard;Teilnehmende;männlich;45
+2012;Snowboard;Teilnehmende;weiblich;71
+2012;Speedskating;Kurse/Lager;;3
+2012;Speedskating;Leitende;;6
+2012;Speedskating;Teilnehmende;männlich;9
+2012;Speedskating;Teilnehmende;weiblich;2
+2012;Sportklettern;Kurse/Lager;;6
+2012;Sportklettern;Leitende;;25
+2012;Sportklettern;Teilnehmende;männlich;38
+2012;Sportklettern;Teilnehmende;weiblich;31
+2012;Squash;Kurse/Lager;;22
+2012;Squash;Leitende;;60
+2012;Squash;Teilnehmende;männlich;133
+2012;Squash;Teilnehmende;weiblich;30
+2012;Synchronized Skating;Kurse/Lager;;5
+2012;Synchronized Skating;Leitende;;9
+2012;Synchronized Skating;Teilnehmende;männlich;0
+2012;Synchronized Skating;Teilnehmende;weiblich;59
+2012;Tennis;Kurse/Lager;;216
+2012;Tennis;Leitende;;325
+2012;Tennis;Teilnehmende;männlich;772
+2012;Tennis;Teilnehmende;weiblich;333
+2012;Tischtennis;Kurse/Lager;;7
+2012;Tischtennis;Leitende;;35
+2012;Tischtennis;Teilnehmende;männlich;45
+2012;Tischtennis;Teilnehmende;weiblich;2
+2012;Turnen und Rhönrad;Kurse/Lager;;180
+2012;Turnen und Rhönrad;Leitende;;560
+2012;Turnen und Rhönrad;Teilnehmende;männlich;720
+2012;Turnen und Rhönrad;Teilnehmende;weiblich;1285
+2012;Unihockey;Kurse/Lager;;43
+2012;Unihockey;Leitende;;96
+2012;Unihockey;Teilnehmende;männlich;428
+2012;Unihockey;Teilnehmende;weiblich;81
+2012;Volleyball;Kurse/Lager;;63
+2012;Volleyball;Leitende;;123
+2012;Volleyball;Teilnehmende;männlich;78
+2012;Volleyball;Teilnehmende;weiblich;538
+2013;Badminton;Kurse/Lager;;55
+2013;Badminton;Leitende;;129
+2013;Badminton;Teilnehmende;männlich;310
+2013;Badminton;Teilnehmende;weiblich;179
+2013;Baseball/Softball;Kurse/Lager;;6
+2013;Baseball/Softball;Leitende;;8
+2013;Baseball/Softball;Teilnehmende;männlich;36
+2013;Baseball/Softball;Teilnehmende;weiblich;1
+2013;Basketball und Korbball;Kurse/Lager;;84
+2013;Basketball und Korbball;Leitende;;196
+2013;Basketball und Korbball;Teilnehmende;männlich;555
+2013;Basketball und Korbball;Teilnehmende;weiblich;194
+2013;Bergsport;Kurse/Lager;;1
+2013;Bergsport;Leitende;;12
+2013;Bergsport;Teilnehmende;männlich;47
+2013;Bergsport;Teilnehmende;weiblich;2
+2013;Curling;Kurse/Lager;;5
+2013;Curling;Leitende;;13
+2013;Curling;Teilnehmende;männlich;22
+2013;Curling;Teilnehmende;weiblich;1
+2013;Diverse Sportarten;Kurse/Lager;;4
+2013;Diverse Sportarten;Leitende;;5
+2013;Diverse Sportarten;Teilnehmende;männlich;17
+2013;Diverse Sportarten;Teilnehmende;weiblich;7
+2013;Eishockey;Kurse/Lager;;19
+2013;Eishockey;Leitende;;33
+2013;Eishockey;Teilnehmende;männlich;293
+2013;Eishockey;Teilnehmende;weiblich;22
+2013;Eiskunstlauf/Eistanz;Kurse/Lager;;46
+2013;Eiskunstlauf/Eistanz;Leitende;;88
+2013;Eiskunstlauf/Eistanz;Teilnehmende;männlich;19
+2013;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;319
+2013;Faustball;Kurse/Lager;;3
+2013;Faustball;Leitende;;6
+2013;Faustball;Teilnehmende;männlich;12
+2013;Faustball;Teilnehmende;weiblich;0
+2013;Fussball;Kurse/Lager;;538
+2013;Fussball;Leitende;;757
+2013;Fussball;Teilnehmende;männlich;6291
+2013;Fussball;Teilnehmende;weiblich;772
+2013;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;152
+2013;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;230
+2013;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;284
+2013;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;965
+2013;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;39
+2013;Gymnastik, Tanz und Tanzsport;Leitende;;55
+2013;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;25
+2013;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;368
+2013;Handball;Kurse/Lager;;105
+2013;Handball;Leitende;;206
+2013;Handball;Teilnehmende;männlich;799
+2013;Handball;Teilnehmende;weiblich;255
+2013;Judo;Kurse/Lager;;82
+2013;Judo;Leitende;;155
+2013;Judo;Teilnehmende;männlich;596
+2013;Judo;Teilnehmende;weiblich;166
+2013;Ju-Jitsu;Kurse/Lager;;13
+2013;Ju-Jitsu;Leitende;;25
+2013;Ju-Jitsu;Teilnehmende;männlich;91
+2013;Ju-Jitsu;Teilnehmende;weiblich;29
+2013;Karate;Kurse/Lager;;45
+2013;Karate;Leitende;;89
+2013;Karate;Teilnehmende;männlich;252
+2013;Karate;Teilnehmende;weiblich;204
+2013;Kids und Allround;Kurse/Lager;;271
+2013;Kids und Allround;Leitende;;272
+2013;Kids und Allround;Teilnehmende;männlich;1639
+2013;Kids und Allround;Teilnehmende;weiblich;990
+2013;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;88
+2013;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;204
+2013;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;1396
+2013;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;1126
+2013;Lagersport/Trekking;Kurse/Lager;;92
+2013;Lagersport/Trekking;Leitende;;566
+2013;Lagersport/Trekking;Teilnehmende;männlich;1241
+2013;Lagersport/Trekking;Teilnehmende;weiblich;2029
+2013;Leichtathletik;Kurse/Lager;;94
+2013;Leichtathletik;Leitende;;206
+2013;Leichtathletik;Teilnehmende;männlich;516
+2013;Leichtathletik;Teilnehmende;weiblich;667
+2013;Orientierungslauf;Kurse/Lager;;5
+2013;Orientierungslauf;Leitende;;21
+2013;Orientierungslauf;Teilnehmende;männlich;35
+2013;Orientierungslauf;Teilnehmende;weiblich;19
+2013;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;52
+2013;Pferdesport (Reiten und Voltigieren);Leitende;;52
+2013;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;15
+2013;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;256
+2013;Polysportive Lager und Kurse;Kurse/Lager;;73
+2013;Polysportive Lager und Kurse;Leitende;;328
+2013;Polysportive Lager und Kurse;Teilnehmende;männlich;1683
+2013;Polysportive Lager und Kurse;Teilnehmende;weiblich;1633
+2013;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;20
+2013;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;42
+2013;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;111
+2013;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;38
+2013;Schiessen (Gewehr und Pistole);Kurse/Lager;;26
+2013;Schiessen (Gewehr und Pistole);Leitende;;39
+2013;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;141
+2013;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;35
+2013;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;261
+2013;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;368
+2013;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;980
+2013;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;1030
+2013;Schwingen;Kurse/Lager;;1
+2013;Schwingen;Leitende;;2
+2013;Schwingen;Teilnehmende;männlich;3
+2013;Schwingen;Teilnehmende;weiblich;0
+2013;Segeln;Kurse/Lager;;3
+2013;Segeln;Leitende;;11
+2013;Segeln;Teilnehmende;männlich;9
+2013;Segeln;Teilnehmende;weiblich;6
+2013;Skifahren;Kurse/Lager;;18
+2013;Skifahren;Leitende;;64
+2013;Skifahren;Teilnehmende;männlich;295
+2013;Skifahren;Teilnehmende;weiblich;277
+2013;Skilanglauf;Kurse/Lager;;1
+2013;Skilanglauf;Leitende;;5
+2013;Skilanglauf;Teilnehmende;männlich;1
+2013;Skilanglauf;Teilnehmende;weiblich;3
+2013;Skitouren;Kurse/Lager;;2
+2013;Skitouren;Leitende;;17
+2013;Skitouren;Teilnehmende;männlich;54
+2013;Skitouren;Teilnehmende;weiblich;30
+2013;Snowboard;Kurse/Lager;;1
+2013;Snowboard;Leitende;;5
+2013;Snowboard;Teilnehmende;männlich;19
+2013;Snowboard;Teilnehmende;weiblich;24
+2013;Speedskating;Kurse/Lager;;5
+2013;Speedskating;Leitende;;25
+2013;Speedskating;Teilnehmende;männlich;24
+2013;Speedskating;Teilnehmende;weiblich;2
+2013;Sportklettern;Kurse/Lager;;4
+2013;Sportklettern;Leitende;;23
+2013;Sportklettern;Teilnehmende;männlich;35
+2013;Sportklettern;Teilnehmende;weiblich;22
+2013;Squash;Kurse/Lager;;24
+2013;Squash;Leitende;;49
+2013;Squash;Teilnehmende;männlich;166
+2013;Squash;Teilnehmende;weiblich;23
+2013;Synchronized Skating;Kurse/Lager;;3
+2013;Synchronized Skating;Leitende;;3
+2013;Synchronized Skating;Teilnehmende;männlich;0
+2013;Synchronized Skating;Teilnehmende;weiblich;29
+2013;Tennis;Kurse/Lager;;289
+2013;Tennis;Leitende;;318
+2013;Tennis;Teilnehmende;männlich;969
+2013;Tennis;Teilnehmende;weiblich;385
+2013;Tischtennis;Kurse/Lager;;14
+2013;Tischtennis;Leitende;;38
+2013;Tischtennis;Teilnehmende;männlich;83
+2013;Tischtennis;Teilnehmende;weiblich;12
+2013;Turnen und Rhönrad;Kurse/Lager;;339
+2013;Turnen und Rhönrad;Leitende;;782
+2013;Turnen und Rhönrad;Teilnehmende;männlich;1313
+2013;Turnen und Rhönrad;Teilnehmende;weiblich;2223
+2013;Unihockey;Kurse/Lager;;52
+2013;Unihockey;Leitende;;88
+2013;Unihockey;Teilnehmende;männlich;522
+2013;Unihockey;Teilnehmende;weiblich;85
+2013;Volleyball;Kurse/Lager;;80
+2013;Volleyball;Leitende;;150
+2013;Volleyball;Teilnehmende;männlich;140
+2013;Volleyball;Teilnehmende;weiblich;694
+2014;Badminton;Kurse/Lager;;44
+2014;Badminton;Leitende;;109
+2014;Badminton;Teilnehmende;männlich;256
+2014;Badminton;Teilnehmende;weiblich;161
+2014;Baseball/Softball;Kurse/Lager;;6
+2014;Baseball/Softball;Leitende;;9
+2014;Baseball/Softball;Teilnehmende;männlich;65
+2014;Baseball/Softball;Teilnehmende;weiblich;5
+2014;Basketball und Korbball;Kurse/Lager;;47
+2014;Basketball und Korbball;Leitende;;95
+2014;Basketball und Korbball;Teilnehmende;männlich;333
+2014;Basketball und Korbball;Teilnehmende;weiblich;150
+2014;Bergsport;Kurse/Lager;;1
+2014;Bergsport;Leitende;;3
+2014;Bergsport;Teilnehmende;männlich;2
+2014;Bergsport;Teilnehmende;weiblich;0
+2014;Curling;Kurse/Lager;;2
+2014;Curling;Leitende;;3
+2014;Curling;Teilnehmende;männlich;13
+2014;Curling;Teilnehmende;weiblich;0
+2014;Diverse Sportarten;Kurse/Lager;;1
+2014;Diverse Sportarten;Leitende;;1
+2014;Diverse Sportarten;Teilnehmende;männlich;5
+2014;Diverse Sportarten;Teilnehmende;weiblich;0
+2014;Eishockey;Kurse/Lager;;17
+2014;Eishockey;Leitende;;26
+2014;Eishockey;Teilnehmende;männlich;247
+2014;Eishockey;Teilnehmende;weiblich;34
+2014;Eiskunstlauf/Eistanz;Kurse/Lager;;64
+2014;Eiskunstlauf/Eistanz;Leitende;;116
+2014;Eiskunstlauf/Eistanz;Teilnehmende;männlich;27
+2014;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;486
+2014;Faustball;Kurse/Lager;;1
+2014;Faustball;Leitende;;2
+2014;Faustball;Teilnehmende;männlich;5
+2014;Faustball;Teilnehmende;weiblich;0
+2014;Fussball;Kurse/Lager;;388
+2014;Fussball;Leitende;;535
+2014;Fussball;Teilnehmende;männlich;5484
+2014;Fussball;Teilnehmende;weiblich;536
+2014;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;75
+2014;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;201
+2014;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;193
+2014;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;821
+2014;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;39
+2014;Gymnastik, Tanz und Tanzsport;Leitende;;52
+2014;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;21
+2014;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;415
+2014;Handball;Kurse/Lager;;46
+2014;Handball;Leitende;;85
+2014;Handball;Teilnehmende;männlich;440
+2014;Handball;Teilnehmende;weiblich;116
+2014;Judo;Kurse/Lager;;70
+2014;Judo;Leitende;;131
+2014;Judo;Teilnehmende;männlich;557
+2014;Judo;Teilnehmende;weiblich;183
+2014;Ju-Jitsu;Kurse/Lager;;12
+2014;Ju-Jitsu;Leitende;;27
+2014;Ju-Jitsu;Teilnehmende;männlich;82
+2014;Ju-Jitsu;Teilnehmende;weiblich;35
+2014;Karate;Kurse/Lager;;6
+2014;Karate;Leitende;;15
+2014;Karate;Teilnehmende;männlich;37
+2014;Karate;Teilnehmende;weiblich;21
+2014;Kids und Allround;Kurse/Lager;;147
+2014;Kids und Allround;Leitende;;241
+2014;Kids und Allround;Teilnehmende;männlich;1023
+2014;Kids und Allround;Teilnehmende;weiblich;982
+2014;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;73
+2014;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;212
+2014;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;1328
+2014;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;1120
+2014;Lagersport/Trekking;Kurse/Lager;;92
+2014;Lagersport/Trekking;Leitende;;446
+2014;Lagersport/Trekking;Teilnehmende;männlich;1375
+2014;Lagersport/Trekking;Teilnehmende;weiblich;1394
+2014;Leichtathletik;Kurse/Lager;;89
+2014;Leichtathletik;Leitende;;208
+2014;Leichtathletik;Teilnehmende;männlich;650
+2014;Leichtathletik;Teilnehmende;weiblich;939
+2014;Orientierungslauf;Kurse/Lager;;5
+2014;Orientierungslauf;Leitende;;18
+2014;Orientierungslauf;Teilnehmende;männlich;35
+2014;Orientierungslauf;Teilnehmende;weiblich;19
+2014;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;69
+2014;Pferdesport (Reiten und Voltigieren);Leitende;;71
+2014;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;31
+2014;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;399
+2014;Polysportive Lager und Kurse;Kurse/Lager;;71
+2014;Polysportive Lager und Kurse;Leitende;;285
+2014;Polysportive Lager und Kurse;Teilnehmende;männlich;1537
+2014;Polysportive Lager und Kurse;Teilnehmende;weiblich;1510
+2014;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;16
+2014;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;29
+2014;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;96
+2014;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;11
+2014;Schiessen (Gewehr und Pistole);Kurse/Lager;;25
+2014;Schiessen (Gewehr und Pistole);Leitende;;41
+2014;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;149
+2014;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;23
+2014;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;131
+2014;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;225
+2014;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;553
+2014;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;646
+2014;Schwingen;Kurse/Lager;;8
+2014;Schwingen;Leitende;;18
+2014;Schwingen;Teilnehmende;männlich;71
+2014;Schwingen;Teilnehmende;weiblich;0
+2014;Segeln;Kurse/Lager;;2
+2014;Segeln;Leitende;;8
+2014;Segeln;Teilnehmende;männlich;8
+2014;Segeln;Teilnehmende;weiblich;5
+2014;Skifahren;Kurse/Lager;;12
+2014;Skifahren;Leitende;;40
+2014;Skifahren;Teilnehmende;männlich;200
+2014;Skifahren;Teilnehmende;weiblich;220
+2014;Skitouren;Kurse/Lager;;1
+2014;Skitouren;Leitende;;2
+2014;Skitouren;Teilnehmende;männlich;10
+2014;Skitouren;Teilnehmende;weiblich;2
+2014;Snowboard;Kurse/Lager;;3
+2014;Snowboard;Leitende;;11
+2014;Snowboard;Teilnehmende;männlich;55
+2014;Snowboard;Teilnehmende;weiblich;62
+2014;Speedskating;Kurse/Lager;;3
+2014;Speedskating;Leitende;;8
+2014;Speedskating;Teilnehmende;männlich;16
+2014;Speedskating;Teilnehmende;weiblich;2
+2014;Sportklettern;Kurse/Lager;;8
+2014;Sportklettern;Leitende;;43
+2014;Sportklettern;Teilnehmende;männlich;35
+2014;Sportklettern;Teilnehmende;weiblich;13
+2014;Squash;Kurse/Lager;;20
+2014;Squash;Leitende;;50
+2014;Squash;Teilnehmende;männlich;155
+2014;Squash;Teilnehmende;weiblich;25
+2014;Tennis;Kurse/Lager;;406
+2014;Tennis;Leitende;;523
+2014;Tennis;Teilnehmende;männlich;1323
+2014;Tennis;Teilnehmende;weiblich;533
+2014;Tischtennis;Kurse/Lager;;17
+2014;Tischtennis;Leitende;;43
+2014;Tischtennis;Teilnehmende;männlich;147
+2014;Tischtennis;Teilnehmende;weiblich;14
+2014;Turnen und Rhönrad;Kurse/Lager;;303
+2014;Turnen und Rhönrad;Leitende;;653
+2014;Turnen und Rhönrad;Teilnehmende;männlich;1502
+2014;Turnen und Rhönrad;Teilnehmende;weiblich;2232
+2014;Unihockey;Kurse/Lager;;57
+2014;Unihockey;Leitende;;110
+2014;Unihockey;Teilnehmende;männlich;690
+2014;Unihockey;Teilnehmende;weiblich;92
+2014;Volleyball;Kurse/Lager;;76
+2014;Volleyball;Leitende;;132
+2014;Volleyball;Teilnehmende;männlich;140
+2014;Volleyball;Teilnehmende;weiblich;784
+2015;Badminton;Kurse/Lager;;45
+2015;Badminton;Leitende;;114
+2015;Badminton;Teilnehmende;männlich;250
+2015;Badminton;Teilnehmende;weiblich;146
+2015;Baseball/Softball;Kurse/Lager;;5
+2015;Baseball/Softball;Leitende;;9
+2015;Baseball/Softball;Teilnehmende;männlich;40
+2015;Baseball/Softball;Teilnehmende;weiblich;5
+2015;Basketball und Korbball;Kurse/Lager;;65
+2015;Basketball und Korbball;Leitende;;151
+2015;Basketball und Korbball;Teilnehmende;männlich;486
+2015;Basketball und Korbball;Teilnehmende;weiblich;177
+2015;Bergsport;Kurse/Lager;;1
+2015;Bergsport;Leitende;;10
+2015;Bergsport;Teilnehmende;männlich;3
+2015;Bergsport;Teilnehmende;weiblich;6
+2015;Curling;Kurse/Lager;;1
+2015;Curling;Leitende;;1
+2015;Curling;Teilnehmende;männlich;7
+2015;Curling;Teilnehmende;weiblich;0
+2015;Diverse Sportarten;Kurse/Lager;;3
+2015;Diverse Sportarten;Leitende;;3
+2015;Diverse Sportarten;Teilnehmende;männlich;9
+2015;Diverse Sportarten;Teilnehmende;weiblich;7
+2015;Eishockey;Kurse/Lager;;18
+2015;Eishockey;Leitende;;33
+2015;Eishockey;Teilnehmende;männlich;273
+2015;Eishockey;Teilnehmende;weiblich;23
+2015;Eiskunstlauf/Eistanz;Kurse/Lager;;74
+2015;Eiskunstlauf/Eistanz;Leitende;;127
+2015;Eiskunstlauf/Eistanz;Teilnehmende;männlich;19
+2015;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;524
+2015;Faustball;Kurse/Lager;;1
+2015;Faustball;Leitende;;2
+2015;Faustball;Teilnehmende;männlich;4
+2015;Faustball;Teilnehmende;weiblich;0
+2015;Fussball;Kurse/Lager;;548
+2015;Fussball;Leitende;;745
+2015;Fussball;Teilnehmende;männlich;7701
+2015;Fussball;Teilnehmende;weiblich;768
+2015;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;97
+2015;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;229
+2015;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;291
+2015;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;1019
+2015;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;56
+2015;Gymnastik, Tanz und Tanzsport;Leitende;;85
+2015;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;62
+2015;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;530
+2015;Handball;Kurse/Lager;;64
+2015;Handball;Leitende;;131
+2015;Handball;Teilnehmende;männlich;693
+2015;Handball;Teilnehmende;weiblich;182
+2015;Judo;Kurse/Lager;;75
+2015;Judo;Leitende;;164
+2015;Judo;Teilnehmende;männlich;591
+2015;Judo;Teilnehmende;weiblich;243
+2015;Ju-Jitsu;Kurse/Lager;;14
+2015;Ju-Jitsu;Leitende;;29
+2015;Ju-Jitsu;Teilnehmende;männlich;108
+2015;Ju-Jitsu;Teilnehmende;weiblich;63
+2015;Karate;Kurse/Lager;;34
+2015;Karate;Leitende;;104
+2015;Karate;Teilnehmende;männlich;285
+2015;Karate;Teilnehmende;weiblich;186
+2015;Kids und Allround;Kurse/Lager;;163
+2015;Kids und Allround;Leitende;;269
+2015;Kids und Allround;Teilnehmende;männlich;1171
+2015;Kids und Allround;Teilnehmende;weiblich;1223
+2015;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;69
+2015;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;172
+2015;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;1220
+2015;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;1074
+2015;Lagersport/Trekking;Kurse/Lager;;85
+2015;Lagersport/Trekking;Leitende;;399
+2015;Lagersport/Trekking;Teilnehmende;männlich;1177
+2015;Lagersport/Trekking;Teilnehmende;weiblich;1232
+2015;Leichtathletik;Kurse/Lager;;100
+2015;Leichtathletik;Leitende;;219
+2015;Leichtathletik;Teilnehmende;männlich;704
+2015;Leichtathletik;Teilnehmende;weiblich;1028
+2015;Orientierungslauf;Kurse/Lager;;2
+2015;Orientierungslauf;Leitende;;14
+2015;Orientierungslauf;Teilnehmende;männlich;20
+2015;Orientierungslauf;Teilnehmende;weiblich;14
+2015;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;107
+2015;Pferdesport (Reiten und Voltigieren);Leitende;;123
+2015;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;42
+2015;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;602
+2015;Polysportive Lager und Kurse;Kurse/Lager;;88
+2015;Polysportive Lager und Kurse;Leitende;;340
+2015;Polysportive Lager und Kurse;Teilnehmende;männlich;1759
+2015;Polysportive Lager und Kurse;Teilnehmende;weiblich;1662
+2015;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;10
+2015;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;15
+2015;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;49
+2015;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;4
+2015;Schiessen (Gewehr und Pistole);Kurse/Lager;;22
+2015;Schiessen (Gewehr und Pistole);Leitende;;39
+2015;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;132
+2015;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;18
+2015;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;269
+2015;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;347
+2015;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;986
+2015;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;1275
+2015;Schwingen;Kurse/Lager;;6
+2015;Schwingen;Leitende;;14
+2015;Schwingen;Teilnehmende;männlich;46
+2015;Schwingen;Teilnehmende;weiblich;0
+2015;Segeln;Kurse/Lager;;1
+2015;Segeln;Leitende;;3
+2015;Segeln;Teilnehmende;männlich;3
+2015;Segeln;Teilnehmende;weiblich;2
+2015;Skifahren;Kurse/Lager;;12
+2015;Skifahren;Leitende;;42
+2015;Skifahren;Teilnehmende;männlich;224
+2015;Skifahren;Teilnehmende;weiblich;188
+2015;Skitouren;Kurse/Lager;;1
+2015;Skitouren;Leitende;;2
+2015;Skitouren;Teilnehmende;männlich;12
+2015;Skitouren;Teilnehmende;weiblich;0
+2015;Snowboard;Kurse/Lager;;2
+2015;Snowboard;Leitende;;4
+2015;Snowboard;Teilnehmende;männlich;20
+2015;Snowboard;Teilnehmende;weiblich;16
+2015;Speedskating;Kurse/Lager;;2
+2015;Speedskating;Leitende;;4
+2015;Speedskating;Teilnehmende;männlich;8
+2015;Speedskating;Teilnehmende;weiblich;2
+2015;Sportklettern;Kurse/Lager;;9
+2015;Sportklettern;Leitende;;29
+2015;Sportklettern;Teilnehmende;männlich;36
+2015;Sportklettern;Teilnehmende;weiblich;29
+2015;Squash;Kurse/Lager;;19
+2015;Squash;Leitende;;44
+2015;Squash;Teilnehmende;männlich;134
+2015;Squash;Teilnehmende;weiblich;41
+2015;Tennis;Kurse/Lager;;398
+2015;Tennis;Leitende;;519
+2015;Tennis;Teilnehmende;männlich;1306
+2015;Tennis;Teilnehmende;weiblich;547
+2015;Tischtennis;Kurse/Lager;;20
+2015;Tischtennis;Leitende;;52
+2015;Tischtennis;Teilnehmende;männlich;160
+2015;Tischtennis;Teilnehmende;weiblich;21
+2015;Turnen und Rhönrad;Kurse/Lager;;359
+2015;Turnen und Rhönrad;Leitende;;743
+2015;Turnen und Rhönrad;Teilnehmende;männlich;1694
+2015;Turnen und Rhönrad;Teilnehmende;weiblich;2687
+2015;Unihockey;Kurse/Lager;;70
+2015;Unihockey;Leitende;;126
+2015;Unihockey;Teilnehmende;männlich;753
+2015;Unihockey;Teilnehmende;weiblich;156
+2015;Volleyball;Kurse/Lager;;78
+2015;Volleyball;Leitende;;134
+2015;Volleyball;Teilnehmende;männlich;162
+2015;Volleyball;Teilnehmende;weiblich;900
+2016;Badminton;Kurse/Lager;;43
+2016;Badminton;Leitende;;121
+2016;Badminton;Teilnehmende;männlich;248
+2016;Badminton;Teilnehmende;weiblich;141
+2016;Baseball/Softball;Kurse/Lager;;9
+2016;Baseball/Softball;Leitende;;16
+2016;Baseball/Softball;Teilnehmende;männlich;66
+2016;Baseball/Softball;Teilnehmende;weiblich;11
+2016;Basketball und Korbball;Kurse/Lager;;107
+2016;Basketball und Korbball;Leitende;;212
+2016;Basketball und Korbball;Teilnehmende;männlich;827
+2016;Basketball und Korbball;Teilnehmende;weiblich;355
+2016;Bergsport;Kurse/Lager;;3
+2016;Bergsport;Leitende;;23
+2016;Bergsport;Teilnehmende;männlich;11
+2016;Bergsport;Teilnehmende;weiblich;4
+2016;Curling;Kurse/Lager;;3
+2016;Curling;Leitende;;5
+2016;Curling;Teilnehmende;männlich;15
+2016;Curling;Teilnehmende;weiblich;2
+2016;Diverse Sportarten;Kurse/Lager;;3
+2016;Diverse Sportarten;Leitende;;3
+2016;Diverse Sportarten;Teilnehmende;männlich;15
+2016;Diverse Sportarten;Teilnehmende;weiblich;3
+2016;Eishockey;Kurse/Lager;;14
+2016;Eishockey;Leitende;;23
+2016;Eishockey;Teilnehmende;männlich;210
+2016;Eishockey;Teilnehmende;weiblich;14
+2016;Eiskunstlauf/Eistanz;Kurse/Lager;;69
+2016;Eiskunstlauf/Eistanz;Leitende;;104
+2016;Eiskunstlauf/Eistanz;Teilnehmende;männlich;35
+2016;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;471
+2016;Faustball;Kurse/Lager;;1
+2016;Faustball;Leitende;;2
+2016;Faustball;Teilnehmende;männlich;7
+2016;Faustball;Teilnehmende;weiblich;0
+2016;Fussball;Kurse/Lager;;653
+2016;Fussball;Leitende;;919
+2016;Fussball;Teilnehmende;männlich;9150
+2016;Fussball;Teilnehmende;weiblich;870
+2016;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;130
+2016;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;330
+2016;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;421
+2016;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;1358
+2016;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;61
+2016;Gymnastik, Tanz und Tanzsport;Leitende;;102
+2016;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;75
+2016;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;784
+2016;Handball;Kurse/Lager;;67
+2016;Handball;Leitende;;137
+2016;Handball;Teilnehmende;männlich;581
+2016;Handball;Teilnehmende;weiblich;174
+2016;Judo;Kurse/Lager;;87
+2016;Judo;Leitende;;185
+2016;Judo;Teilnehmende;männlich;616
+2016;Judo;Teilnehmende;weiblich;316
+2016;Ju-Jitsu;Kurse/Lager;;15
+2016;Ju-Jitsu;Leitende;;34
+2016;Ju-Jitsu;Teilnehmende;männlich;86
+2016;Ju-Jitsu;Teilnehmende;weiblich;94
+2016;Karate;Kurse/Lager;;57
+2016;Karate;Leitende;;192
+2016;Karate;Teilnehmende;männlich;524
+2016;Karate;Teilnehmende;weiblich;340
+2016;Kids und Allround;Kurse/Lager;;181
+2016;Kids und Allround;Leitende;;333
+2016;Kids und Allround;Teilnehmende;männlich;1403
+2016;Kids und Allround;Teilnehmende;weiblich;1319
+2016;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;70
+2016;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;176
+2016;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;1153
+2016;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;936
+2016;Lagersport/Trekking;Kurse/Lager;;106
+2016;Lagersport/Trekking;Leitende;;508
+2016;Lagersport/Trekking;Teilnehmende;männlich;1636
+2016;Lagersport/Trekking;Teilnehmende;weiblich;1504
+2016;Leichtathletik;Kurse/Lager;;111
+2016;Leichtathletik;Leitende;;260
+2016;Leichtathletik;Teilnehmende;männlich;828
+2016;Leichtathletik;Teilnehmende;weiblich;1191
+2016;Orientierungslauf;Kurse/Lager;;1
+2016;Orientierungslauf;Leitende;;13
+2016;Orientierungslauf;Teilnehmende;männlich;6
+2016;Orientierungslauf;Teilnehmende;weiblich;7
+2016;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;184
+2016;Pferdesport (Reiten und Voltigieren);Leitende;;225
+2016;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;96
+2016;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;1011
+2016;Polysportive Lager und Kurse;Kurse/Lager;;73
+2016;Polysportive Lager und Kurse;Leitende;;305
+2016;Polysportive Lager und Kurse;Teilnehmende;männlich;1678
+2016;Polysportive Lager und Kurse;Teilnehmende;weiblich;1493
+2016;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;10
+2016;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;17
+2016;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;65
+2016;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;9
+2016;Schiessen (Gewehr und Pistole);Kurse/Lager;;21
+2016;Schiessen (Gewehr und Pistole);Leitende;;39
+2016;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;106
+2016;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;21
+2016;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;207
+2016;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;304
+2016;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;790
+2016;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;1054
+2016;Schwingen;Kurse/Lager;;15
+2016;Schwingen;Leitende;;30
+2016;Schwingen;Teilnehmende;männlich;125
+2016;Schwingen;Teilnehmende;weiblich;2
+2016;Segeln;Kurse/Lager;;1
+2016;Segeln;Leitende;;6
+2016;Segeln;Teilnehmende;männlich;3
+2016;Segeln;Teilnehmende;weiblich;2
+2016;Skifahren;Kurse/Lager;;10
+2016;Skifahren;Leitende;;37
+2016;Skifahren;Teilnehmende;männlich;137
+2016;Skifahren;Teilnehmende;weiblich;163
+2016;Skitouren;Kurse/Lager;;1
+2016;Skitouren;Leitende;;2
+2016;Skitouren;Teilnehmende;männlich;10
+2016;Skitouren;Teilnehmende;weiblich;2
+2016;Speedskating;Kurse/Lager;;2
+2016;Speedskating;Leitende;;7
+2016;Speedskating;Teilnehmende;männlich;12
+2016;Speedskating;Teilnehmende;weiblich;1
+2016;Sportklettern;Kurse/Lager;;9
+2016;Sportklettern;Leitende;;40
+2016;Sportklettern;Teilnehmende;männlich;30
+2016;Sportklettern;Teilnehmende;weiblich;36
+2016;Squash;Kurse/Lager;;19
+2016;Squash;Leitende;;33
+2016;Squash;Teilnehmende;männlich;138
+2016;Squash;Teilnehmende;weiblich;45
+2016;Tennis;Kurse/Lager;;427
+2016;Tennis;Leitende;;523
+2016;Tennis;Teilnehmende;männlich;1373
+2016;Tennis;Teilnehmende;weiblich;529
+2016;Tischtennis;Kurse/Lager;;16
+2016;Tischtennis;Leitende;;40
+2016;Tischtennis;Teilnehmende;männlich;128
+2016;Tischtennis;Teilnehmende;weiblich;20
+2016;Turnen und Rhönrad;Kurse/Lager;;386
+2016;Turnen und Rhönrad;Leitende;;838
+2016;Turnen und Rhönrad;Teilnehmende;männlich;1916
+2016;Turnen und Rhönrad;Teilnehmende;weiblich;2797
+2016;Unihockey;Kurse/Lager;;67
+2016;Unihockey;Leitende;;130
+2016;Unihockey;Teilnehmende;männlich;814
+2016;Unihockey;Teilnehmende;weiblich;164
+2016;Volleyball;Kurse/Lager;;83
+2016;Volleyball;Leitende;;153
+2016;Volleyball;Teilnehmende;männlich;139
+2016;Volleyball;Teilnehmende;weiblich;919
+2017;Badminton;Kurse/Lager;;29
+2017;Badminton;Leitende;;68
+2017;Badminton;Teilnehmende;männlich;228
+2017;Badminton;Teilnehmende;weiblich;142
+2017;Baseball/Softball;Kurse/Lager;;10
+2017;Baseball/Softball;Leitende;;17
+2017;Baseball/Softball;Teilnehmende;männlich;82
+2017;Baseball/Softball;Teilnehmende;weiblich;5
+2017;Basketball und Korbball;Kurse/Lager;;79
+2017;Basketball und Korbball;Leitende;;178
+2017;Basketball und Korbball;Teilnehmende;männlich;658
+2017;Basketball und Korbball;Teilnehmende;weiblich;233
+2017;Curling;Kurse/Lager;;1
+2017;Curling;Leitende;;1
+2017;Curling;Teilnehmende;männlich;5
+2017;Curling;Teilnehmende;weiblich;0
+2017;Diverse Sportarten;Kurse/Lager;;3
+2017;Diverse Sportarten;Leitende;;3
+2017;Diverse Sportarten;Teilnehmende;männlich;12
+2017;Diverse Sportarten;Teilnehmende;weiblich;2
+2017;Eishockey;Kurse/Lager;;19
+2017;Eishockey;Leitende;;36
+2017;Eishockey;Teilnehmende;männlich;273
+2017;Eishockey;Teilnehmende;weiblich;30
+2017;Eiskunstlauf/Eistanz;Kurse/Lager;;83
+2017;Eiskunstlauf/Eistanz;Leitende;;188
+2017;Eiskunstlauf/Eistanz;Teilnehmende;männlich;51
+2017;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;736
+2017;Faustball;Kurse/Lager;;2
+2017;Faustball;Leitende;;3
+2017;Faustball;Teilnehmende;männlich;11
+2017;Faustball;Teilnehmende;weiblich;9
+2017;Fussball;Kurse/Lager;;493
+2017;Fussball;Leitende;;725
+2017;Fussball;Teilnehmende;männlich;6823
+2017;Fussball;Teilnehmende;weiblich;638
+2017;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;110
+2017;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;244
+2017;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;339
+2017;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;1110
+2017;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;53
+2017;Gymnastik, Tanz und Tanzsport;Leitende;;93
+2017;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;66
+2017;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;610
+2017;Handball;Kurse/Lager;;71
+2017;Handball;Leitende;;166
+2017;Handball;Teilnehmende;männlich;651
+2017;Handball;Teilnehmende;weiblich;230
+2017;Judo;Kurse/Lager;;64
+2017;Judo;Leitende;;149
+2017;Judo;Teilnehmende;männlich;460
+2017;Judo;Teilnehmende;weiblich;222
+2017;Ju-Jitsu;Kurse/Lager;;11
+2017;Ju-Jitsu;Leitende;;23
+2017;Ju-Jitsu;Teilnehmende;männlich;65
+2017;Ju-Jitsu;Teilnehmende;weiblich;79
+2017;Karate;Kurse/Lager;;34
+2017;Karate;Leitende;;104
+2017;Karate;Teilnehmende;männlich;288
+2017;Karate;Teilnehmende;weiblich;152
+2017;Kids und Allround;Kurse/Lager;;143
+2017;Kids und Allround;Leitende;;239
+2017;Kids und Allround;Teilnehmende;männlich;932
+2017;Kids und Allround;Teilnehmende;weiblich;898
+2017;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;64
+2017;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;180
+2017;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;1067
+2017;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;797
+2017;Lagersport/Trekking;Kurse/Lager;;96
+2017;Lagersport/Trekking;Leitende;;459
+2017;Lagersport/Trekking;Teilnehmende;männlich;1413
+2017;Lagersport/Trekking;Teilnehmende;weiblich;1363
+2017;Leichtathletik;Kurse/Lager;;98
+2017;Leichtathletik;Leitende;;269
+2017;Leichtathletik;Teilnehmende;männlich;735
+2017;Leichtathletik;Teilnehmende;weiblich;1011
+2017;Orientierungslauf;Kurse/Lager;;2
+2017;Orientierungslauf;Leitende;;14
+2017;Orientierungslauf;Teilnehmende;männlich;15
+2017;Orientierungslauf;Teilnehmende;weiblich;14
+2017;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;75
+2017;Pferdesport (Reiten und Voltigieren);Leitende;;97
+2017;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;25
+2017;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;379
+2017;Polysportive Lager und Kurse;Kurse/Lager;;77
+2017;Polysportive Lager und Kurse;Leitende;;349
+2017;Polysportive Lager und Kurse;Teilnehmende;männlich;1642
+2017;Polysportive Lager und Kurse;Teilnehmende;weiblich;1613
+2017;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;6
+2017;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;17
+2017;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;48
+2017;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;9
+2017;Schiessen (Gewehr und Pistole);Kurse/Lager;;26
+2017;Schiessen (Gewehr und Pistole);Leitende;;52
+2017;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;122
+2017;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;31
+2017;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;137
+2017;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;214
+2017;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;549
+2017;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;744
+2017;Schwingen;Kurse/Lager;;1
+2017;Schwingen;Leitende;;2
+2017;Schwingen;Teilnehmende;männlich;8
+2017;Schwingen;Teilnehmende;weiblich;0
+2017;Segeln;Kurse/Lager;;1
+2017;Segeln;Leitende;;7
+2017;Segeln;Teilnehmende;männlich;4
+2017;Segeln;Teilnehmende;weiblich;4
+2017;Skifahren;Kurse/Lager;;9
+2017;Skifahren;Leitende;;37
+2017;Skifahren;Teilnehmende;männlich;158
+2017;Skifahren;Teilnehmende;weiblich;154
+2017;Snowboard;Kurse/Lager;;1
+2017;Snowboard;Leitende;;3
+2017;Snowboard;Teilnehmende;männlich;11
+2017;Snowboard;Teilnehmende;weiblich;13
+2017;Speedskating;Kurse/Lager;;2
+2017;Speedskating;Leitende;;4
+2017;Speedskating;Teilnehmende;männlich;11
+2017;Speedskating;Teilnehmende;weiblich;6
+2017;Sportklettern;Kurse/Lager;;8
+2017;Sportklettern;Leitende;;25
+2017;Sportklettern;Teilnehmende;männlich;22
+2017;Sportklettern;Teilnehmende;weiblich;17
+2017;Squash;Kurse/Lager;;16
+2017;Squash;Leitende;;20
+2017;Squash;Teilnehmende;männlich;107
+2017;Squash;Teilnehmende;weiblich;28
+2017;Tennis;Kurse/Lager;;449
+2017;Tennis;Leitende;;508
+2017;Tennis;Teilnehmende;männlich;1450
+2017;Tennis;Teilnehmende;weiblich;541
+2017;Tischtennis;Kurse/Lager;;15
+2017;Tischtennis;Leitende;;37
+2017;Tischtennis;Teilnehmende;männlich;150
+2017;Tischtennis;Teilnehmende;weiblich;8
+2017;Turnen und Rhönrad;Kurse/Lager;;324
+2017;Turnen und Rhönrad;Leitende;;724
+2017;Turnen und Rhönrad;Teilnehmende;männlich;1491
+2017;Turnen und Rhönrad;Teilnehmende;weiblich;2489
+2017;Unihockey;Kurse/Lager;;63
+2017;Unihockey;Leitende;;118
+2017;Unihockey;Teilnehmende;männlich;746
+2017;Unihockey;Teilnehmende;weiblich;206
+2017;Volleyball;Kurse/Lager;;98
+2017;Volleyball;Leitende;;191
+2017;Volleyball;Teilnehmende;männlich;157
+2017;Volleyball;Teilnehmende;weiblich;1003
+2018;Badminton;Kurse/Lager;;54
+2018;Badminton;Leitende;;132
+2018;Badminton;Teilnehmende;männlich;402
+2018;Badminton;Teilnehmende;weiblich;218
+2018;Baseball/Softball;Kurse/Lager;;8
+2018;Baseball/Softball;Leitende;;20
+2018;Baseball/Softball;Teilnehmende;männlich;75
+2018;Baseball/Softball;Teilnehmende;weiblich;1
+2018;Basketball und Korbball;Kurse/Lager;;85
+2018;Basketball und Korbball;Leitende;;171
+2018;Basketball und Korbball;Teilnehmende;männlich;648
+2018;Basketball und Korbball;Teilnehmende;weiblich;239
+2018;Curling;Kurse/Lager;;1
+2018;Curling;Leitende;;1
+2018;Curling;Teilnehmende;männlich;5
+2018;Curling;Teilnehmende;weiblich;0
+2018;Diverse Sportarten;Kurse/Lager;;1
+2018;Diverse Sportarten;Leitende;;1
+2018;Diverse Sportarten;Teilnehmende;männlich;4
+2018;Diverse Sportarten;Teilnehmende;weiblich;0
+2018;Eishockey;Kurse/Lager;;18
+2018;Eishockey;Leitende;;45
+2018;Eishockey;Teilnehmende;männlich;247
+2018;Eishockey;Teilnehmende;weiblich;28
+2018;Eiskunstlauf/Eistanz;Kurse/Lager;;69
+2018;Eiskunstlauf/Eistanz;Leitende;;177
+2018;Eiskunstlauf/Eistanz;Teilnehmende;männlich;48
+2018;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;566
+2018;Faustball;Kurse/Lager;;2
+2018;Faustball;Leitende;;5
+2018;Faustball;Teilnehmende;männlich;14
+2018;Faustball;Teilnehmende;weiblich;10
+2018;Fussball;Kurse/Lager;;613
+2018;Fussball;Leitende;;898
+2018;Fussball;Teilnehmende;männlich;8313
+2018;Fussball;Teilnehmende;weiblich;763
+2018;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;158
+2018;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;363
+2018;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;359
+2018;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;1551
+2018;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;54
+2018;Gymnastik, Tanz und Tanzsport;Leitende;;98
+2018;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;48
+2018;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;581
+2018;Handball;Kurse/Lager;;67
+2018;Handball;Leitende;;162
+2018;Handball;Teilnehmende;männlich;622
+2018;Handball;Teilnehmende;weiblich;256
+2018;Judo;Kurse/Lager;;90
+2018;Judo;Leitende;;220
+2018;Judo;Teilnehmende;männlich;627
+2018;Judo;Teilnehmende;weiblich;313
+2018;Ju-Jitsu;Kurse/Lager;;18
+2018;Ju-Jitsu;Leitende;;36
+2018;Ju-Jitsu;Teilnehmende;männlich;99
+2018;Ju-Jitsu;Teilnehmende;weiblich;80
+2018;Karate;Kurse/Lager;;94
+2018;Karate;Leitende;;228
+2018;Karate;Teilnehmende;männlich;735
+2018;Karate;Teilnehmende;weiblich;393
+2018;Kids und Allround;Kurse/Lager;;152
+2018;Kids und Allround;Leitende;;240
+2018;Kids und Allround;Teilnehmende;männlich;1058
+2018;Kids und Allround;Teilnehmende;weiblich;982
+2018;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;69
+2018;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;180
+2018;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;911
+2018;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;747
+2018;Lagersport/Trekking;Kurse/Lager;;85
+2018;Lagersport/Trekking;Leitende;;467
+2018;Lagersport/Trekking;Teilnehmende;männlich;1373
+2018;Lagersport/Trekking;Teilnehmende;weiblich;1411
+2018;Leichtathletik;Kurse/Lager;;117
+2018;Leichtathletik;Leitende;;302
+2018;Leichtathletik;Teilnehmende;männlich;863
+2018;Leichtathletik;Teilnehmende;weiblich;1202
+2018;Orientierungslauf;Kurse/Lager;;2
+2018;Orientierungslauf;Leitende;;13
+2018;Orientierungslauf;Teilnehmende;männlich;19
+2018;Orientierungslauf;Teilnehmende;weiblich;3
+2018;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;152
+2018;Pferdesport (Reiten und Voltigieren);Leitende;;201
+2018;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;65
+2018;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;864
+2018;Polysportive Lager und Kurse;Kurse/Lager;;68
+2018;Polysportive Lager und Kurse;Leitende;;305
+2018;Polysportive Lager und Kurse;Teilnehmende;männlich;1425
+2018;Polysportive Lager und Kurse;Teilnehmende;weiblich;1461
+2018;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;13
+2018;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;20
+2018;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;98
+2018;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;43
+2018;Schiessen (Gewehr und Pistole);Kurse/Lager;;22
+2018;Schiessen (Gewehr und Pistole);Leitende;;37
+2018;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;99
+2018;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;32
+2018;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;122
+2018;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;269
+2018;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;571
+2018;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;793
+2018;Schwingen;Kurse/Lager;;10
+2018;Schwingen;Leitende;;23
+2018;Schwingen;Teilnehmende;männlich;94
+2018;Schwingen;Teilnehmende;weiblich;1
+2018;Segeln;Kurse/Lager;;1
+2018;Segeln;Leitende;;5
+2018;Segeln;Teilnehmende;männlich;2
+2018;Segeln;Teilnehmende;weiblich;1
+2018;Skifahren;Kurse/Lager;;18
+2018;Skifahren;Leitende;;56
+2018;Skifahren;Teilnehmende;männlich;287
+2018;Skifahren;Teilnehmende;weiblich;260
+2018;Speedskating;Kurse/Lager;;2
+2018;Speedskating;Leitende;;6
+2018;Speedskating;Teilnehmende;männlich;12
+2018;Speedskating;Teilnehmende;weiblich;8
+2018;Sportklettern;Kurse/Lager;;6
+2018;Sportklettern;Leitende;;32
+2018;Sportklettern;Teilnehmende;männlich;17
+2018;Sportklettern;Teilnehmende;weiblich;22
+2018;Squash;Kurse/Lager;;23
+2018;Squash;Leitende;;28
+2018;Squash;Teilnehmende;männlich;160
+2018;Squash;Teilnehmende;weiblich;53
+2018;Synchronized Skating;Kurse/Lager;;12
+2018;Synchronized Skating;Leitende;;31
+2018;Synchronized Skating;Teilnehmende;männlich;6
+2018;Synchronized Skating;Teilnehmende;weiblich;143
+2018;Tennis;Kurse/Lager;;438
+2018;Tennis;Leitende;;566
+2018;Tennis;Teilnehmende;männlich;1598
+2018;Tennis;Teilnehmende;weiblich;657
+2018;Tischtennis;Kurse/Lager;;15
+2018;Tischtennis;Leitende;;33
+2018;Tischtennis;Teilnehmende;männlich;146
+2018;Tischtennis;Teilnehmende;weiblich;12
+2018;Turnen und Rhönrad;Kurse/Lager;;426
+2018;Turnen und Rhönrad;Leitende;;1014
+2018;Turnen und Rhönrad;Teilnehmende;männlich;2068
+2018;Turnen und Rhönrad;Teilnehmende;weiblich;3204
+2018;Unihockey;Kurse/Lager;;86
+2018;Unihockey;Leitende;;156
+2018;Unihockey;Teilnehmende;männlich;956
+2018;Unihockey;Teilnehmende;weiblich;286
+2018;Volleyball;Kurse/Lager;;116
+2018;Volleyball;Leitende;;232
+2018;Volleyball;Teilnehmende;männlich;285
+2018;Volleyball;Teilnehmende;weiblich;1061
+2019;Badminton;Kurse/Lager;;44
+2019;Badminton;Leitende;;99
+2019;Badminton;Teilnehmende;männlich;287
+2019;Badminton;Teilnehmende;weiblich;174
+2019;Baseball/Softball;Kurse/Lager;;10
+2019;Baseball/Softball;Leitende;;25
+2019;Baseball/Softball;Teilnehmende;männlich;64
+2019;Baseball/Softball;Teilnehmende;weiblich;7
+2019;Basketball und Korbball;Kurse/Lager;;77
+2019;Basketball und Korbball;Leitende;;145
+2019;Basketball und Korbball;Teilnehmende;männlich;591
+2019;Basketball und Korbball;Teilnehmende;weiblich;246
+2019;Bergsport;Kurse/Lager;;1
+2019;Bergsport;Leitende;;9
+2019;Bergsport;Teilnehmende;männlich;1
+2019;Bergsport;Teilnehmende;weiblich;4
+2019;Diverse Sportarten;Kurse/Lager;;1
+2019;Diverse Sportarten;Leitende;;1
+2019;Diverse Sportarten;Teilnehmende;männlich;5
+2019;Diverse Sportarten;Teilnehmende;weiblich;1
+2019;Eishockey;Kurse/Lager;;19
+2019;Eishockey;Leitende;;41
+2019;Eishockey;Teilnehmende;männlich;302
+2019;Eishockey;Teilnehmende;weiblich;23
+2019;Eiskunstlauf/Eistanz;Kurse/Lager;;56
+2019;Eiskunstlauf/Eistanz;Leitende;;159
+2019;Eiskunstlauf/Eistanz;Teilnehmende;männlich;60
+2019;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;498
+2019;Faustball;Kurse/Lager;;1
+2019;Faustball;Leitende;;3
+2019;Faustball;Teilnehmende;männlich;4
+2019;Faustball;Teilnehmende;weiblich;2
+2019;Fussball;Kurse/Lager;;523
+2019;Fussball;Leitende;;842
+2019;Fussball;Teilnehmende;männlich;6852
+2019;Fussball;Teilnehmende;weiblich;576
+2019;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;164
+2019;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;371
+2019;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;411
+2019;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;1479
+2019;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;48
+2019;Gymnastik, Tanz und Tanzsport;Leitende;;73
+2019;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;58
+2019;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;488
+2019;Handball;Kurse/Lager;;57
+2019;Handball;Leitende;;138
+2019;Handball;Teilnehmende;männlich;542
+2019;Handball;Teilnehmende;weiblich;190
+2019;Judo;Kurse/Lager;;64
+2019;Judo;Leitende;;150
+2019;Judo;Teilnehmende;männlich;378
+2019;Judo;Teilnehmende;weiblich;184
+2019;Ju-Jitsu;Kurse/Lager;;12
+2019;Ju-Jitsu;Leitende;;25
+2019;Ju-Jitsu;Teilnehmende;männlich;58
+2019;Ju-Jitsu;Teilnehmende;weiblich;56
+2019;Karate;Kurse/Lager;;64
+2019;Karate;Leitende;;198
+2019;Karate;Teilnehmende;männlich;527
+2019;Karate;Teilnehmende;weiblich;261
+2019;Kids und Allround;Kurse/Lager;;97
+2019;Kids und Allround;Leitende;;156
+2019;Kids und Allround;Teilnehmende;männlich;660
+2019;Kids und Allround;Teilnehmende;weiblich;598
+2019;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;53
+2019;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;81
+2019;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;460
+2019;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;486
+2019;Lagersport/Trekking;Kurse/Lager;;91
+2019;Lagersport/Trekking;Leitende;;487
+2019;Lagersport/Trekking;Teilnehmende;männlich;1342
+2019;Lagersport/Trekking;Teilnehmende;weiblich;1452
+2019;Leichtathletik;Kurse/Lager;;112
+2019;Leichtathletik;Leitende;;293
+2019;Leichtathletik;Teilnehmende;männlich;850
+2019;Leichtathletik;Teilnehmende;weiblich;1167
+2019;Orientierungslauf;Kurse/Lager;;2
+2019;Orientierungslauf;Leitende;;17
+2019;Orientierungslauf;Teilnehmende;männlich;6
+2019;Orientierungslauf;Teilnehmende;weiblich;9
+2019;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;90
+2019;Pferdesport (Reiten und Voltigieren);Leitende;;115
+2019;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;28
+2019;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;502
+2019;Polysportive Lager und Kurse;Kurse/Lager;;75
+2019;Polysportive Lager und Kurse;Leitende;;307
+2019;Polysportive Lager und Kurse;Teilnehmende;männlich;1461
+2019;Polysportive Lager und Kurse;Teilnehmende;weiblich;1407
+2019;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;11
+2019;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;20
+2019;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;80
+2019;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;18
+2019;Schiessen (Gewehr und Pistole);Kurse/Lager;;21
+2019;Schiessen (Gewehr und Pistole);Leitende;;31
+2019;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;89
+2019;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;27
+2019;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;74
+2019;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;162
+2019;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;364
+2019;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;437
+2019;Schwingen;Kurse/Lager;;7
+2019;Schwingen;Leitende;;13
+2019;Schwingen;Teilnehmende;männlich;50
+2019;Schwingen;Teilnehmende;weiblich;1
+2019;Segeln;Kurse/Lager;;1
+2019;Segeln;Leitende;;6
+2019;Segeln;Teilnehmende;männlich;2
+2019;Segeln;Teilnehmende;weiblich;0
+2019;Skifahren;Kurse/Lager;;16
+2019;Skifahren;Leitende;;57
+2019;Skifahren;Teilnehmende;männlich;275
+2019;Skifahren;Teilnehmende;weiblich;250
+2019;Skilanglauf;Kurse/Lager;;1
+2019;Skilanglauf;Leitende;;4
+2019;Skilanglauf;Teilnehmende;männlich;4
+2019;Skilanglauf;Teilnehmende;weiblich;2
+2019;Skitouren;Kurse/Lager;;1
+2019;Skitouren;Leitende;;2
+2019;Skitouren;Teilnehmende;männlich;9
+2019;Skitouren;Teilnehmende;weiblich;3
+2019;Speedskating;Kurse/Lager;;1
+2019;Speedskating;Leitende;;3
+2019;Speedskating;Teilnehmende;männlich;4
+2019;Speedskating;Teilnehmende;weiblich;6
+2019;Sportklettern;Kurse/Lager;;8
+2019;Sportklettern;Leitende;;31
+2019;Sportklettern;Teilnehmende;männlich;22
+2019;Sportklettern;Teilnehmende;weiblich;41
+2019;Squash;Kurse/Lager;;9
+2019;Squash;Leitende;;11
+2019;Squash;Teilnehmende;männlich;61
+2019;Squash;Teilnehmende;weiblich;22
+2019;Synchronized Skating;Kurse/Lager;;5
+2019;Synchronized Skating;Leitende;;13
+2019;Synchronized Skating;Teilnehmende;männlich;2
+2019;Synchronized Skating;Teilnehmende;weiblich;53
+2019;Tennis;Kurse/Lager;;582
+2019;Tennis;Leitende;;741
+2019;Tennis;Teilnehmende;männlich;1932
+2019;Tennis;Teilnehmende;weiblich;774
+2019;Tischtennis;Kurse/Lager;;4
+2019;Tischtennis;Leitende;;6
+2019;Tischtennis;Teilnehmende;männlich;36
+2019;Tischtennis;Teilnehmende;weiblich;1
+2019;Turnen und Rhönrad;Kurse/Lager;;313
+2019;Turnen und Rhönrad;Leitende;;723
+2019;Turnen und Rhönrad;Teilnehmende;männlich;1592
+2019;Turnen und Rhönrad;Teilnehmende;weiblich;2420
+2019;Unihockey;Kurse/Lager;;80
+2019;Unihockey;Leitende;;149
+2019;Unihockey;Teilnehmende;männlich;938
+2019;Unihockey;Teilnehmende;weiblich;265
+2019;Volleyball;Kurse/Lager;;104
+2019;Volleyball;Leitende;;220
+2019;Volleyball;Teilnehmende;männlich;251
+2019;Volleyball;Teilnehmende;weiblich;919
+2020;Badminton;Kurse/Lager;;75
+2020;Badminton;Leitende;;161
+2020;Badminton;Teilnehmende;männlich;470
+2020;Badminton;Teilnehmende;weiblich;262
+2020;Baseball/Softball;Kurse/Lager;;10
+2020;Baseball/Softball;Leitende;;22
+2020;Baseball/Softball;Teilnehmende;männlich;57
+2020;Baseball/Softball;Teilnehmende;weiblich;12
+2020;Basketball und Korbball;Kurse/Lager;;121
+2020;Basketball und Korbball;Leitende;;205
+2020;Basketball und Korbball;Teilnehmende;männlich;886
+2020;Basketball und Korbball;Teilnehmende;weiblich;385
+2020;Bergsport;Kurse/Lager;;2
+2020;Bergsport;Leitende;;19
+2020;Bergsport;Teilnehmende;männlich;5
+2020;Bergsport;Teilnehmende;weiblich;2
+2020;Curling;Kurse/Lager;;8
+2020;Curling;Leitende;;8
+2020;Curling;Teilnehmende;männlich;23
+2020;Curling;Teilnehmende;weiblich;13
+2020;Diverse Sportarten;Kurse/Lager;;1
+2020;Diverse Sportarten;Leitende;;1
+2020;Diverse Sportarten;Teilnehmende;männlich;4
+2020;Diverse Sportarten;Teilnehmende;weiblich;1
+2020;Eishockey;Kurse/Lager;;16
+2020;Eishockey;Leitende;;43
+2020;Eishockey;Teilnehmende;männlich;248
+2020;Eishockey;Teilnehmende;weiblich;31
+2020;Eiskunstlauf/Eistanz;Kurse/Lager;;68
+2020;Eiskunstlauf/Eistanz;Leitende;;158
+2020;Eiskunstlauf/Eistanz;Teilnehmende;männlich;52
+2020;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;540
+2020;Faustball;Kurse/Lager;;1
+2020;Faustball;Leitende;;2
+2020;Faustball;Teilnehmende;männlich;4
+2020;Faustball;Teilnehmende;weiblich;4
+2020;Fussball;Kurse/Lager;;859
+2020;Fussball;Leitende;;1246
+2020;Fussball;Teilnehmende;männlich;10512
+2020;Fussball;Teilnehmende;weiblich;982
+2020;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;217
+2020;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;549
+2020;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;494
+2020;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;2156
+2020;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;65
+2020;Gymnastik, Tanz und Tanzsport;Leitende;;115
+2020;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;50
+2020;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;580
+2020;Handball;Kurse/Lager;;73
+2020;Handball;Leitende;;168
+2020;Handball;Teilnehmende;männlich;679
+2020;Handball;Teilnehmende;weiblich;265
+2020;Judo;Kurse/Lager;;105
+2020;Judo;Leitende;;254
+2020;Judo;Teilnehmende;männlich;503
+2020;Judo;Teilnehmende;weiblich;277
+2020;Ju-Jitsu;Kurse/Lager;;17
+2020;Ju-Jitsu;Leitende;;35
+2020;Ju-Jitsu;Teilnehmende;männlich;93
+2020;Ju-Jitsu;Teilnehmende;weiblich;89
+2020;Karate;Kurse/Lager;;114
+2020;Karate;Leitende;;260
+2020;Karate;Teilnehmende;männlich;753
+2020;Karate;Teilnehmende;weiblich;333
+2020;Kids und Allround;Kurse/Lager;;82
+2020;Kids und Allround;Leitende;;253
+2020;Kids und Allround;Teilnehmende;männlich;1253
+2020;Kids und Allround;Teilnehmende;weiblich;1222
+2020;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;59
+2020;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;142
+2020;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;549
+2020;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;571
+2020;Lagersport/Trekking;Kurse/Lager;;41
+2020;Lagersport/Trekking;Leitende;;253
+2020;Lagersport/Trekking;Teilnehmende;männlich;597
+2020;Lagersport/Trekking;Teilnehmende;weiblich;672
+2020;Leichtathletik;Kurse/Lager;;117
+2020;Leichtathletik;Leitende;;308
+2020;Leichtathletik;Teilnehmende;männlich;800
+2020;Leichtathletik;Teilnehmende;weiblich;1096
+2020;Orientierungslauf;Kurse/Lager;;1
+2020;Orientierungslauf;Leitende;;6
+2020;Orientierungslauf;Teilnehmende;männlich;4
+2020;Orientierungslauf;Teilnehmende;weiblich;5
+2020;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;123
+2020;Pferdesport (Reiten und Voltigieren);Leitende;;179
+2020;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;47
+2020;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;728
+2020;Polysportive Lager und Kurse;Kurse/Lager;;135
+2020;Polysportive Lager und Kurse;Leitende;;192
+2020;Polysportive Lager und Kurse;Teilnehmende;männlich;903
+2020;Polysportive Lager und Kurse;Teilnehmende;weiblich;874
+2020;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;15
+2020;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;25
+2020;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;78
+2020;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;43
+2020;Schiessen (Gewehr und Pistole);Kurse/Lager;;18
+2020;Schiessen (Gewehr und Pistole);Leitende;;23
+2020;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;80
+2020;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;30
+2020;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;139
+2020;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;275
+2020;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;603
+2020;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;693
+2020;Schwingen;Kurse/Lager;;18
+2020;Schwingen;Leitende;;39
+2020;Schwingen;Teilnehmende;männlich;113
+2020;Schwingen;Teilnehmende;weiblich;1
+2020;Skifahren;Kurse/Lager;;12
+2020;Skifahren;Leitende;;40
+2020;Skifahren;Teilnehmende;männlich;152
+2020;Skifahren;Teilnehmende;weiblich;139
+2020;Skilanglauf;Kurse/Lager;;1
+2020;Skilanglauf;Leitende;;4
+2020;Skilanglauf;Teilnehmende;männlich;5
+2020;Skilanglauf;Teilnehmende;weiblich;1
+2020;Speedskating;Kurse/Lager;;1
+2020;Speedskating;Leitende;;3
+2020;Speedskating;Teilnehmende;männlich;3
+2020;Speedskating;Teilnehmende;weiblich;6
+2020;Sportklettern;Kurse/Lager;;9
+2020;Sportklettern;Leitende;;52
+2020;Sportklettern;Teilnehmende;männlich;41
+2020;Sportklettern;Teilnehmende;weiblich;42
+2020;Squash;Kurse/Lager;;24
+2020;Squash;Leitende;;25
+2020;Squash;Teilnehmende;männlich;170
+2020;Squash;Teilnehmende;weiblich;47
+2020;Synchronized Skating;Kurse/Lager;;3
+2020;Synchronized Skating;Leitende;;10
+2020;Synchronized Skating;Teilnehmende;männlich;2
+2020;Synchronized Skating;Teilnehmende;weiblich;39
+2020;Tennis;Kurse/Lager;;712
+2020;Tennis;Leitende;;872
+2020;Tennis;Teilnehmende;männlich;2389
+2020;Tennis;Teilnehmende;weiblich;943
+2020;Tischtennis;Kurse/Lager;;25
+2020;Tischtennis;Leitende;;58
+2020;Tischtennis;Teilnehmende;männlich;224
+2020;Tischtennis;Teilnehmende;weiblich;21
+2020;Turnen und Rhönrad;Kurse/Lager;;472
+2020;Turnen und Rhönrad;Leitende;;1070
+2020;Turnen und Rhönrad;Teilnehmende;männlich;2286
+2020;Turnen und Rhönrad;Teilnehmende;weiblich;3411
+2020;Unihockey;Kurse/Lager;;95
+2020;Unihockey;Leitende;;182
+2020;Unihockey;Teilnehmende;männlich;1149
+2020;Unihockey;Teilnehmende;weiblich;246
+2020;Volleyball;Kurse/Lager;;139
+2020;Volleyball;Leitende;;265
+2020;Volleyball;Teilnehmende;männlich;281
+2020;Volleyball;Teilnehmende;weiblich;1257
+2021;Badminton;Kurse/Lager;;55
+2021;Badminton;Leitende;;113
+2021;Badminton;Teilnehmende;männlich;340
+2021;Badminton;Teilnehmende;weiblich;169
+2021;Baseball/Softball;Kurse/Lager;;8
+2021;Baseball/Softball;Leitende;;17
+2021;Baseball/Softball;Teilnehmende;männlich;48
+2021;Baseball/Softball;Teilnehmende;weiblich;9
+2021;Basketball und Korbball;Kurse/Lager;;104
+2021;Basketball und Korbball;Leitende;;177
+2021;Basketball und Korbball;Teilnehmende;männlich;759
+2021;Basketball und Korbball;Teilnehmende;weiblich;343
+2021;Bergsport;Kurse/Lager;;2
+2021;Bergsport;Leitende;;12
+2021;Bergsport;Teilnehmende;männlich;1
+2021;Bergsport;Teilnehmende;weiblich;4
+2021;Curling;Kurse/Lager;;5
+2021;Curling;Leitende;;5
+2021;Curling;Teilnehmende;männlich;13
+2021;Curling;Teilnehmende;weiblich;7
+2021;Diverse Sportarten;Kurse/Lager;;1
+2021;Diverse Sportarten;Leitende;;1
+2021;Diverse Sportarten;Teilnehmende;männlich;1
+2021;Diverse Sportarten;Teilnehmende;weiblich;2
+2021;Eishockey;Kurse/Lager;;18
+2021;Eishockey;Leitende;;55
+2021;Eishockey;Teilnehmende;männlich;254
+2021;Eishockey;Teilnehmende;weiblich;23
+2021;Eiskunstlauf/Eistanz;Kurse/Lager;;68
+2021;Eiskunstlauf/Eistanz;Leitende;;158
+2021;Eiskunstlauf/Eistanz;Teilnehmende;männlich;52
+2021;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;499
+2021;Faustball;Kurse/Lager;;3
+2021;Faustball;Leitende;;4
+2021;Faustball;Teilnehmende;männlich;9
+2021;Faustball;Teilnehmende;weiblich;12
+2021;Fussball;Kurse/Lager;;622
+2021;Fussball;Leitende;;904
+2021;Fussball;Teilnehmende;männlich;7805
+2021;Fussball;Teilnehmende;weiblich;751
+2021;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;124
+2021;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;336
+2021;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;310
+2021;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;1270
+2021;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;59
+2021;Gymnastik, Tanz und Tanzsport;Leitende;;104
+2021;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;40
+2021;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;581
+2021;Handball;Kurse/Lager;;75
+2021;Handball;Leitende;;185
+2021;Handball;Teilnehmende;männlich;492
+2021;Handball;Teilnehmende;weiblich;237
+2021;Judo;Kurse/Lager;;61
+2021;Judo;Leitende;;146
+2021;Judo;Teilnehmende;männlich;384
+2021;Judo;Teilnehmende;weiblich;156
+2021;Ju-Jitsu;Kurse/Lager;;13
+2021;Ju-Jitsu;Leitende;;26
+2021;Ju-Jitsu;Teilnehmende;männlich;98
+2021;Ju-Jitsu;Teilnehmende;weiblich;81
+2021;Karate;Kurse/Lager;;85
+2021;Karate;Leitende;;169
+2021;Karate;Teilnehmende;männlich;595
+2021;Karate;Teilnehmende;weiblich;270
+2021;Kids und Allround;Kurse/Lager;;34
+2021;Kids und Allround;Leitende;;91
+2021;Kids und Allround;Teilnehmende;männlich;244
+2021;Kids und Allround;Teilnehmende;weiblich;247
+2021;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;56
+2021;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;126
+2021;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;787
+2021;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;648
+2021;Lagersport/Trekking;Kurse/Lager;;104
+2021;Lagersport/Trekking;Leitende;;617
+2021;Lagersport/Trekking;Teilnehmende;männlich;1418
+2021;Lagersport/Trekking;Teilnehmende;weiblich;1655
+2021;Leichtathletik;Kurse/Lager;;129
+2021;Leichtathletik;Leitende;;307
+2021;Leichtathletik;Teilnehmende;männlich;751
+2021;Leichtathletik;Teilnehmende;weiblich;1167
+2021;Orientierungslauf;Kurse/Lager;;1
+2021;Orientierungslauf;Leitende;;7
+2021;Orientierungslauf;Teilnehmende;männlich;14
+2021;Orientierungslauf;Teilnehmende;weiblich;9
+2021;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;85
+2021;Pferdesport (Reiten und Voltigieren);Leitende;;126
+2021;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;30
+2021;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;462
+2021;Polysportive Lager und Kurse;Kurse/Lager;;117
+2021;Polysportive Lager und Kurse;Leitende;;168
+2021;Polysportive Lager und Kurse;Teilnehmende;männlich;821
+2021;Polysportive Lager und Kurse;Teilnehmende;weiblich;657
+2021;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;13
+2021;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;41
+2021;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;100
+2021;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;25
+2021;Schiessen (Gewehr und Pistole);Kurse/Lager;;16
+2021;Schiessen (Gewehr und Pistole);Leitende;;21
+2021;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;57
+2021;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;19
+2021;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;102
+2021;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;186
+2021;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;405
+2021;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;418
+2021;Schwingen;Kurse/Lager;;10
+2021;Schwingen;Leitende;;23
+2021;Schwingen;Teilnehmende;männlich;62
+2021;Schwingen;Teilnehmende;weiblich;5
+2021;Segeln;Kurse/Lager;;1
+2021;Segeln;Leitende;;4
+2021;Segeln;Teilnehmende;männlich;3
+2021;Segeln;Teilnehmende;weiblich;1
+2021;Skifahren;Kurse/Lager;;2
+2021;Skifahren;Leitende;;10
+2021;Skifahren;Teilnehmende;männlich;6
+2021;Skifahren;Teilnehmende;weiblich;4
+2021;Skitouren;Kurse/Lager;;1
+2021;Skitouren;Leitende;;7
+2021;Skitouren;Teilnehmende;männlich;2
+2021;Skitouren;Teilnehmende;weiblich;0
+2021;Speedskating;Kurse/Lager;;4
+2021;Speedskating;Leitende;;9
+2021;Speedskating;Teilnehmende;männlich;4
+2021;Speedskating;Teilnehmende;weiblich;20
+2021;Sportklettern;Kurse/Lager;;5
+2021;Sportklettern;Leitende;;32
+2021;Sportklettern;Teilnehmende;männlich;14
+2021;Sportklettern;Teilnehmende;weiblich;23
+2021;Squash;Kurse/Lager;;7
+2021;Squash;Leitende;;7
+2021;Squash;Teilnehmende;männlich;38
+2021;Squash;Teilnehmende;weiblich;6
+2021;Synchronized Skating;Kurse/Lager;;5
+2021;Synchronized Skating;Leitende;;10
+2021;Synchronized Skating;Teilnehmende;männlich;2
+2021;Synchronized Skating;Teilnehmende;weiblich;73
+2021;Tennis;Kurse/Lager;;818
+2021;Tennis;Leitende;;939
+2021;Tennis;Teilnehmende;männlich;2469
+2021;Tennis;Teilnehmende;weiblich;1026
+2021;Tischtennis;Kurse/Lager;;18
+2021;Tischtennis;Leitende;;30
+2021;Tischtennis;Teilnehmende;männlich;139
+2021;Tischtennis;Teilnehmende;weiblich;13
+2021;Turnen und Rhönrad;Kurse/Lager;;418
+2021;Turnen und Rhönrad;Leitende;;901
+2021;Turnen und Rhönrad;Teilnehmende;männlich;1843
+2021;Turnen und Rhönrad;Teilnehmende;weiblich;2787
+2021;Unihockey;Kurse/Lager;;83
+2021;Unihockey;Leitende;;161
+2021;Unihockey;Teilnehmende;männlich;951
+2021;Unihockey;Teilnehmende;weiblich;227
+2021;Volleyball;Kurse/Lager;;117
+2021;Volleyball;Leitende;;234
+2021;Volleyball;Teilnehmende;männlich;192
+2021;Volleyball;Teilnehmende;weiblich;992
+2022;Badminton;Kurse/Lager;;47
+2022;Badminton;Leitende;;89
+2022;Badminton;Teilnehmende;männlich;286
+2022;Badminton;Teilnehmende;weiblich;144
+2022;Baseball/Softball;Kurse/Lager;;9
+2022;Baseball/Softball;Leitende;;25
+2022;Baseball/Softball;Teilnehmende;männlich;56
+2022;Baseball/Softball;Teilnehmende;weiblich;3
+2022;Basketball und Korbball;Kurse/Lager;;100
+2022;Basketball und Korbball;Leitende;;177
+2022;Basketball und Korbball;Teilnehmende;männlich;665
+2022;Basketball und Korbball;Teilnehmende;weiblich;357
+2022;Curling;Kurse/Lager;;5
+2022;Curling;Leitende;;7
+2022;Curling;Teilnehmende;männlich;12
+2022;Curling;Teilnehmende;weiblich;9
+2022;Diverse Sportarten;Kurse/Lager;;3
+2022;Diverse Sportarten;Leitende;;5
+2022;Diverse Sportarten;Teilnehmende;männlich;13
+2022;Diverse Sportarten;Teilnehmende;weiblich;5
+2022;Eishockey;Kurse/Lager;;20
+2022;Eishockey;Leitende;;54
+2022;Eishockey;Teilnehmende;männlich;226
+2022;Eishockey;Teilnehmende;weiblich;25
+2022;Eiskunstlauf/Eistanz;Kurse/Lager;;85
+2022;Eiskunstlauf/Eistanz;Leitende;;178
+2022;Eiskunstlauf/Eistanz;Teilnehmende;männlich;61
+2022;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;619
+2022;Faustball;Kurse/Lager;;2
+2022;Faustball;Leitende;;3
+2022;Faustball;Teilnehmende;männlich;7
+2022;Faustball;Teilnehmende;weiblich;6
+2022;Fussball;Kurse/Lager;;426
+2022;Fussball;Leitende;;626
+2022;Fussball;Teilnehmende;männlich;5318
+2022;Fussball;Teilnehmende;weiblich;495
+2022;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;114
+2022;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;270
+2022;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;278
+2022;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;1112
+2022;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;24
+2022;Gymnastik, Tanz und Tanzsport;Leitende;;49
+2022;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;3
+2022;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;257
+2022;Handball;Kurse/Lager;;69
+2022;Handball;Leitende;;181
+2022;Handball;Teilnehmende;männlich;454
+2022;Handball;Teilnehmende;weiblich;265
+2022;Judo;Kurse/Lager;;62
+2022;Judo;Leitende;;168
+2022;Judo;Teilnehmende;männlich;313
+2022;Judo;Teilnehmende;weiblich;156
+2022;Ju-Jitsu;Kurse/Lager;;7
+2022;Ju-Jitsu;Leitende;;15
+2022;Ju-Jitsu;Teilnehmende;männlich;50
+2022;Ju-Jitsu;Teilnehmende;weiblich;48
+2022;Karate;Kurse/Lager;;29
+2022;Karate;Leitende;;64
+2022;Karate;Teilnehmende;männlich;189
+2022;Karate;Teilnehmende;weiblich;97
+2022;Kids und Allround;Kurse/Lager;;92
+2022;Kids und Allround;Leitende;;123
+2022;Kids und Allround;Teilnehmende;männlich;683
+2022;Kids und Allround;Teilnehmende;weiblich;429
+2022;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;57
+2022;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;140
+2022;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;761
+2022;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;667
+2022;Lagersport/Trekking;Kurse/Lager;;102
+2022;Lagersport/Trekking;Leitende;;728
+2022;Lagersport/Trekking;Teilnehmende;männlich;1422
+2022;Lagersport/Trekking;Teilnehmende;weiblich;1665
+2022;Leichtathletik;Kurse/Lager;;101
+2022;Leichtathletik;Leitende;;232
+2022;Leichtathletik;Teilnehmende;männlich;521
+2022;Leichtathletik;Teilnehmende;weiblich;697
+2022;Orientierungslauf;Kurse/Lager;;1
+2022;Orientierungslauf;Leitende;;9
+2022;Orientierungslauf;Teilnehmende;männlich;16
+2022;Orientierungslauf;Teilnehmende;weiblich;8
+2022;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;77
+2022;Pferdesport (Reiten und Voltigieren);Leitende;;89
+2022;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;19
+2022;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;421
+2022;Polysportive Lager und Kurse;Kurse/Lager;;71
+2022;Polysportive Lager und Kurse;Leitende;;240
+2022;Polysportive Lager und Kurse;Teilnehmende;männlich;1209
+2022;Polysportive Lager und Kurse;Teilnehmende;weiblich;1190
+2022;Radsport (Kunstradfahren, Mountainbike und Strasse);Kurse/Lager;;12
+2022;Radsport (Kunstradfahren, Mountainbike und Strasse);Leitende;;30
+2022;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;männlich;90
+2022;Radsport (Kunstradfahren, Mountainbike und Strasse);Teilnehmende;weiblich;23
+2022;Schiessen (Gewehr und Pistole);Kurse/Lager;;18
+2022;Schiessen (Gewehr und Pistole);Leitende;;33
+2022;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;82
+2022;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;34
+2022;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;72
+2022;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;154
+2022;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;297
+2022;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;336
+2022;Schwingen;Kurse/Lager;;1
+2022;Schwingen;Leitende;;2
+2022;Schwingen;Teilnehmende;männlich;14
+2022;Schwingen;Teilnehmende;weiblich;6
+2022;Segeln;Kurse/Lager;;1
+2022;Segeln;Leitende;;3
+2022;Segeln;Teilnehmende;männlich;2
+2022;Segeln;Teilnehmende;weiblich;1
+2022;Skifahren;Kurse/Lager;;12
+2022;Skifahren;Leitende;;42
+2022;Skifahren;Teilnehmende;männlich;170
+2022;Skifahren;Teilnehmende;weiblich;136
+2022;Sportklettern;Kurse/Lager;;2
+2022;Sportklettern;Leitende;;8
+2022;Sportklettern;Teilnehmende;männlich;16
+2022;Sportklettern;Teilnehmende;weiblich;20
+2022;Squash;Kurse/Lager;;5
+2022;Squash;Leitende;;9
+2022;Squash;Teilnehmende;männlich;28
+2022;Squash;Teilnehmende;weiblich;2
+2022;Tennis;Kurse/Lager;;858
+2022;Tennis;Leitende;;1031
+2022;Tennis;Teilnehmende;männlich;2256
+2022;Tennis;Teilnehmende;weiblich;1093
+2022;Tischtennis;Kurse/Lager;;18
+2022;Tischtennis;Leitende;;36
+2022;Tischtennis;Teilnehmende;männlich;149
+2022;Tischtennis;Teilnehmende;weiblich;11
+2022;Turnen und Rhönrad;Kurse/Lager;;255
+2022;Turnen und Rhönrad;Leitende;;560
+2022;Turnen und Rhönrad;Teilnehmende;männlich;1209
+2022;Turnen und Rhönrad;Teilnehmende;weiblich;1690
+2022;Unihockey;Kurse/Lager;;88
+2022;Unihockey;Leitende;;170
+2022;Unihockey;Teilnehmende;männlich;906
+2022;Unihockey;Teilnehmende;weiblich;184
+2022;Volleyball;Kurse/Lager;;115
+2022;Volleyball;Leitende;;204
+2022;Volleyball;Teilnehmende;männlich;445
+2022;Volleyball;Teilnehmende;weiblich;931
+2023;Badminton;Kurse/Lager;;55
+2023;Badminton;Leitende;;117
+2023;Badminton;Teilnehmende;männlich;327
+2023;Badminton;Teilnehmende;weiblich;163
+2023;Baseball/Softball;Kurse/Lager;;10
+2023;Baseball/Softball;Leitende;;19
+2023;Baseball/Softball;Teilnehmende;männlich;45
+2023;Baseball/Softball;Teilnehmende;weiblich;4
+2023;Basketball und Korbball;Kurse/Lager;;95
+2023;Basketball und Korbball;Leitende;;189
+2023;Basketball und Korbball;Teilnehmende;männlich;778
+2023;Basketball und Korbball;Teilnehmende;weiblich;294
+2023;Bergsport;Kurse/Lager;;1
+2023;Bergsport;Leitende;;4
+2023;Bergsport;Teilnehmende;männlich;0
+2023;Bergsport;Teilnehmende;weiblich;0
+2023;Curling;Kurse/Lager;;6
+2023;Curling;Leitende;;6
+2023;Curling;Teilnehmende;männlich;10
+2023;Curling;Teilnehmende;weiblich;4
+2023;Diverse Sportarten;Kurse/Lager;;7
+2023;Diverse Sportarten;Leitende;;14
+2023;Diverse Sportarten;Teilnehmende;männlich;23
+2023;Diverse Sportarten;Teilnehmende;weiblich;10
+2023;Eishockey;Kurse/Lager;;7
+2023;Eishockey;Leitende;;18
+2023;Eishockey;Teilnehmende;männlich;64
+2023;Eishockey;Teilnehmende;weiblich;21
+2023;Eiskunstlauf/Eistanz;Kurse/Lager;;63
+2023;Eiskunstlauf/Eistanz;Leitende;;136
+2023;Eiskunstlauf/Eistanz;Teilnehmende;männlich;43
+2023;Eiskunstlauf/Eistanz;Teilnehmende;weiblich;408
+2023;Faustball;Kurse/Lager;;1
+2023;Faustball;Leitende;;2
+2023;Faustball;Teilnehmende;männlich;2
+2023;Faustball;Teilnehmende;weiblich;1
+2023;Fussball;Kurse/Lager;;632
+2023;Fussball;Leitende;;1006
+2023;Fussball;Teilnehmende;männlich;7811
+2023;Fussball;Teilnehmende;weiblich;726
+2023;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Kurse/Lager;;163
+2023;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Leitende;;398
+2023;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;männlich;343
+2023;Geräte-, Akrobatik- und Kunstturnen, Trampolin;Teilnehmende;weiblich;1359
+2023;Gymnastik, Tanz und Tanzsport;Kurse/Lager;;38
+2023;Gymnastik, Tanz und Tanzsport;Leitende;;81
+2023;Gymnastik, Tanz und Tanzsport;Teilnehmende;männlich;6
+2023;Gymnastik, Tanz und Tanzsport;Teilnehmende;weiblich;434
+2023;Handball;Kurse/Lager;;65
+2023;Handball;Leitende;;142
+2023;Handball;Teilnehmende;männlich;564
+2023;Handball;Teilnehmende;weiblich;209
+2023;Judo;Kurse/Lager;;61
+2023;Judo;Leitende;;188
+2023;Judo;Teilnehmende;männlich;358
+2023;Judo;Teilnehmende;weiblich;151
+2023;Ju-Jitsu;Kurse/Lager;;10
+2023;Ju-Jitsu;Leitende;;21
+2023;Ju-Jitsu;Teilnehmende;männlich;90
+2023;Ju-Jitsu;Teilnehmende;weiblich;68
+2023;Karate;Kurse/Lager;;52
+2023;Karate;Leitende;;130
+2023;Karate;Teilnehmende;männlich;324
+2023;Karate;Teilnehmende;weiblich;197
+2023;Kids und Allround;Kurse/Lager;;87
+2023;Kids und Allround;Leitende;;121
+2023;Kids und Allround;Teilnehmende;männlich;579
+2023;Kids und Allround;Teilnehmende;weiblich;486
+2023;KJSBL, Kinder- und Jugendsport Baselland;Kurse/Lager;;63
+2023;KJSBL, Kinder- und Jugendsport Baselland;Leitende;;186
+2023;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;männlich;824
+2023;KJSBL, Kinder- und Jugendsport Baselland;Teilnehmende;weiblich;760
+2023;Lagersport/Trekking;Kurse/Lager;;96
+2023;Lagersport/Trekking;Leitende;;604
+2023;Lagersport/Trekking;Teilnehmende;männlich;1316
+2023;Lagersport/Trekking;Teilnehmende;weiblich;1509
+2023;Leichtathletik;Kurse/Lager;;144
+2023;Leichtathletik;Leitende;;381
+2023;Leichtathletik;Teilnehmende;männlich;775
+2023;Leichtathletik;Teilnehmende;weiblich;1164
+2023;Orientierungslauf;Kurse/Lager;;1
+2023;Orientierungslauf;Leitende;;6
+2023;Orientierungslauf;Teilnehmende;männlich;13
+2023;Orientierungslauf;Teilnehmende;weiblich;8
+2023;Pferdesport (Reiten und Voltigieren);Kurse/Lager;;27
+2023;Pferdesport (Reiten und Voltigieren);Leitende;;44
+2023;Pferdesport (Reiten und Voltigieren);Teilnehmende;männlich;8
+2023;Pferdesport (Reiten und Voltigieren);Teilnehmende;weiblich;177
+2023;Polysportive Lager und Kurse;Kurse/Lager;;223
+2023;Polysportive Lager und Kurse;Leitende;;740
+2023;Polysportive Lager und Kurse;Teilnehmende;männlich;4366
+2023;Polysportive Lager und Kurse;Teilnehmende;weiblich;3685
+2023;Radsport (Kunstradfahren, Einrad,  Mountainbike und Strasse);Kurse/Lager;;14
+2023;Radsport (Kunstradfahren, Einrad,  Mountainbike und Strasse);Leitende;;42
+2023;Radsport (Kunstradfahren, Einrad,  Mountainbike und Strasse);Teilnehmende;männlich;62
+2023;Radsport (Kunstradfahren, Einrad,  Mountainbike und Strasse);Teilnehmende;weiblich;18
+2023;Schiessen (Gewehr und Pistole);Kurse/Lager;;17
+2023;Schiessen (Gewehr und Pistole);Leitende;;34
+2023;Schiessen (Gewehr und Pistole);Teilnehmende;männlich;72
+2023;Schiessen (Gewehr und Pistole);Teilnehmende;weiblich;26
+2023;Schwimmen, Rettungsschwimmen und Wasserball;Kurse/Lager;;86
+2023;Schwimmen, Rettungsschwimmen und Wasserball;Leitende;;151
+2023;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;männlich;275
+2023;Schwimmen, Rettungsschwimmen und Wasserball;Teilnehmende;weiblich;351
+2023;Schwingen;Kurse/Lager;;7
+2023;Schwingen;Leitende;;16
+2023;Schwingen;Teilnehmende;männlich;55
+2023;Schwingen;Teilnehmende;weiblich;2
+2023;Skifahren;Kurse/Lager;;23
+2023;Skifahren;Leitende;;74
+2023;Skifahren;Teilnehmende;männlich;368
+2023;Skifahren;Teilnehmende;weiblich;345
+2023;Speedskating;Kurse/Lager;;2
+2023;Speedskating;Leitende;;5
+2023;Speedskating;Teilnehmende;männlich;0
+2023;Speedskating;Teilnehmende;weiblich;12
+2023;Sportklettern;Kurse/Lager;;6
+2023;Sportklettern;Leitende;;28
+2023;Sportklettern;Teilnehmende;männlich;22
+2023;Sportklettern;Teilnehmende;weiblich;20
+2023;Squash;Kurse/Lager;;2
+2023;Squash;Leitende;;5
+2023;Squash;Teilnehmende;männlich;8
+2023;Squash;Teilnehmende;weiblich;1
+2023;Synchronized Skating;Kurse/Lager;;10
+2023;Synchronized Skating;Leitende;;30
+2023;Synchronized Skating;Teilnehmende;männlich;7
+2023;Synchronized Skating;Teilnehmende;weiblich;120
+2023;Tennis;Kurse/Lager;;620
+2023;Tennis;Leitende;;702
+2023;Tennis;Teilnehmende;männlich;1685
+2023;Tennis;Teilnehmende;weiblich;831
+2023;Tischtennis;Kurse/Lager;;31
+2023;Tischtennis;Leitende;;62
+2023;Tischtennis;Teilnehmende;männlich;307
+2023;Tischtennis;Teilnehmende;weiblich;55
+2023;Turnen und Rhönrad;Kurse/Lager;;347
+2023;Turnen und Rhönrad;Leitende;;744
+2023;Turnen und Rhönrad;Teilnehmende;männlich;1685
+2023;Turnen und Rhönrad;Teilnehmende;weiblich;2136
+2023;Unihockey;Kurse/Lager;;82
+2023;Unihockey;Leitende;;138
+2023;Unihockey;Teilnehmende;männlich;747
+2023;Unihockey;Teilnehmende;weiblich;130
+2023;Volleyball;Kurse/Lager;;123
+2023;Volleyball;Leitende;;238
+2023;Volleyball;Teilnehmende;männlich;337
+2023;Volleyball;Teilnehmende;weiblich;700

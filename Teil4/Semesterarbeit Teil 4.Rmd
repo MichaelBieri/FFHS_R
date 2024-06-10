@@ -1,59 +1,168 @@
 Semesterarbeit Teil 4 - Michael Bieri
-Aufgabe 1 a) Histogrra alle Werte
+Aufgabe 1 a) Histogramm aller Werte
 Aufgabe 1 b) Passende Verteilung mit angepassten Parametern
 
 ```{r}
+# Aufgabe 1 a) Histogramm aller Werte
 library(readxl)
 library(ggplot2)
 
 load("zeitdauerGesamtheit.RData")
 
-# Assuming zeitdauerGesamtheit is already loaded
-zeitdauer <- as.numeric(zeitdauerGesamtheit$zeitdauer)
+zeitdauer <- as.numeric(zeitdauerGesamtheit$zeitdauer) # Numerisch laden der Werte
+zeitdauerdf <- data.frame(zeitdauer)
+zeitdauerkategoriendf <- data.frame(Zeitdauer = zeitdauer) # Datframe spaeter mit Kategorien
 
-# Calculate the mean of 'zeitdauer'
-lambda_zeitdauer <- mean(zeitdauer)
+lambda_zeitdauer <- mean(zeitdauer) # Berechnen Mittelwerts der 'zeitdauer'
+sd_zeitdauer <- sd(zeitdauer) # Berechnung Standardabweichung
 
-# Create a data frame for observed data
-zeitdauerdf <- data.frame(Zeitdauer = zeitdauer)
-
-# Inspect the range of zeitdauer to ensure correct categorization
 print(range(zeitdauer))
 
-# Kategorien - Adjusted breaks to cover all values
+# Histogramm der Zeiten
+ggplot(zeitdauer_df, aes(x = zeitdauer)) +
+  geom_histogram(binwidth = 1, fill = "blue", alpha = 0.7, color = "black") + # In 1er Schritten
+  labs(title = "Histogramm der Zeitdauervariablen", x = "Zeitdauer", y = "Häufigkeit") +
+  scale_x_continuous(breaks = seq(0, max(zeitdauer), by = 10)) + # x-Achse 10er Schritten
+  scale_y_continuous(labels = scales::number_format(accuracy = 0.5)) + # y-Achse Rundung
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5, size = 5))
+
+# Kategorien
 kategorien <- cut(zeitdauer, 
                   breaks = c(min(zeitdauer),0,50,100,150,200,250,300, 350,400,450,500,550,600,650,700,750,800,850,900,950,1000,1050,1100,1150,1200,1250,1300,1350, max(zeitdauer)), 
                   labels = c("-0", "0-50", "50-100", "100-150", "150-200", "200-250", "250-300", "300-350", "350-400", "400-450", "450-500", "500-550", "550-600", "600-650","650-700", "700-750", "750-800", "800-850", "850-900", "900-950", "950-1000", "1000-1050","1050-1100", "1100-1150", "1150-1200", "1200-1250", "1250-1300", "1300-1350", "1350+"))
 
-# Add the categories to the data frame
-zeitdauerdf$Kategorien <- kategorien
+zeitdauerkategoriendf$Kategorien <- kategorien # Kategorien zum Dataframe hinzufügen
 
-# Generate Poisson distribution data
-poisson_data <- data.frame(
-  Zeitdauer = 0:max(zeitdauer),
-  Probability = dpois(0:max(zeitdauer), lambda_zeitdauer)
-)
-
-# Plot the frequency distribution of 'zeitdauer' categories
-ggplot(zeitdauerdf, aes(x = Kategorien)) +
+# Häufigkeitsverteilung der 'zeitdauer'-Kategorien
+ggplot(zeitdauerkategoriendf, aes(x = kategorien)) +
   geom_bar(color = "black", fill = "green", alpha = 0.7, na.rm = TRUE) +
-  labs(title = "Häufigkeitsverteilung der Zeitdauerkategorien", x = "Kategorien", y = "Häufigkeit") +
+  labs(title = "Histogramm der Zeitdauerkategorien", x = "Kategorien", y = "Häufigkeit") +
   scale_y_continuous(labels = scales::number_format(accuracy = 0.1)) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8))
 
-# Create a data frame for observed data in the histogram
-observed_data <- data.frame(Zeitdauer = zeitdauer)
+# Aufgabe 1 b) Passende Verteilung mit angepassten Parametern - Normalverteilung
+# Erstellen eines Dataframes für die Normalverteilung
+x_values <- seq(min(zeitdauer), max(zeitdauer), length.out = 1000)
+normal_data <- data.frame(
+  Zeitdauer = x_values,
+  Density = dnorm(x_values, mean = lambda_zeitdauer, sd = sd_zeitdauer)
+)
 
-# Poissonverteilung
+# Normalverteilung inkl. Histogramm
 ggplot() +
-  geom_line(data = poisson_data, aes(x = Zeitdauer, y = Probability), color = "red", linewidth = 0.1) +
-  scale_x_continuous(breaks = seq(60, 150, by = 10), limits = c(60, 150)) +
-  labs(title = "Poisson-Verteilung der Zeitreihenwerte", x = "Zeitdauer mit Wertebereich von 60 - 150", y = "Dichte") +
-  theme_minimal()
- + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  geom_histogram(data = zeitdauerdf, aes(x = zeitdauer, y = ..density..), binwidth = 50, fill = "green", alpha = 0.5, color = "black") +
+  geom_line(data = normal_data, aes(x = Zeitdauer, y = Density), color = "red", size = 1) +
+  scale_x_continuous(breaks = seq(-50, max(zeitdauer), by = 50)) +
+  labs(title = "Normalverteilung und Histogramm der Zeitreihenwerte", x = "Zeitdauer", y = "Dichtehauefigkeit pro Intervall Total = 1") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+Erklaerung:
+Gesamtflaeche unterhalb der Kurve oder auch Summe der Flaechen aller Bins im Histogramm gleich 1.
+Dichtehöhe: Die Höhe eines Bins (z.B. 0.02) gibt die Dichte an, was bedeutet, dass in einem Intervall der Breite 1 auf der x-Achse etwa 0.02 der Gesamtflaeche des Histogramms liegt.
+Flaeche eines Bins: Die Flaeche eines Bins ist die Dichtehöhe multipliziert mit der Breite des Bins. Wenn ein Bin eine Breite von 5 und eine Dichtehoehe von 0.02 hat, ist die Fläche dieses Bins 0.02 * 5 = 0.1.
+Gesamtflaeche: Die Summe der Flächen aller Bins ist 1, was die gesamte Wahrscheinlichkeit darstellt. Histogramm mit Dichte: Das Histogramm zeigt die Dichte der zeitdauer-Daten.
+Normalverteilungskurve: Die rote Linie zeigt die theoretische Normalverteilung basierend auf dem Mittelwert und der Standardabweichung der zeitdauer-Daten. Die Werte zwischen 75 und 125 sind also am dichtesten.
+
+Aufgabe 1 c) Plotten Histogramm der tatsaechlichen und der theoretischen Verteilung
+Die theoretische Dichteverteilung, ist oft eine kontinuierliche Dichtefunktion. Indem man die Dichtewerte der theoretischen Verteilung an den Mittelpunkten der Bins berechnet, können diese Werte mit den diskreten Höhen der Balken des Histogramms verglichen werden.
+```{r}
+density_values <- density(zeitdauerdf$zeitdauer)
+
+# Tatasechliche Verteilung
+ggplot(zeitdauerdf, aes(x = zeitdauer)) +
+  geom_histogram(aes(y = ..density..), binwidth = 0.1, fill = "steelblue", color = "black") +
+  labs(title = "Distribution of Observed Values", x = "Observed Value", y = "Density") +
+  theme_minimal() +
+  geom_line(data = data.frame(x = density_values$x, y = density_values$y), 
+            aes(x = x, y = y), color = "red", size = 1)
+
 ```
 ```{r}
+# Histogramm der tatsaechlichen Daten berechnen
+hist_data <- hist(zeitdauerdf$zeitdauer, breaks = 100, plot = FALSE) # Bins
 
+# Parameter der Normalverteilung
+print(lambda_zeitdauer)
+print(sd_zeitdauer)
+
+# Hoehen der theoretischen Normalverteilung berechnen
+x_values <- hist_data$mids
+y_values <- dnorm(x_values, mean = lambda_zeitdauer, sd = sd_zeitdauer)
+y_values <- y_values * diff(hist_data$breaks) * length(zeitdauerdf$zeitdauer) # skaliert die Dichtewerte auf die tatsächliche Anzahl der Datenpunkte und die Breite der Bins
+
+# Balkendiagramm erstellen
+barplot(height = hist_data$counts, names.arg = round(hist_data$mids, 1), col = rgb(0.2, 0.4, 0.6, 0.6), ylim = c(0, max(c(hist_data$counts, y_values))*1.2), xlab = "Zeitreihe", ylab = "Haeufigkeit", main = "Histo mit tatsaechlicher Verteilung und theoretischer Normalverteilung")
+barplot(height = y_values, names.arg = round(hist_data$mids, 1), col = rgb(1, 0, 0, 0.4), add = TRUE)
+legend("topright", legend = c("Tatsaechliche Verteilung", "Theoretische Normalverteilung"), fill = c(rgb(0.2, 0.4, 0.6, 0.6), rgb(1, 0, 0, 0.4)))
+```
+# Versuch diese nebeneinander zu plotten
+
+
+```{r}
+# Balkenhöhen in einer Matrix anordnen
+heights <- rbind(hist_data$counts, y_values)
+
+# Balkendiagramm erstellen mit nebeneinander stehenden Balken
+barplot(heights, beside = TRUE, names.arg = round(hist_data$mids, 1),
+        col = c(rgb(0.2, 0.4, 0.6, 0.6), rgb(1, 0, 0, 0.4)),
+        ylim = c(0, max(heights) * 1.2),
+        xlab = "Werte",
+        ylab = "Haeufigkeit",
+        main = "Tatsaechliche vs. Theoretische Normalverteilung",
+        width = 1.5,
+        space = c(0.1, 0.1))
+```
+# Chi-Quadrat-Anpassungstest (χ²-Goodness-of-Fit-Test)
+# H0: Die Teilnehmer an den Jahren 2005 - 2014 in der Sportart Orientierungslauf von allen Teilnehmern eines Jugend und Sportkurses ist gleich verteilt. Wenn der p-Wert <0.005 deutet daraufhin, dass die beobachteten Häufigkeiten signifikant von den erwarteten Häufigkeiten abweichen, was darauf hindeutet, dass die Verteilung nicht gleichmäßig ist. Annahme gleichmaessiger Verteilung der Teilnehmenden da sonst die Erhebung der Statistik falsch waere. Jedes Jahr waren die Voraussetzungen gleich. Objektiv geht aber hervor, dass die Teilnehmenden vorallem zu Beginn stark abgenommen haben.
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+data <- read.csv("Jugend_und_Sport_Anzahl_Kurse_Teilnehmende_und_Leitende_nach_Sportart_und_Jahr_(seit 2005).csv", header = TRUE, sep = ";", stringsAsFactors = FALSE)
+
+# Überprüfen ob NA-Werte
+sum(is.na(data))
+data <- na.omit(data)
+
+# Anzahl Personen pro Jahr bei der sportart Orieniterungslauf
+Teilnehmer_pro_jah_Orientierungslaufr <- data %>%
+  group_by(jahr) %>%
+  summarise(summe = sum(anzahl))
+
+# Filter the data based on multiple conditions
+filtered_data <- data %>%
+  filter(
+    sportart == "Orientierungslauf" &
+    indikator == "Teilnehmende" &
+    (geschlecht == "männlich" | geschlecht == "weiblich")
+  )
+
+# Group by 'jahr' and 'geschlecht' and summarize the 'anzahl'
+anzahl_teilnehmende <- filtered_data %>%
+  group_by(jahr) %>%
+  summarize(Teilnehmer_OL_pro_Jahr = sum(anzahl, na.rm = TRUE))
+
+str(anzahl_teilnehmende)
+print(anzahl_teilnehmende)
+
+# Darstellung der Teilnehmenden von 2005 bis 2023 an der sportart Orientierungslauf
+ggplot(anzahl_teilnehmende, aes(x = anzahl_teilnehmende$jahr, y = anzahl_teilnehmende$Teilnehmer_OL_pro_Jahr)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "Teilnehmerzahlen pro Jahr", x = "Jahr", y = "Teilnehmerzahl") +
+  theme_minimal()
+
+# Erwartete Häufigkeiten annehmen, dass sie gleichmäßig verteilt sind
+expected_frequencies <- rep(mean(anzahl_teilnehmende), length(anzahl_teilnehmende))
+
+# Chi-Quadrat-Goodness-of-Fit-Test durchführen
+chi_square_test <- chisq.test(anzahl_teilnehmende, p = expected_frequencies/sum(expected_frequencies))
+
+# Testergebnis ausgeben
+print(chi_square_test)
 ```
 
