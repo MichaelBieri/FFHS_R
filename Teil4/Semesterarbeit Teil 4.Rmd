@@ -250,7 +250,7 @@ pairs.panels(data_meteo[, c("tre200s0", "rre150z0", "sre000z0", "gre000z0", "ure
 
 ```
 Diskussion:
-In den unteren Plots erkennt man ob die ausgewaehlten Variablen einen Zusammenhang. In den oberen sieht man die Korrelation. Die Werte deuten auf keine Korrelation hin. Die letzte Grafik zeigt die Dichteverteilung der Datenpunkte sowie die Dichtekurven.
+In den unteren Plots erkennt man ob die ausgewaehlten Variablen einen Zusammenhang. In den oberen sieht man die Korrelation. Die Werte deuten auf keine Korrelation hin. Die letzte Grafik zeigt die Dichteverteilung der Datenpunkte sowie die Dichtekurven. Zwei Variablen haben keine regelmaessigen Werte. Niederschlag und Sonnenscheindauer. Zwei Werte zeigen eine Gausskurve. Temperatur und Taupunkt. Diese haengen zusammen. Die relative Feuchtigkeit und die Globalstrahlung.
 
 Aufgabe 2b)
 Wir versuchen aus der unabhaengigen Variablen X die abhaengige Variable Y vorherzusagen und mit der linearen Einfachregression eine Gleichung zu finden. Der Plot residuals zeigt die Abstaende gegen dir vorhergesagten Werte. Die Punkte sind nicht um die Linie y = 0 in rot. Dies deutet nicht auf eine Homoskedastizität hin.
@@ -259,7 +259,7 @@ Wir versuchen aus der unabhaengigen Variablen X die abhaengige Variable Y vorher
 data <- data.frame(data_meteo)
 
 # Lineare Regression durchführen
-model <- lm(data_meteo$sre000z0 ~ data_meteo$tre200s0, data_meteo)
+model <- lm(data_meteo$tre200s0 ~ data_meteo$tde200s0, data_meteo)
 
 # Zusammenfassung des Modells anzeigen
 summary(model)
@@ -275,11 +275,17 @@ abline(h = 0, col = "red")
 qqnorm(residuals)
 qqline(residuals, col = "red")
 ```
-Scatter-Plot:
+Residual-Plot: Die Punkte sind gestreut, dafuer regelmaessig und nicht bei der 0-Kureve. Es gibt jedoch ein Trend das es mehr Wrte zwischen 10 - 15 gibt. Dies deutet auf Heteroskedastizität hin.
+
+Der QQ-Plot zeigt dass die Punkte auf der Diagonale liegen. Vorallem innerhalb der Standardabweichung von -1 und +1. Daneben zeigt die Grafik, dass die Punkte von der Normalverteilung abweichen.
+
+Aufgabe 2 d)
+Bereits unterhalb der einzelnen Aufgaben gmacht.
+
+Zusaetzlicher Scatter-Plot:
 Quelle: https://opendata.swiss/de/dataset/kennzahlen-offentliche-ladeinfrastruktur-elektromobilitat
 Die Datei enthaelt von den Jahren 2020 bis 2023 die Anzahl Ladestationen in verschiedenen Leistungsklassen im Total als auch in den einzelnen Kantonen. Dabei kann der Zusammenhang vom Ausbau der verschiedenen Ladestationenkategorien analysiert werden. 
 
-Der QQ-Plot zeigt, dass die Punkte zu Beginn auf der Diagonale liegen dann aber nicht mehr. Auf der x-Achse sind die Werte 0 = Mittelwert sowie Standardabweichung = 1. Wie bereits geschrieben gibt es ab der Standardabweichungen Punkte die von der Normalverteilung abweichen.
 
 ```{r}
 # Load necessary libraries
