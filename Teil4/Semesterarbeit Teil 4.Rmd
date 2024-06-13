@@ -11,7 +11,7 @@ load("zeitdauerGesamtheit.RData")
 
 zeitdauer <- as.numeric(zeitdauerGesamtheit$zeitdauer) # Numerisch laden der Werte
 zeitdauerdf <- data.frame(zeitdauer)
-zeitdauerkategoriendf <- data.frame(Zeitdauer = zeitdauer) # Datframe spaeter mit Kategorien
+zeitdauerkategoriendf <- data.frame(Zeitdauer = zeitdauer) # Dataframe spaeter mit Kategorien
 
 lambda_zeitdauer <- mean(zeitdauer) # Berechnen Mittelwerts der 'zeitdauer'
 sd_zeitdauer <- sd(zeitdauer) # Berechnung Standardabweichung
@@ -74,7 +74,7 @@ density_values <- density(zeitdauerdf$zeitdauer)
 # Tatasechliche Verteilung
 ggplot(zeitdauerdf, aes(x = zeitdauer)) +
   geom_histogram(aes(y = ..density..), binwidth = 0.1, fill = "steelblue", color = "black") +
-  labs(title = "Distribution of Observed Values", x = "Observed Value", y = "Density") +
+  labs(title = "Verteilung der beobachteten Werte", x = "Beobachtete Werte real", y = "Dichte") +
   theme_minimal() +
   geom_line(data = data.frame(x = density_values$x, y = density_values$y), 
             aes(x = x, y = y), color = "red", size = 1)
@@ -82,7 +82,7 @@ ggplot(zeitdauerdf, aes(x = zeitdauer)) +
 ```
 ```{r}
 # Histogramm der tatsaechlichen Daten berechnen
-hist_data <- hist(zeitdauerdf$zeitdauer, breaks = 100, plot = FALSE) # Bins
+hist_data <- hist(zeitdauerdf$zeitdauer, breaks = 100, plot = FALSE) # Bins = Fehler
 
 # Parameter der Normalverteilung
 print(lambda_zeitdauer)
@@ -115,8 +115,9 @@ barplot(heights, beside = TRUE, names.arg = round(hist_data$mids, 1),
         width = 1.5,
         space = c(0.1, 0.1))
 ```
-# Chi-Quadrat-Anpassungstest (χ²-Goodness-of-Fit-Test)
-# H0: Die Teilnehmer an den Jahren 2005 - 2014 in der Sportart Orientierungslauf von allen Teilnehmern eines Jugend und Sportkurses ist gleich verteilt. Wenn der p-Wert <0.005 deutet daraufhin, dass die beobachteten Häufigkeiten signifikant von den erwarteten Häufigkeiten abweichen, was darauf hindeutet, dass die Verteilung nicht gleichmäßig ist. Annahme gleichmaessiger Verteilung der Teilnehmenden da sonst die Erhebung der Statistik falsch waere. Jedes Jahr waren die Voraussetzungen gleich. Objektiv geht aber hervor, dass die Teilnehmenden vorallem zu Beginn stark abgenommen haben.
+Aufgabe 1d)
+Chi-Quadrat-Anpassungstest (χ²-Goodness-of-Fit-Test)
+H0: Die Teilnehmer an den Jahren 2005 - 2014 in der Sportart Orientierungslauf von allen Teilnehmern eines Jugend und Sportkurses ist gleich verteilt. Wenn der p-Wert <0.005 deutet daraufhin, dass die beobachteten Häufigkeiten signifikant von den erwarteten Häufigkeiten abweichen, was darauf hindeutet, dass die Verteilung nicht gleichmäßig ist. Annahme gleichmaessiger Verteilung der Teilnehmenden da sonst die Erhebung der Statistik falsch waere. Jedes Jahr waren die Voraussetzungen gleich. Objektiv geht aber hervor, dass die Teilnehmenden vorallem zu Beginn stark abgenommen haben.
 
 ```{r}
 library(dplyr)
@@ -133,7 +134,7 @@ Teilnehmer_pro_jahr_Orientierungslauf <- data %>%
   group_by(jahr) %>%
   summarise(summe = sum(anzahl))
 
-# Filter the data based on multiple conditions
+# Filtern der Daten
 filtered_data <- data %>%
   filter(
     sportart == "Orientierungslauf" &
@@ -159,17 +160,15 @@ ggplot(anzahl_teilnehmende, aes(x = anzahl_teilnehmende$jahr, y = anzahl_teilneh
 # Erwartete Häufigkeiten annehmen, dass sie gleichmäßig verteilt sind
 expected_frequencies <- rep(mean(anzahl_teilnehmende), length(anzahl_teilnehmende))
 
-# Chi-Quadrat-Goodness-of-Fit-Test durchführen
+# Chi-Quadrat-Goodness-of-Fit-Test
 chi_square_test <- chisq.test(anzahl_teilnehmende, p = expected_frequencies/sum(expected_frequencies))
 
-# Testergebnis ausgeben
 print(chi_square_test)
 ```
-Der Test zeigt dass die Häufigkeiten signifikant von den erwarteten Häufigkeiten abweichen. Da p nahezu null ist.
+Der Test zeigt dass die Häufigkeiten signifikant von den erwarteten Häufigkeiten abweichen. Da p nahezu null ist, bedeutet dies, dass es extrem unwahrscheinlich ist, dass die beobachteten Häufigkeiten von den erwarteten Häufigkeiten abweichen, nur aufgrund von Zufälligkeiten. Die Abweichung ist statistisch signifikant. Es gibt 18 Freiheitsgrade somit unabhaengige Werte in der Berechnung.
 
-
-Aufgabe 1 c)
-Datn: Aktuelle Messwerte, 10 Parameter (Format csv)
+Aufgabe 2 a)
+Datenn: Aktuelle Messwerte, 10 Parameter (Format csv)
 Quelle: https://data.geo.admin.ch/ch.meteoschweiz.messwerte-aktuell/VQHA80.csv
 tre200s0 = Tempertatur in 2m
 rre150z0 = Niederschlag in 150min
@@ -178,30 +177,23 @@ gre000z0 = Globalstrahlung
 ure200s0 = Relative Fechtigkeit
 tde200s0 = Taupunkt
 ```{r}
-# Load the CSV file
-# Load necessary library
 library(dplyr)
 library(psych)
 
-# Load the CSV file
 data_meteo <- read.csv("Meteodaten_VQHA80.csv", header = TRUE, sep = ";", stringsAsFactors = FALSE)
 data_meteo <- data_meteo %>% select(-Station.Location)
 data_meteo <- na.omit(data_meteo)
 
-# Function to clean and convert to numeric
 convert_to_numeric <- function(x) {
   x <- gsub("\\$", "", x)
-  x <- gsub("-", "", x)  # Replace "-" with empty string
+  x <- gsub("-", "", x)  # Ersatz "-"
   as.numeric(x)
 }
 
-# Apply the function to the data
 data_meteo[] <- lapply(data_meteo, convert_to_numeric)
 
-# Print the converted data
 print(data_meteo)
 
-# Check and convert specific columns to numeric (if necessary)
 data_meteo$tre200s0 <- as.numeric(data_meteo$tre200s0)
 data_meteo$rre150z0 <- as.numeric(data_meteo$rre150z0)
 data_meteo$sre000z0 <- as.numeric(data_meteo$sre000z0)
@@ -209,13 +201,11 @@ data_meteo$gre000z0 <- as.numeric(data_meteo$gre000z0)
 data_meteo$ure200s0 <- as.numeric(data_meteo$ure200s0)
 data_meteo$tde200s0 <- as.numeric(data_meteo$tde200s0)
 
-# Calculate the correlation coefficient
+# Koeffizientwert
 correlation_coefficient_meteo <- cor(data_meteo$tre200s0, data_meteo$rre150z0, use = "complete.obs")
-
-# Print the correlation coefficient
 print(correlation_coefficient_meteo)
 
-# Plot #1: Basic scatterplot matrix of the four measurements
+# Scatterplot matrix mit vier werten
 pairs(~tre200s0+rre150z0+sre000z0+gre000z0+ure200s0+tde200s0, data_meteo)
 
 # panel.smooth function
@@ -236,7 +226,6 @@ pairs(~tre200s0+rre150z0+sre000z0+gre000z0+ure200s0+tde200s0, data_meteo,
       lower.panel=panel.smooth, upper.panel=panel.cor, 
       pch=20, main="Streudiagramm mit Metoe-Daten")
 
-# Final plot using the psych package
 if (!require(psych)) {
   install.packages("psych")
 }
@@ -247,27 +236,25 @@ pairs.panels(data_meteo[, c("tre200s0", "rre150z0", "sre000z0", "gre000z0", "ure
              density = TRUE,  # show density plots
              ellipses = TRUE # show correlation ellipses
 )
-
 ```
 Diskussion:
 In den unteren Plots erkennt man ob die ausgewaehlten Variablen einen Zusammenhang. In den oberen sieht man die Korrelation. Die Werte deuten auf keine Korrelation hin. Die letzte Grafik zeigt die Dichteverteilung der Datenpunkte sowie die Dichtekurven. Zwei Variablen haben keine regelmaessigen Werte. Niederschlag und Sonnenscheindauer. Zwei Werte zeigen eine Gausskurve. Temperatur und Taupunkt. Diese haengen zusammen. Die relative Feuchtigkeit und die Globalstrahlung.
 
-Aufgabe 2b)
+Aufgabe 2a) + 2b) + c)
 Wir versuchen aus der unabhaengigen Variablen X die abhaengige Variable Y vorherzusagen und mit der linearen Einfachregression eine Gleichung zu finden. Der Plot residuals zeigt die Abstaende gegen dir vorhergesagten Werte. Die Punkte sind nicht um die Linie y = 0 in rot. Dies deutet nicht auf eine Homoskedastizität hin.
 ```{r}
-# Daten in einen DataFrame packen
+
 data <- data.frame(data_meteo)
 
-# Lineare Regression durchführen
+# Lineare Regression
 model <- lm(data_meteo$tre200s0 ~ data_meteo$tde200s0, data_meteo)
 
-# Zusammenfassung des Modells anzeigen
+# Zusammenfassung des Modells
 summary(model)
 
-# Residuen berechnen
+# Residuen
 residuals <- residuals(model)
 
-# Residuenplot
 plot(fitted(model), residuals)
 abline(h = 0, col = "red")
 
@@ -284,24 +271,19 @@ Bereits unterhalb der einzelnen Aufgaben gmacht.
 
 Zusaetzlicher Scatter-Plot:
 Quelle: https://opendata.swiss/de/dataset/kennzahlen-offentliche-ladeinfrastruktur-elektromobilitat
-Die Datei enthaelt von den Jahren 2020 bis 2023 die Anzahl Ladestationen in verschiedenen Leistungsklassen im Total als auch in den einzelnen Kantonen. Dabei kann der Zusammenhang vom Ausbau der verschiedenen Ladestationenkategorien analysiert werden. 
-
+Die Datei enthaelt von den Jahren 2020 bis 2023 die Anzahl Ladestationen in verschiedenen Leistungsklassen im Total als auch in den einzelnen Kantonen. Dabei kann der Zusammenhang vom Ausbau der verschiedenen Ladestationenkategorien analysiert werden.
 
 ```{r}
-# Load necessary libraries
 library(dplyr)
 library(ggplot2)
 
-# Load the CSV file
 data_ladestationen <- read.csv("ich_tanke_strom_Kennzahlen_monatlich.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
 
-# Check for NA values and remove them
 data_ladestationen <- na.omit(data_ladestationen)
 
-# Filter data for the years 2020 to 2023
+# Daten von2020 to 2023
 data_ladestationen <- data_ladestationen %>% filter(year >= 2020 & year <= 2023)
 
-# Remove the 'month' column
 data_ladestationen <- data_ladestationen %>% select(-month)
 
 # Korrelationskoeffizient
@@ -309,7 +291,7 @@ correlation_coefficient_ladestation <- cor(data_ladestationen$chargingPower_10kW
 
 print(correlation_coefficient_ladestation)
 
-# Create a scatter plot comparing 'chargingPower_10kW_count' and 'chargingPower_21kW_count'
+# Scstterplot von zwei Variablen 'chargingPower_10kW_count' and 'chargingPower_21kW_count'
 ggplot(data_ladestationen, aes(x = chargingPower_10kW_count, y = chargingPower_21kW_count, color = as.factor(year))) +
   geom_point() +
   scale_color_manual(values = c("2020" = "red", "2021" = "blue", "2022" = "green", "2023" = "violet")) +
